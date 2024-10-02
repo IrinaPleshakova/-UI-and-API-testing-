@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExerciseTestSuite" parallel="false">
+    <test name="AutomationExerciseTests">
+        <classes>
+            <class name="ui.runners.TestRunner"/>
+<!--            <class name="ui.stepsdef.RegistrationSteps"/>-->
+<!--            <class name="ui.stepsdef.LoginSteps"/>-->
+<!--            <class name="ui.stepsdef.LogoutSteps"/>-->
+        </classes>
+    </test>
+</suite>

@@ -18,10 +18,11 @@ public class AccountCreatedPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
-	public boolean isAccountCreatedMessageDisplayed() {
+	
+	public boolean isAccountCreatedMessageDisplayed(String expectedMessage) {
 		try {
-			return accountCreatedMessage.isDisplayed();
+			String actualMessage = accountCreatedMessage.getText();
+			return actualMessage.equalsIgnoreCase(expectedMessage);
 		} catch (Exception e) {
 			return false;
 		}

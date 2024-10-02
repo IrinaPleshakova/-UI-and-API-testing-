@@ -1,0 +1,829 @@
+2024-10-01 19:33:11 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 19:33:12 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 19:33:12 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 19:33:12 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 19:33:12 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 19:33:12 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 19:34:06 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 19:34:06 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 19:34:06 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 19:34:06 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 19:34:06 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 19:34:06 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 19:36:35 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 19:37:09 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 19:45:06 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 19:45:06 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 19:45:06 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 19:45:06 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 19:45:06 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 19:45:06 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 19:45:36 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 19:45:56 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 21:25:32 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 22:07:40 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 22:37:28 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 22:37:29 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 22:37:29 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 22:37:29 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 22:37:29 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 22:37:29 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 23:19:55 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 23:19:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:19:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:19:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:19:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:19:56 INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win64/chromedriver-win64.zip
+2024-10-01 23:19:56 INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win64/chromedriver-win64.zip
+2024-10-01 23:19:56 INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win64/chromedriver-win64.zip
+2024-10-01 23:19:56 INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win64/chromedriver-win64.zip
+2024-10-01 23:19:57 INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2024-10-01 23:19:57 INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2024-10-01 23:19:57 INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2024-10-01 23:19:57 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:19:58 INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2024-10-01 23:19:59 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 23:19:59 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 23:19:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:19:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:19:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:19:59 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 23:19:59 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 23:20:00 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 23:22:24 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:22:24 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:22:25 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 23:22:25 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 23:24:55 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 23:24:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:24:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:24:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:24:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:24:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:24:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:24:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:24:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:24:57 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 23:24:57 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 23:24:57 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 23:24:57 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 23:24:57 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 23:34:15 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 23:34:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:34:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:34:17 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 23:34:17 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 23:34:17 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 23:34:17 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 23:34:17 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 23:40:58 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:40:58 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:40:59 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 23:40:59 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 23:54:35 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-01 23:54:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:54:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:54:37 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 23:54:37 INFO  ui.stepsdef.LoginSteps - Navigating to login page
+2024-10-01 23:54:37 INFO  ui.stepsdef.LogoutSteps - Logging in user
+2024-10-01 23:54:37 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 23:54:37 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 23:54:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-01 23:54:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-01 23:54:51 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-01 23:54:51 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-01 23:59:27 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 00:00:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 00:00:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 00:00:15 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-02 00:00:15 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-02 00:01:14 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 00:01:37 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 00:01:37 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 00:01:38 INFO  ui.stepsdef.RegistrationSteps - Navigating to home page
+2024-10-02 00:01:38 INFO  ui.stepsdef.RegistrationSteps - Navigating to signup/login page
+2024-10-02 12:51:01 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 12:53:52 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:07:58 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:08:12 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:08:49 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:09:22 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:26:27 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:31:35 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:31:46 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:33:02 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:46:11 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:46:35 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:59:08 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 13:59:23 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 14:46:04 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 14:49:52 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 16:50:12 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 16:53:18 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 16:54:49 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 16:58:49 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 16:59:25 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 16:59:26 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 16:59:26 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 16:59:27 INFO  utils.Hooks - Driver initialized
+2024-10-02 16:59:29 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 16:59:31 INFO  utils.Hooks - Driver quit
+2024-10-02 17:01:38 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 17:01:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 17:01:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 17:01:39 INFO  utils.Hooks - Driver initialized
+2024-10-02 17:01:43 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 17:01:44 INFO  utils.Hooks - Driver quit
+2024-10-02 17:24:37 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 17:24:37 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 17:24:37 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 17:24:38 INFO  utils.Hooks - Driver initialized
+2024-10-02 17:24:40 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 17:24:42 INFO  utils.Hooks - Driver quit
+2024-10-02 17:26:09 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 17:26:09 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 17:26:12 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 17:37:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 17:37:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 17:37:45 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 17:42:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 17:42:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 17:42:53 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:04:27 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:04:27 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:04:35 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:04:35 INFO  ui.stepsdef.LoginSteps - Using existing user account from config
+2024-10-02 19:11:04 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:11:04 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:11:07 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:11:07 INFO  ui.stepsdef.LoginSteps - Using existing user account from config
+2024-10-02 19:47:46 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:47:46 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:47:49 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:47:49 INFO  ui.stepsdef.LoginSteps - Using existing user account from config
+2024-10-02 19:48:52 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 19:48:52 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:48:52 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:48:53 INFO  utils.Hooks - Driver initialized
+2024-10-02 19:48:55 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:48:56 INFO  utils.Hooks - Driver quit
+2024-10-02 19:51:06 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 19:51:07 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:51:07 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:51:08 INFO  utils.Hooks - Driver initialized
+2024-10-02 19:51:09 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:51:11 INFO  utils.Hooks - Driver quit
+2024-10-02 19:51:34 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 19:51:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:51:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:51:35 INFO  utils.Hooks - Driver initialized
+2024-10-02 19:51:37 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:51:38 INFO  utils.Hooks - Driver quit
+2024-10-02 19:51:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:51:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:51:58 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:52:44 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 19:52:45 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:52:45 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:52:45 INFO  utils.Hooks - Driver initialized
+2024-10-02 19:52:47 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:52:49 INFO  utils.Hooks - Driver quit
+2024-10-02 19:55:15 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:55:15 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:55:18 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:56:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:56:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:57:02 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:57:26 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:57:26 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:57:29 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:57:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:57:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:57:57 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 19:59:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 19:59:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 19:59:37 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 20:00:01 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 20:00:01 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 20:00:01 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 20:00:02 INFO  utils.Hooks - Driver initialized
+2024-10-02 20:00:04 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 20:00:05 INFO  utils.Hooks - Driver quit
+2024-10-02 20:01:31 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 20:01:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 20:01:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 20:01:32 INFO  utils.Hooks - Driver initialized
+2024-10-02 20:01:34 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 20:01:35 INFO  utils.Hooks - Driver quit
+2024-10-02 20:02:10 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 20:02:11 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 20:02:11 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 20:02:11 INFO  utils.Hooks - Driver initialized
+2024-10-02 20:02:13 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 20:02:14 INFO  utils.Hooks - Driver quit
+2024-10-02 20:04:18 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 20:04:19 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 20:04:19 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 20:04:20 INFO  utils.Hooks - Driver initialized
+2024-10-02 20:04:22 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 20:04:23 INFO  utils.Hooks - Driver quit
+2024-10-02 21:07:14 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 21:07:15 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 21:07:15 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 21:07:16 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:07:18 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:07:19 INFO  utils.Hooks - Driver quit
+2024-10-02 21:25:43 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 21:25:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 21:25:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 21:25:45 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:25:47 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:25:48 INFO  utils.Hooks - Driver quit
+2024-10-02 21:28:52 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 21:28:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:28:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+2024-10-02 21:28:53 INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-win64.zip
+2024-10-02 21:28:54 INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file geckodriver-v0.35.0-win64.zip
+2024-10-02 21:28:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:28:56 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:28:58 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:28:59 INFO  utils.Hooks - Driver quit
+2024-10-02 21:32:33 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 21:32:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:32:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:32:36 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:32:38 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:32:38 INFO  utils.Hooks - Driver quit
+2024-10-02 21:32:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:32:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:32:40 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:32:42 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:32:43 INFO  utils.Hooks - Driver quit
+2024-10-02 21:32:43 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:32:43 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:32:44 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:32:47 INFO  utils.Hooks - Driver quit
+2024-10-02 21:32:47 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:32:47 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:32:49 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:32:50 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:32:51 INFO  utils.Hooks - Driver quit
+2024-10-02 21:38:53 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 21:38:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:38:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:38:54 INFO  utils.Hooks - Driver quit
+2024-10-02 21:38:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:38:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:38:54 INFO  utils.Hooks - Driver quit
+2024-10-02 21:38:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:38:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:38:54 INFO  utils.Hooks - Driver quit
+2024-10-02 21:38:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 129)
+2024-10-02 21:38:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-02 21:38:54 INFO  utils.Hooks - Driver quit
+2024-10-02 21:42:22 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 21:42:23 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 21:42:23 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 21:42:24 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:42:26 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:42:27 INFO  utils.Hooks - Driver quit
+2024-10-02 21:42:27 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 21:42:27 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 21:42:27 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:42:29 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:42:31 INFO  utils.Hooks - Driver quit
+2024-10-02 21:42:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 21:42:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 21:42:31 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:42:34 INFO  utils.Hooks - Driver quit
+2024-10-02 21:42:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 21:42:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 21:42:35 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:42:37 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:42:38 INFO  utils.Hooks - Driver quit
+2024-10-02 21:43:33 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 21:43:33 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 21:43:33 INFO  utils.Hooks - Driver initialized
+2024-10-02 21:43:35 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 21:43:36 INFO  utils.Hooks - Driver quit
+2024-10-02 22:07:24 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 22:07:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:07:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:07:26 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:07:28 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:07:29 INFO  utils.Hooks - Driver quit
+2024-10-02 22:07:29 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:07:29 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:07:30 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:07:31 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:07:33 INFO  utils.Hooks - Driver quit
+2024-10-02 22:07:33 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:07:33 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:07:33 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:07:36 INFO  utils.Hooks - Driver quit
+2024-10-02 22:07:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:07:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:07:37 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:07:39 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:07:40 INFO  utils.Hooks - Driver quit
+2024-10-02 22:16:24 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 22:16:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:16:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:16:26 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:16:27 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:16:30 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:16:31 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:16:33 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:16:34 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-02 22:16:34 INFO  utils.Hooks - Driver quit
+2024-10-02 22:16:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:16:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:16:34 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:16:36 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:16:38 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:16:40 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:16:41 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:16:42 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 22:16:42 INFO  utils.Hooks - Driver quit
+2024-10-02 22:16:42 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:16:42 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:16:42 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:16:44 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:16:46 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:16:50 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 22:16:51 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 22:16:51 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 22:16:51 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 22:16:51 INFO  utils.Hooks - Driver quit
+2024-10-02 22:16:51 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:16:51 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:16:52 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:16:53 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:16:55 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:16:56 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:16:59 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:16:59 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Colin and email: austin.hand@hotmail.com
+2024-10-02 22:16:59 INFO  utils.Hooks - Driver quit
+2024-10-02 22:19:08 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 22:19:09 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:19:09 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:19:09 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:19:11 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:19:13 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:19:15 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:19:15 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:19:16 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-02 22:19:16 INFO  utils.Hooks - Driver quit
+2024-10-02 22:19:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:19:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:19:17 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:19:19 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:19:21 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:19:23 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:19:25 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:19:25 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 22:19:25 INFO  utils.Hooks - Driver quit
+2024-10-02 22:19:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:19:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:19:25 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:19:27 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:19:29 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:19:34 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 22:19:36 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 22:19:36 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 22:19:36 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 22:19:36 INFO  utils.Hooks - Driver quit
+2024-10-02 22:19:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:19:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:19:36 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:19:38 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:19:40 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:19:42 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:19:44 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:19:44 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Felica and email: freddie.sawayn@hotmail.com
+2024-10-02 22:19:44 INFO  utils.Hooks - Driver quit
+2024-10-02 22:35:44 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 22:35:45 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:35:45 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:35:45 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:35:47 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:35:49 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:35:50 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:35:52 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:35:52 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-02 22:35:52 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 22:35:52 INFO  utils.Hooks - Driver quit
+2024-10-02 22:35:52 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:35:52 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:35:53 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:35:55 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:35:57 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:35:59 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:36:00 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:36:00 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 22:36:00 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 22:36:00 INFO  utils.Hooks - Driver quit
+2024-10-02 22:36:00 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:36:00 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:36:01 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:36:02 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:36:04 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:36:09 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 22:36:10 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 22:36:10 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 22:36:10 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 22:36:10 INFO  utils.Hooks - Driver quit
+2024-10-02 22:36:10 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:36:10 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:36:11 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:36:12 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:36:14 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:36:15 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:36:17 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:36:17 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Myung and email: cory.howell@hotmail.com
+2024-10-02 22:36:17 INFO  utils.Hooks - Driver quit
+2024-10-02 22:42:37 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 22:42:37 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:42:37 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:42:38 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:42:40 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:42:42 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:42:44 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:42:45 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:42:45 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-02 22:42:45 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 22:42:45 INFO  utils.Hooks - Driver quit
+2024-10-02 22:42:46 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:42:46 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:42:46 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:42:47 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:42:49 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:42:51 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:42:52 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:42:52 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 22:42:52 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 22:42:52 INFO  utils.Hooks - Driver quit
+2024-10-02 22:42:52 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:42:52 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:42:53 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:42:55 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:42:57 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:43:02 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 22:43:03 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 22:43:03 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 22:43:03 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 22:43:03 INFO  utils.Hooks - Driver quit
+2024-10-02 22:43:03 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:43:03 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:43:03 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:43:05 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:43:07 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:43:09 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:43:10 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:43:10 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Francesco and email: ileana.boyle@yahoo.com
+2024-10-02 22:43:10 INFO  utils.Hooks - Driver quit
+2024-10-02 22:50:14 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 22:50:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:50:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:50:15 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:50:17 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:50:19 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:50:21 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:50:21 INFO  utils.Hooks - Driver quit
+2024-10-02 22:50:22 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:50:22 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:50:22 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:50:24 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:50:26 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:50:28 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:50:29 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:50:30 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 22:50:30 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 22:50:31 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-02 22:50:31 INFO  utils.Hooks - Driver quit
+2024-10-02 22:50:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:50:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:50:32 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:50:34 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:50:36 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:50:41 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 22:50:42 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 22:50:42 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 22:50:42 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 22:50:42 INFO  utils.Hooks - Driver quit
+2024-10-02 22:50:42 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 22:50:42 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 22:50:43 INFO  utils.Hooks - Driver initialized
+2024-10-02 22:50:45 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 22:50:47 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 22:50:48 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 22:50:49 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 22:50:49 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Rory and email: mickie.vandervort@gmail.com
+2024-10-02 22:50:51 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-02 22:50:52 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-02 22:50:53 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-02 22:50:53 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-02 22:50:55 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-02 22:50:55 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-02 22:50:55 INFO  utils.Hooks - Driver quit
+2024-10-02 23:04:05 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 23:04:05 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:04:05 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:04:06 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:04:08 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:04:10 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:04:11 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:04:13 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:04:13 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-02 23:04:13 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:04:14 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-02 23:04:15 INFO  utils.Hooks - Driver quit
+2024-10-02 23:04:15 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:04:15 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:04:15 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:04:17 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:04:19 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:04:21 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:04:22 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:04:23 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 23:04:23 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:04:24 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-02 23:04:24 INFO  utils.Hooks - Driver quit
+2024-10-02 23:04:24 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:04:24 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:04:24 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:04:26 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:04:28 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:04:33 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 23:04:34 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 23:04:34 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 23:04:34 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 23:04:34 INFO  utils.Hooks - Driver quit
+2024-10-02 23:04:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:04:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:04:35 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:04:36 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:04:38 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:04:41 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:04:42 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:04:42 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Cordia and email: monserrate.boyer@hotmail.com
+2024-10-02 23:04:44 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-02 23:04:45 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-02 23:04:46 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-02 23:04:46 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-02 23:04:47 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-02 23:04:47 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-02 23:04:47 INFO  utils.Hooks - Driver quit
+2024-10-02 23:05:12 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:05:12 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:05:12 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:05:14 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:05:16 INFO  utils.Hooks - Popup window closed by clicking 'РЎРѕРіР»Р°С€Р°СЋСЃСЊ' button
+2024-10-02 23:05:18 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:05:20 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:05:20 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 23:05:20 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:05:22 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-02 23:05:22 INFO  utils.Hooks - Driver quit
+2024-10-02 23:10:03 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 23:10:04 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:10:04 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:10:05 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:10:07 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:10:09 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:10:11 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:10:12 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:10:12 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-02 23:10:12 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:10:13 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-02 23:10:13 INFO  utils.Hooks - Driver quit
+2024-10-02 23:10:13 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:10:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:10:14 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:10:15 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:10:18 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:10:19 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:10:20 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:10:20 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 23:10:20 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:10:21 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-02 23:10:21 INFO  utils.Hooks - Driver quit
+2024-10-02 23:10:21 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:10:21 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:10:22 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:10:24 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:10:26 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:10:31 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 23:10:32 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 23:10:32 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 23:10:32 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 23:10:32 INFO  utils.Hooks - Driver quit
+2024-10-02 23:10:32 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-10-02 23:10:32 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-10-02 23:10:33 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:10:35 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:10:37 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:10:39 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:10:41 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:10:41 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Mikaela and email: russell.kuphal@hotmail.com
+2024-10-02 23:10:42 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-02 23:10:43 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-02 23:10:45 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-02 23:10:45 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-02 23:10:46 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-02 23:10:46 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-02 23:10:46 INFO  utils.Hooks - Driver quit
+2024-10-02 23:37:27 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 23:37:28 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 23:37:28 INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.89/win64/chromedriver-win64.zip
+2024-10-02 23:37:28 INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2024-10-02 23:37:28 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 23:37:30 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:37:32 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:37:34 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:37:36 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:37:37 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:37:37 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-02 23:37:37 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:37:38 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-02 23:37:38 INFO  utils.Hooks - Driver quit
+2024-10-02 23:37:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 23:37:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 23:37:39 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:37:41 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:37:43 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:37:44 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:37:46 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:37:46 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 23:37:46 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:37:47 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-02 23:37:47 INFO  utils.Hooks - Driver quit
+2024-10-02 23:37:47 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 23:37:47 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 23:37:47 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:37:49 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:37:51 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:37:55 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 23:37:56 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 23:37:56 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 23:37:56 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 23:37:56 INFO  utils.Hooks - Driver quit
+2024-10-02 23:37:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 23:37:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 23:37:57 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:37:59 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:38:01 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:38:03 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:38:04 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:38:04 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Ulysses and email: tommie.predovic@gmail.com
+2024-10-02 23:38:06 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-02 23:38:07 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-02 23:38:09 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-02 23:38:09 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-02 23:38:10 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-02 23:38:10 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-02 23:38:10 INFO  utils.Hooks - Driver quit
+2024-10-02 23:44:47 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-02 23:44:47 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 23:44:47 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 23:44:48 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:44:50 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:44:50 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:44:51 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:44:52 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:44:52 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-02 23:44:52 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:44:54 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-02 23:44:54 INFO  utils.Hooks - Driver quit
+2024-10-02 23:44:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 23:44:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 23:44:55 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:44:56 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:44:56 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:44:58 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:44:59 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:44:59 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-02 23:44:59 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-02 23:45:00 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-02 23:45:00 INFO  utils.Hooks - Driver quit
+2024-10-02 23:45:00 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 23:45:00 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 23:45:01 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:45:03 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:45:03 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:45:07 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-02 23:45:09 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-02 23:45:09 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-02 23:45:09 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-02 23:45:09 INFO  utils.Hooks - Driver quit
+2024-10-02 23:45:09 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 23:45:09 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 23:45:10 INFO  utils.Hooks - Driver initialized
+2024-10-02 23:45:12 INFO  utils.Hooks - Navigated to base URL
+2024-10-02 23:45:12 INFO  utils.Hooks - Popup window closed by clicking 'Соглашаюсь' button
+2024-10-02 23:45:13 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-02 23:45:14 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-02 23:45:14 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Odilia and email: lennie.nader@hotmail.com
+2024-10-02 23:45:15 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-02 23:45:16 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-02 23:45:18 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-02 23:45:18 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-02 23:45:19 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-02 23:45:19 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-02 23:45:19 INFO  utils.Hooks - Driver quit
+2024-10-03 00:13:07 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-03 00:13:08 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 00:13:08 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 00:13:08 INFO  utils.Hooks - Driver initialized
+2024-10-03 00:13:18 INFO  utils.Hooks - Navigated to base URL
+2024-10-03 00:13:18 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-03 00:13:20 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-03 00:13:22 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-03 00:13:22 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-03 00:13:22 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-03 00:13:24 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-03 00:13:24 INFO  utils.Hooks - Driver quit
+2024-10-03 00:13:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 00:13:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 00:13:25 INFO  utils.Hooks - Driver initialized
+2024-10-03 00:13:33 INFO  utils.Hooks - Navigated to base URL
+2024-10-03 00:13:33 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-03 00:13:37 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-03 00:13:39 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-03 00:13:39 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-03 00:13:39 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-03 00:13:41 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-03 00:13:41 INFO  utils.Hooks - Driver quit
+2024-10-03 00:13:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 00:13:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 00:13:41 INFO  utils.Hooks - Driver initialized
+2024-10-03 00:13:44 INFO  utils.Hooks - Navigated to base URL
+2024-10-03 00:13:44 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-03 00:13:50 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-03 00:13:51 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-03 00:13:51 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-03 00:13:51 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-03 00:13:51 INFO  utils.Hooks - Driver quit
+2024-10-03 00:13:51 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 00:13:51 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 00:13:51 INFO  utils.Hooks - Driver initialized
+2024-10-03 00:13:54 INFO  utils.Hooks - Navigated to base URL
+2024-10-03 00:13:54 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-03 00:13:56 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-03 00:13:57 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-03 00:13:58 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Willard and email: armandina.witting@hotmail.com
+2024-10-03 00:13:59 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-03 00:14:00 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-03 00:14:01 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-03 00:14:01 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-03 00:14:03 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-03 00:14:03 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-03 00:14:04 INFO  utils.Hooks - Driver quit
+2024-10-03 00:26:49 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-03 00:26:49 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 00:26:49 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 00:26:50 INFO  utils.Hooks - Driver initialized
+2024-10-03 00:26:52 INFO  utils.Hooks - Navigated to base URL
+2024-10-03 00:26:53 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-03 00:26:56 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-03 00:26:57 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-03 00:26:57 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-03 00:26:57 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-03 00:27:01 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-03 00:27:01 INFO  utils.Hooks - Driver quit
+2024-10-03 00:27:01 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 00:27:01 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 00:27:02 INFO  utils.Hooks - Driver initialized
+2024-10-03 00:27:03 INFO  utils.Hooks - Navigated to base URL
+2024-10-03 00:27:03 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-03 00:27:09 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-03 00:27:11 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-03 00:27:11 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-03 00:27:11 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-03 00:27:12 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-03 00:27:13 INFO  utils.Hooks - Driver quit
+2024-10-03 00:27:13 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 00:27:13 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 00:27:13 INFO  utils.Hooks - Driver initialized
+2024-10-03 00:27:15 INFO  utils.Hooks - Navigated to base URL
+2024-10-03 00:27:15 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-03 00:27:27 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-03 00:27:29 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-03 00:27:29 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-03 00:27:29 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-03 00:27:29 INFO  utils.Hooks - Driver quit
+2024-10-03 00:27:29 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 00:27:29 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 00:27:30 INFO  utils.Hooks - Driver initialized
+2024-10-03 00:27:35 INFO  utils.Hooks - Navigated to base URL
+2024-10-03 00:27:35 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-03 00:27:37 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-03 00:27:38 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-03 00:27:38 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Ozzie and email: lenard.doyle@yahoo.com
+2024-10-03 00:27:40 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-03 00:27:41 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-03 00:27:42 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-03 00:27:42 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-03 00:27:43 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-03 00:27:43 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-03 00:27:44 INFO  utils.Hooks - Driver quit
