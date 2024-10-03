@@ -5,12 +5,17 @@ import io.cucumber.java.Before;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+
+/**
+ * Hooks for initializing and tearing down the WebDriver and handling screenshots for Cucumber tests.
+ */
 
 public class Hooks {
 	private WebDriver driver;
@@ -30,9 +35,19 @@ public class Hooks {
 		closePopupIfPresent();
 	}
 
+	/**
+	 * Takes a screenshot at the end of each test. If the test fails, the screenshot is logged as an error.
+	 * If the test passes, the screenshot is logged as informational.
+	 */
 	@After
-	public void teardown() {
-		// Quit the driver
+	public void teardown(Scenario scenario) {
+		if (scenario.isFailed()) {
+			logger.error("Test failed: " + scenario.getName());
+			ScreenshotUtil.takeScreenshot(driver, scenario.getName());
+		} else {
+			logger.info("Test passed: " + scenario.getName());
+			ScreenshotUtil.takeScreenshot(driver, scenario.getName());
+		}
 		DriverManager.quitDriver();
 		logger.info("Driver quit");
 	}
@@ -43,11 +58,11 @@ public class Hooks {
 	private void closePopupIfPresent() {
 		try {
 			// Wait a few seconds to make sure the window appears
-//			Thread.sleep(2000);
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
 			// Wait for the popup window to appear
 			List<WebElement> popups = driver.findElements(By.cssSelector("body > div > div.fc-dialog-container"));
+			logger.info("Checking for popup...");
 
 			// If the popup is found and displayed, click the button
 			if (!popups.isEmpty() && popups.get(0).isDisplayed()) {

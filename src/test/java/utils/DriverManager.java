@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 /**
- * DriverManager class to manage WebDriver instances.
+ * DriverManager class to manage WebDriver instances and configuration for different browsers.
  */
 public class DriverManager {
 	private static WebDriver driver;
@@ -18,8 +18,8 @@ public class DriverManager {
 	 */
 	public static WebDriver getDriver() {
 		if (driver == null) {
-			String browser = ConfigProvider.getBrowser();
-			boolean headless = ConfigProvider.isHeadless();
+			String browser = ConfigProvider.getBrowser(); // Retrieve browser type from configuration
+			boolean headless = ConfigProvider.isHeadless(); // Check if headless mode is enabled
 
 			switch (browser.toLowerCase()) {
 				case "chrome":

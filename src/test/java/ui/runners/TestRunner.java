@@ -13,6 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 		plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
 		monochrome = true,
 		tags = "@ui"
+//		tags = "@important"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 	// No need to implement any methods here

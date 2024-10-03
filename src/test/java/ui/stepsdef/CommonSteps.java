@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import ui.pages.HomePage;
 import ui.pages.LoginPage;
+import ui.pages.ProductsPage;
 import utils.DriverManager;
 import utils.ConfigProvider;
 import org.apache.logging.log4j.LogManager;
@@ -19,6 +20,7 @@ public class CommonSteps {
 	private WebDriver driver = DriverManager.getDriver();
 	private HomePage homePage;
 	private LoginPage loginPage = new LoginPage(driver);
+	private ProductsPage productsPage;
 	private static final Logger logger = LogManager.getLogger(CommonSteps.class);
 
 	@Given("I open the homepage")
@@ -44,5 +46,12 @@ public class CommonSteps {
 	public void iClickOnTheLoginButtonOnTheLoginPage() {
 		logger.info("Clicking login button");
 		loginPage.clickLoginButton();
+	}
+
+	@And("I click on \"Products\" link")
+	public void iClickOnProductsLink() {
+		homePage.clickProducts();
+		productsPage = new ProductsPage(driver);
+		logger.info("Clicked on Products link");
 	}
 }

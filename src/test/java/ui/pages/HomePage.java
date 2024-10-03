@@ -1,12 +1,21 @@
 package ui.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.time.Duration;
 
 public class HomePage {
+	private static final Logger logger = LogManager.getLogger(HomePage.class);
 	WebDriver driver;
 
 	@FindBy(css = "a[href*='/login']")
@@ -54,13 +63,26 @@ public class HomePage {
 		cartLink.click();
 	}
 
-	public void hoverOverWomenCategory() {
-		Actions actions = new Actions(driver);
-		actions.moveToElement(womenCategoryLink).perform();
+	public void clickWomenCategory() {
+		womenCategoryLink.click();
 	}
 
 	public void clickDressSubcategory() {
-		dressSubcategoryLink.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		try {
+			WebElement dressSubcategory = wait.until(ExpectedConditions.elementToBeClickable(dressSubcategoryLink));
+			// Use JavascriptExecutor to scroll to an element
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dressSubcategory);
+			// Use Actions to perform the click
+			Actions actions = new Actions(driver);
+			actions.moveToElement(dressSubcategory).click().perform();
+			logger.info("Clicked on Dress subcategory successfully");
+		} catch (TimeoutException e) {
+			logger.error("Dress subcategory is not clickable within the timeout period");
+		} catch (Exception e) {
+			logger.error("Failed to click on Dress subcategory: " + e.getMessage());
+		}
 	}
 
 	public boolean isLoggedIn() {
@@ -70,6 +92,7 @@ public class HomePage {
 			return false;
 		}
 	}
+
 	public LoginPage ClickOnLogOutButton() {
 		logoutButton.click();
 		return new LoginPage(driver);
