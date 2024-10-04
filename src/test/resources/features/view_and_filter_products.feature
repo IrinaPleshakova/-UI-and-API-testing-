@@ -1,12 +1,12 @@
 Feature: Viewing Products and Filtering by Category
 
-@ui
+  @ui
   Scenario: View all products
     Given I open the homepage
     When I click on "Products" link
     Then I should see a list of products
 
-@ui
+  @ui
   Scenario: Filter products by category "Women > Dress"
     Given I open the homepage
     When I click on "Women" category

@@ -98,5 +98,7 @@ public class HomePage {
 		return new LoginPage(driver);
 	}
 
-//	public DeleteAccountPage
+	public void clickDeleteAccount() {
+		deleteAccountButton.click();
+	}
 }

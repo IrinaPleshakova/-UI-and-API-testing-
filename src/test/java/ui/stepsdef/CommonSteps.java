@@ -1,12 +1,8 @@
 package ui.stepsdef;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
-import ui.pages.HomePage;
-import ui.pages.LoginPage;
-import ui.pages.ProductsPage;
+import ui.pages.*;
 import utils.DriverManager;
 import utils.ConfigProvider;
 import org.apache.logging.log4j.LogManager;
@@ -18,9 +14,16 @@ import org.apache.logging.log4j.Logger;
 public class CommonSteps {
 
 	private WebDriver driver = DriverManager.getDriver();
-	private HomePage homePage;
+	private HomePage homePage = new HomePage(driver);
+	private CartPage cartPage = new CartPage(driver);
+	private CheckoutPage checkoutPage = new CheckoutPage(driver);
+	private PaymentPage paymentPage = new PaymentPage(driver);
+	private AccountCreatedPage accountCreatedPage = new AccountCreatedPage(driver);
+	private AccountDeletedPage accountDeletedPage = new AccountDeletedPage(driver);
 	private LoginPage loginPage = new LoginPage(driver);
-	private ProductsPage productsPage;
+	private SignupPage signupPage = new SignupPage(driver);
+	private ProductDetailPage productDetailPage = new ProductDetailPage(driver);
+	private ProductsPage productsPage = new ProductsPage(driver);
 	private static final Logger logger = LogManager.getLogger(CommonSteps.class);
 
 	@Given("I open the homepage")
@@ -53,5 +56,45 @@ public class CommonSteps {
 		homePage.clickProducts();
 		productsPage = new ProductsPage(driver);
 		logger.info("Clicked on Products link");
+	}
+
+	@Then("I click {string} button")
+	public void iClickButton(String buttonName) {
+		switch (buttonName.toLowerCase()) {
+			case "continue shopping":
+				productDetailPage.clickContinueShopping();
+				break;
+			case "view cart":
+				productDetailPage.clickViewCart();
+				break;
+			case "proceed to checkout":
+				cartPage.clickProceedToCheckout();
+				break;
+			case "cart":
+				homePage.clickCart();
+				break;
+			case "register / login":
+				checkoutPage.clickRegisterLogin();
+				break;
+			case "place order":
+				checkoutPage.clickPlaceOrderButton();
+				break;
+			case "pay and confirm order":
+				paymentPage.clickPayAndConfirmOrder();
+				break;
+			case "continue on payment page":
+				paymentPage.continueButtonClick();
+				break;
+			case "delete account":
+				homePage.clickDeleteAccount();
+				break;
+			case "continue on account deleted page":
+				accountDeletedPage.clickContinueButton();
+				break;
+			// You can add more cases as needed
+			default:
+				throw new IllegalArgumentException("Unknown button: " + buttonName);
+		}
+		logger.info("Clicked '" + buttonName + "' button");
 	}
 }

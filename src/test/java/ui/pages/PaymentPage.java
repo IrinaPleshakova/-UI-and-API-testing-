@@ -53,9 +53,10 @@ public class PaymentPage {
 		payAndConfirmOrderButton.click();
 	}
 
-	public boolean isOrderConfirmationDisplayed() {
+	public boolean isOrderConfirmationDisplayed(String expectedMessage) {
 		try {
-			return orderConfirmationMessage.isDisplayed();
+			String actualMessage = orderConfirmationMessage.getText();
+			return actualMessage.contains(expectedMessage);
 		} catch (Exception e) {
 			return false;
 		}

@@ -2,6 +2,7 @@ package ui.stepsdef;
 
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import ui.pages.*;
 import utils.DriverManager;
 import com.github.javafaker.Faker;
@@ -22,6 +23,7 @@ public class RegistrationSteps {
 	private LoginPage loginPage;
 	private SignupPage signupPage;
 	private AccountCreatedPage accountCreatedPage;
+	private AccountDeletedPage accountDeletedPage;
 	private Faker faker = new Faker();
 	private String userName;
 	private String userEmail;
@@ -80,9 +82,12 @@ public class RegistrationSteps {
 	@Then("I should see the {string} message")
 	public void iShouldSeeTheMessage(String expectedMessage) {
 		accountCreatedPage = new AccountCreatedPage(driver);
-		boolean isMessageDisplayed = accountCreatedPage.isAccountCreatedMessageDisplayed(expectedMessage);
+		accountDeletedPage = new AccountDeletedPage(driver);
 
-		if (isMessageDisplayed) {
+		boolean isCreatedMessageDisplayed = accountCreatedPage.isAccountCreatedMessageDisplayed(expectedMessage);
+		boolean isDeletedMessageDisplayed = accountDeletedPage.isAccountDeletedMessageDisplayed(expectedMessage);
+
+		if (isCreatedMessageDisplayed || isDeletedMessageDisplayed) {
 			logger.info("Expected message is displayed: {}", expectedMessage);
 		} else {
 			logger.error("Expected message not displayed.");

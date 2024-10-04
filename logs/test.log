@@ -2201,3 +2201,1900 @@ javax.net.ssl.SSLHandshakeException: Received fatal alert: certificate_unknown
 2024-10-03 23:23:26 INFO  utils.TestListener - Test succeeded: runScenario
 2024-10-03 23:23:26 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/runScenario_1727990606578.png
 2024-10-03 23:23:26 INFO  utils.TestListener - Test suite finished: AutomationExerciseTests
+2024-10-04 10:43:59 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 10:44:01 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 10:44:01 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 10:44:02 INFO  utils.Hooks - Driver initialized
+2024-10-04 10:44:04 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 10:44:04 INFO  utils.Hooks - Checking for popup...
+2024-10-04 10:44:04 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 10:44:06 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 10:44:12 INFO  ui.pages.ProductsPage - Selected random product: Full Sleeves Top Cherry - Pink
+2024-10-04 10:44:12 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Full Sleeves Top Cherry - Pink
+2024-10-04 10:44:13 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 10:44:13 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Clicked 'Continue Shopping' button
+2024-10-04 10:44:17 INFO  ui.pages.ProductsPage - Selected random product: Frozen Tops For Kids
+2024-10-04 10:44:17 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Frozen Tops For Kids
+2024-10-04 10:44:17 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 10:44:28 ERROR utils.Hooks - Test failed: Add random products to cart
+2024-10-04 10:44:28 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728031468533.png
+2024-10-04 10:44:28 INFO  utils.Hooks - Driver quit
+2024-10-04 10:48:15 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 10:48:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 10:48:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 10:48:17 INFO  utils.Hooks - Driver initialized
+2024-10-04 10:48:19 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 10:48:19 INFO  utils.Hooks - Checking for popup...
+2024-10-04 10:48:19 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 10:48:20 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 10:48:23 INFO  ui.pages.ProductsPage - Selected random product: Stylish Dress
+2024-10-04 10:48:23 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Stylish Dress
+2024-10-04 10:48:24 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 10:48:24 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Clicked 'Continue Shopping' button
+2024-10-04 10:48:27 INFO  ui.pages.ProductsPage - Selected random product: Premium Polo T-Shirts
+2024-10-04 10:48:27 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Premium Polo T-Shirts
+2024-10-04 10:48:28 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 10:48:29 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Clicked 'View Cart' button
+2024-10-04 10:48:30 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 10:48:30 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 10:48:30 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728031710339.png
+2024-10-04 10:48:30 INFO  utils.Hooks - Driver quit
+2024-10-04 11:13:48 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 11:13:49 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 11:13:49 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 11:13:49 INFO  utils.Hooks - Driver initialized
+2024-10-04 11:13:51 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 11:13:52 INFO  utils.Hooks - Checking for popup...
+2024-10-04 11:13:52 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 11:13:56 INFO  ui.pages.ProductsPage - Selected random product: GRAPHIC DESIGN MEN T SHIRT - BLUE
+2024-10-04 11:13:57 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart: GRAPHIC DESIGN MEN T SHIRT - BLUE
+2024-10-04 11:14:00 INFO  ui.pages.ProductsPage - Selected random product: Fancy Green Top
+2024-10-04 11:14:02 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Fancy Green Top
+2024-10-04 11:14:02 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart: GRAPHIC DESIGN MEN T SHIRT - BLUE
+2024-10-04 11:14:02 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product 'GRAPHIC DESIGN MEN T SHIRT - BLUE' is not in the cart
+2024-10-04 11:14:03 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the cart contains only the remaining product
+2024-10-04 11:14:03 INFO  utils.Hooks - Test passed: Remove a product from the cart
+2024-10-04 11:14:03 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728033243219.png
+2024-10-04 11:14:03 INFO  utils.Hooks - Driver quit
+2024-10-04 13:02:39 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 13:07:52 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 13:07:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 13:07:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 13:07:54 INFO  utils.Hooks - Driver initialized
+2024-10-04 13:07:56 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 13:07:56 INFO  utils.Hooks - Checking for popup...
+2024-10-04 13:07:56 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 13:07:57 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 13:08:00 INFO  ui.pages.ProductsPage - Selected random product: Blue Top
+2024-10-04 13:08:00 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Blue Top
+2024-10-04 13:08:00 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 13:08:02 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 13:08:02 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728040082297.png
+2024-10-04 13:08:02 INFO  utils.Hooks - Driver quit
+2024-10-04 13:11:30 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 13:11:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 13:11:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 13:11:32 INFO  utils.Hooks - Driver initialized
+2024-10-04 13:11:33 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 13:11:33 INFO  utils.Hooks - Checking for popup...
+2024-10-04 13:11:34 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 13:11:39 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 13:11:42 INFO  ui.pages.ProductsPage - Selected random product: Full Sleeves Top Cherry - Pink
+2024-10-04 13:11:42 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Full Sleeves Top Cherry - Pink
+2024-10-04 13:11:42 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 13:11:42 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 13:11:43 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728040303065.png
+2024-10-04 13:11:43 INFO  utils.Hooks - Driver quit
+2024-10-04 13:14:16 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 13:14:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 13:14:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 13:14:17 INFO  utils.Hooks - Driver initialized
+2024-10-04 13:14:21 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 13:14:21 INFO  utils.Hooks - Checking for popup...
+2024-10-04 13:14:21 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 13:14:22 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 13:14:26 INFO  ui.pages.ProductsPage - Selected random product: Premium Polo T-Shirts
+2024-10-04 13:14:26 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Premium Polo T-Shirts
+2024-10-04 13:14:27 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 13:14:28 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'View Cart' button
+2024-10-04 13:14:28 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 13:14:28 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 13:14:29 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 13:14:30 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Iris and email: wilfred.schoen@gmail.com
+2024-10-04 13:14:30 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 13:14:32 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 13:14:33 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 13:14:33 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 13:14:33 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728040473927.png
+2024-10-04 13:14:34 INFO  utils.Hooks - Driver quit
+2024-10-04 13:17:54 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 13:17:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 13:17:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 13:17:56 INFO  utils.Hooks - Driver initialized
+2024-10-04 13:17:57 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 13:17:58 INFO  utils.Hooks - Checking for popup...
+2024-10-04 13:17:58 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 13:17:59 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 13:18:02 INFO  ui.pages.ProductsPage - Selected random product: Blue Cotton Indie Mickey Dress
+2024-10-04 13:18:02 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Blue Cotton Indie Mickey Dress
+2024-10-04 13:18:03 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 13:18:04 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'View Cart' button
+2024-10-04 13:18:04 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 13:18:04 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 13:18:06 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 13:18:06 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Selena and email: marco.bosco@hotmail.com
+2024-10-04 13:18:08 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 13:18:09 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 13:18:11 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 13:18:11 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 13:18:11 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728040691489.png
+2024-10-04 13:18:11 INFO  utils.Hooks - Driver quit
+2024-10-04 13:39:49 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 13:39:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 13:39:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 13:39:50 INFO  utils.Hooks - Driver initialized
+2024-10-04 13:39:52 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 13:39:52 INFO  utils.Hooks - Checking for popup...
+2024-10-04 13:39:52 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 13:39:54 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 13:39:57 INFO  ui.pages.ProductsPage - Selected random product: Pure Cotton V-Neck T-Shirt
+2024-10-04 13:39:57 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Pure Cotton V-Neck T-Shirt
+2024-10-04 13:39:58 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 13:39:59 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'View Cart' button
+2024-10-04 13:39:59 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 13:39:59 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 13:40:00 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 13:40:01 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Dante and email: allegra.nienow@gmail.com
+2024-10-04 13:40:03 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 13:40:04 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 13:40:06 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 13:40:06 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 13:40:06 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728042006239.png
+2024-10-04 13:40:06 INFO  utils.Hooks - Driver quit
+2024-10-04 13:44:15 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 13:44:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 13:44:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 13:44:17 INFO  utils.Hooks - Driver initialized
+2024-10-04 13:44:18 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 13:44:18 INFO  utils.Hooks - Checking for popup...
+2024-10-04 13:44:18 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 13:44:20 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 13:44:23 INFO  ui.pages.ProductsPage - Selected random product: Sleeveless Unicorn Patch Gown - Pink
+2024-10-04 13:44:23 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Sleeveless Unicorn Patch Gown - Pink
+2024-10-04 13:44:24 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 13:44:25 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'View Cart' button
+2024-10-04 13:44:25 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 13:44:25 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 13:44:26 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 13:44:26 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Toccara and email: alesia.okeefe@hotmail.com
+2024-10-04 13:44:28 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 13:44:29 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 13:44:31 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 13:44:31 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 13:44:32 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 13:44:32 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 13:44:33 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Cart' button
+2024-10-04 13:44:35 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 13:44:35 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 13:44:36 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 13:44:37 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 13:44:37 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 13:44:37 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728042277343.png
+2024-10-04 13:44:37 INFO  utils.Hooks - Driver quit
+2024-10-04 14:03:12 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 14:03:12 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 14:03:12 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 14:03:13 INFO  utils.Hooks - Driver initialized
+2024-10-04 14:03:15 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 14:03:15 INFO  utils.Hooks - Checking for popup...
+2024-10-04 14:03:15 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 14:03:17 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 14:03:21 INFO  ui.pages.ProductsPage - Selected random product: Blue Cotton Indie Mickey Dress
+2024-10-04 14:03:21 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Blue Cotton Indie Mickey Dress
+2024-10-04 14:03:21 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 14:03:21 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 14:03:25 INFO  ui.pages.ProductsPage - Selected random product: Rust Red Linen Saree
+2024-10-04 14:03:25 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Rust Red Linen Saree
+2024-10-04 14:03:26 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 14:03:27 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 14:03:29 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 14:03:29 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 14:03:29 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728043409672.png
+2024-10-04 14:03:29 INFO  utils.Hooks - Driver quit
+2024-10-04 14:03:30 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 14:03:30 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 14:03:30 INFO  utils.Hooks - Driver initialized
+2024-10-04 14:03:32 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 14:03:32 INFO  utils.Hooks - Checking for popup...
+2024-10-04 14:03:32 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 14:03:35 INFO  ui.pages.ProductsPage - Selected random product: Blue Cotton Indie Mickey Dress
+2024-10-04 14:03:36 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart: Blue Cotton Indie Mickey Dress
+2024-10-04 14:03:39 INFO  ui.pages.ProductsPage - Selected random product: Summer White Top
+2024-10-04 14:03:41 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Summer White Top
+2024-10-04 14:03:41 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart: Blue Cotton Indie Mickey Dress
+2024-10-04 14:03:41 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product 'Blue Cotton Indie Mickey Dress' is not in the cart
+2024-10-04 14:03:41 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the cart contains only the remaining product
+2024-10-04 14:03:41 INFO  utils.Hooks - Test passed: Remove a product from the cart
+2024-10-04 14:03:42 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728043422111.png
+2024-10-04 14:03:42 INFO  utils.Hooks - Driver quit
+2024-10-04 14:05:39 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 14:05:39 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 14:05:39 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 14:05:40 INFO  utils.Hooks - Driver initialized
+2024-10-04 14:05:42 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 14:05:42 INFO  utils.Hooks - Checking for popup...
+2024-10-04 14:05:42 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 14:05:44 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 14:05:48 INFO  ui.pages.ProductsPage - Selected random product: Green Side Placket Detail T-Shirt
+2024-10-04 14:05:48 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Green Side Placket Detail T-Shirt
+2024-10-04 14:05:49 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 14:05:50 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 14:05:50 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 14:05:50 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 14:05:52 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 14:05:52 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Tory and email: willie.lockman@hotmail.com
+2024-10-04 14:05:53 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 14:05:55 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 14:05:56 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 14:05:56 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 14:05:58 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 14:05:58 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 14:05:59 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 14:06:01 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 14:06:01 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 14:06:02 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 14:06:03 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 14:06:05 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 14:06:05 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 14:06:05 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728043565499.png
+2024-10-04 14:06:05 INFO  utils.Hooks - Driver quit
+2024-10-04 14:17:49 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 14:17:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 14:17:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 14:17:50 INFO  utils.Hooks - Driver initialized
+2024-10-04 14:17:52 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 14:17:52 INFO  utils.Hooks - Checking for popup...
+2024-10-04 14:17:52 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 14:17:54 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 14:17:58 INFO  ui.pages.ProductsPage - Selected random product: Soft Stretch Jeans
+2024-10-04 14:17:58 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Soft Stretch Jeans
+2024-10-04 14:17:58 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 14:17:59 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 14:17:59 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 14:18:00 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 14:18:01 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 14:18:01 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Francis and email: darren.harber@yahoo.com
+2024-10-04 14:18:02 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 14:18:04 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 14:18:05 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 14:18:06 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 14:18:07 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 14:18:07 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 14:18:08 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 14:18:09 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 14:18:10 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 14:18:11 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 14:18:11 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 14:18:13 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 14:18:13 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 14:18:14 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 14:18:15 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 14:18:15 ERROR ui.stepsdef.RegistrationSteps - Expected message not displayed.
+2024-10-04 14:18:17 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 14:18:17 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 14:18:17 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728044297313.png
+2024-10-04 14:18:17 INFO  utils.Hooks - Driver quit
+2024-10-04 14:19:19 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 14:19:20 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 14:19:20 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 14:19:21 INFO  utils.Hooks - Driver initialized
+2024-10-04 14:19:22 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 14:19:23 INFO  utils.Hooks - Checking for popup...
+2024-10-04 14:19:23 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 14:19:26 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 14:19:27 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 14:19:27 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 14:19:27 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 14:19:29 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 14:19:33 INFO  ui.pages.ProductsPage - Selected random product: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+2024-10-04 14:19:33 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+2024-10-04 14:19:33 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 14:19:34 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 14:19:34 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 14:19:36 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 14:19:36 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 14:19:38 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 14:19:38 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 14:19:40 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 14:19:40 ERROR utils.Hooks - Test failed: Place Order - Login before Checkout
+2024-10-04 14:19:40 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728044380783.png
+2024-10-04 14:19:40 INFO  utils.Hooks - Driver quit
+2024-10-04 14:21:17 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 14:21:18 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 14:21:18 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 14:21:19 INFO  utils.Hooks - Driver initialized
+2024-10-04 14:21:20 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 14:21:21 INFO  utils.Hooks - Checking for popup...
+2024-10-04 14:21:21 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 14:21:22 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 14:21:23 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 14:21:23 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 14:21:23 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 14:21:25 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 14:21:28 INFO  ui.pages.ProductsPage - Selected random product: Blue Cotton Indie Mickey Dress
+2024-10-04 14:21:28 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Blue Cotton Indie Mickey Dress
+2024-10-04 14:21:29 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 14:21:30 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 14:21:30 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 14:21:31 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 14:21:32 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 14:21:33 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 14:21:34 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 14:21:36 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 14:21:36 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 14:21:36 INFO  utils.Hooks - Test passed: Place Order - Login before Checkout
+2024-10-04 14:21:36 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728044496421.png
+2024-10-04 14:21:36 INFO  utils.Hooks - Driver quit
+2024-10-04 15:12:37 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 15:12:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:12:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:12:39 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:12:41 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:12:41 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:12:41 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:12:42 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:12:45 INFO  ui.pages.ProductsPage - Selected random product: Sleeveless Unicorn Patch Gown - Pink
+2024-10-04 15:12:45 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Sleeveless Unicorn Patch Gown - Pink
+2024-10-04 15:12:46 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 15:12:46 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 15:12:49 INFO  ui.pages.ProductsPage - Selected random product: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+2024-10-04 15:12:49 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+2024-10-04 15:12:49 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 15:12:51 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 15:12:52 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 15:12:52 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 15:12:53 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728047573000.png
+2024-10-04 15:12:53 INFO  utils.Hooks - Driver quit
+2024-10-04 15:12:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:12:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:12:53 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:12:57 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:12:57 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:12:57 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:13:00 INFO  ui.pages.ProductsPage - Selected random product: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+2024-10-04 15:13:01 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+2024-10-04 15:13:04 INFO  ui.pages.ProductsPage - Selected random product: Cotton Mull Embroidered Dress
+2024-10-04 15:13:06 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Cotton Mull Embroidered Dress
+2024-10-04 15:13:07 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+2024-10-04 15:13:07 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product 'Long Maxi Tulle Fancy Dress Up Outfits -Pink' is not in the cart
+2024-10-04 15:13:07 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the cart contains only the remaining product
+2024-10-04 15:13:07 INFO  utils.Hooks - Test passed: Remove a product from the cart
+2024-10-04 15:13:07 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728047587499.png
+2024-10-04 15:13:07 INFO  utils.Hooks - Driver quit
+2024-10-04 15:13:07 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:13:07 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:13:08 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:13:10 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:13:10 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:13:10 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:13:11 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:13:12 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 15:13:12 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 15:13:12 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 15:13:13 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 15:13:13 INFO  utils.Hooks - Test passed: Successful login with valid credentials
+2024-10-04 15:13:13 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_login_with_valid_credentials_1728047593986.png
+2024-10-04 15:13:14 INFO  utils.Hooks - Driver quit
+2024-10-04 15:13:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:13:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:13:14 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:13:16 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:13:16 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:13:16 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:13:17 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:13:18 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 15:13:18 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-04 15:13:18 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 15:13:19 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-04 15:13:19 INFO  utils.Hooks - Test passed: Unsuccessful login with invalid credentials
+2024-10-04 15:13:20 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Unsuccessful_login_with_invalid_credentials_1728047600061.png
+2024-10-04 15:13:20 INFO  utils.Hooks - Driver quit
+2024-10-04 15:13:20 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:13:20 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:13:20 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:13:22 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:13:22 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:13:22 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:13:27 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-04 15:13:28 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-04 15:13:28 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-04 15:13:28 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-04 15:13:28 INFO  utils.Hooks - Test passed: Successful logout
+2024-10-04 15:13:28 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_logout_1728047608490.png
+2024-10-04 15:13:28 INFO  utils.Hooks - Driver quit
+2024-10-04 15:13:28 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:13:28 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:13:29 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:13:30 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:13:30 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:13:31 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:13:32 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:13:35 INFO  ui.pages.ProductsPage - Selected random product: Sleeves Top and Short - Blue & Pink
+2024-10-04 15:13:35 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Sleeves Top and Short - Blue & Pink
+2024-10-04 15:13:36 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 15:13:37 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 15:13:37 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 15:13:37 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 15:13:38 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 15:13:39 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Jeffie and email: rita.kirlin@yahoo.com
+2024-10-04 15:13:41 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 15:13:42 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 15:13:44 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 15:13:44 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 15:13:45 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 15:13:45 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 15:13:46 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 15:13:47 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 15:13:47 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 15:13:48 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 15:13:49 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 15:13:51 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 15:13:51 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 15:13:52 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 15:13:53 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 15:13:53 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT DELETED!
+2024-10-04 15:13:54 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 15:13:54 INFO  ui.stepsdef.LogoutSteps - Redirected to the homepage
+2024-10-04 15:13:54 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 15:13:55 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728047635151.png
+2024-10-04 15:13:55 INFO  utils.Hooks - Driver quit
+2024-10-04 15:13:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:13:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:13:55 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:13:56 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:13:56 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:13:57 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:13:58 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:13:59 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 15:14:00 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 15:14:00 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 15:14:01 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 15:14:04 INFO  ui.pages.ProductsPage - Selected random product: Sleeveless Dress
+2024-10-04 15:14:04 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Sleeveless Dress
+2024-10-04 15:14:04 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 15:14:05 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 15:14:05 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 15:14:07 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 15:14:07 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 15:14:08 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 15:14:09 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 15:14:11 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 15:14:11 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 15:14:11 INFO  utils.Hooks - Test passed: Place Order - Login before Checkout
+2024-10-04 15:14:11 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728047651422.png
+2024-10-04 15:14:11 INFO  utils.Hooks - Driver quit
+2024-10-04 15:14:11 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:14:11 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:14:12 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:14:13 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:14:14 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:14:14 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:14:15 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:14:17 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 15:14:17 INFO  ui.pages.ProductsPage - No banner found, proceeding.
+2024-10-04 15:14:18 INFO  ui.pages.ProductsPage - Scrolled to the product at index: 0 and clicked.
+2024-10-04 15:14:18 INFO  ui.stepsdef.ProductDetailsInformationSteps - Clicked on the 'View Product' button for the first product
+2024-10-04 15:14:19 INFO  ui.stepsdef.ProductDetailsInformationSteps - Product details are displayed correctly
+2024-10-04 15:14:19 INFO  utils.Hooks - Test passed: View product details
+2024-10-04 15:14:19 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_product_details_1728047659119.png
+2024-10-04 15:14:19 INFO  utils.Hooks - Driver quit
+2024-10-04 15:14:19 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:14:19 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:14:19 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:14:21 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:14:21 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:14:22 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:14:23 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:14:25 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 15:14:25 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Jaime and email: katherin.boyle@yahoo.com
+2024-10-04 15:14:27 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 15:14:28 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 15:14:29 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 15:14:29 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 15:14:30 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 15:14:30 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 15:14:30 INFO  utils.Hooks - Test passed: Successful user registration
+2024-10-04 15:14:31 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_user_registration_1728047671177.png
+2024-10-04 15:14:31 INFO  utils.Hooks - Driver quit
+2024-10-04 15:14:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:14:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:14:31 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:14:33 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:14:33 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:14:33 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:14:35 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:14:37 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 15:14:37 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Product list is displayed
+2024-10-04 15:14:37 INFO  utils.Hooks - Test passed: View all products
+2024-10-04 15:14:37 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_all_products_1728047677527.png
+2024-10-04 15:14:37 INFO  utils.Hooks - Driver quit
+2024-10-04 15:14:37 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:14:37 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:14:38 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:14:39 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:14:39 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:14:40 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:14:41 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:14:41 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Women category
+2024-10-04 15:14:43 INFO  ui.pages.HomePage - Clicked on Dress subcategory successfully
+2024-10-04 15:14:43 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Dress subcategory
+2024-10-04 15:14:43 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Filtered products are displayed
+2024-10-04 15:14:43 INFO  utils.Hooks - Test passed: Filter products by category "Women > Dress"
+2024-10-04 15:14:43 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Filter_products_by_category_Women__Dress_1728047683943.png
+2024-10-04 15:14:44 INFO  utils.Hooks - Driver quit
+2024-10-04 15:27:17 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 15:27:17 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 15:27:18 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:27:19 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 15:27:19 INFO  utils.Hooks - Checking for popup...
+2024-10-04 15:27:19 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 15:27:22 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 15:27:25 INFO  ui.pages.ProductsPage - Selected random product: Cotton Mull Embroidered Dress
+2024-10-04 15:27:25 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Cotton Mull Embroidered Dress
+2024-10-04 15:27:25 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 15:27:25 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 15:28:00 ERROR utils.Hooks - Test failed: Add random products to cart
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: Remove a product from the cart
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: Successful login with valid credentials
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: Unsuccessful login with invalid credentials
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: Successful logout
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: Place Order - Login before Checkout
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: View product details
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: Successful user registration
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: View all products
+2024-10-04 15:28:01 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:28:01 ERROR utils.Hooks - Test failed: Filter products by category "Women > Dress"
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Add random products to cart
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Remove a product from the cart
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Successful login with valid credentials
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Unsuccessful login with invalid credentials
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Successful logout
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Place Order - Login before Checkout
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: View product details
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Successful user registration
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: View all products
+2024-10-04 15:45:34 INFO  utils.Hooks - Driver initialized
+2024-10-04 15:45:34 ERROR utils.Hooks - Test failed: Filter products by category "Women > Dress"
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Add random products to cart
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Remove a product from the cart
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Successful login with valid credentials
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Unsuccessful login with invalid credentials
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Successful logout
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Place Order - Register while Checkout
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Place Order - Login before Checkout
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: View product details
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Successful user registration
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: View all products
+2024-10-04 16:07:33 ERROR utils.Hooks - WebDriver is null during teardown for scenario: Filter products by category "Women > Dress"
+2024-10-04 16:08:46 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:08:46 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:08:47 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:08:49 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:08:49 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:08:49 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:08:51 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:08:55 INFO  ui.pages.ProductsPage - Selected random product: Green Side Placket Detail T-Shirt
+2024-10-04 16:08:55 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Green Side Placket Detail T-Shirt
+2024-10-04 16:08:55 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:08:55 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 16:08:58 INFO  ui.pages.ProductsPage - Selected random product: Beautiful Peacock Blue Cotton Linen Saree
+2024-10-04 16:08:58 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Beautiful Peacock Blue Cotton Linen Saree
+2024-10-04 16:08:58 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:09:00 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:09:01 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 16:09:01 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 16:09:01 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728050941599.png
+2024-10-04 16:09:01 INFO  utils.Hooks - Driver quit
+2024-10-04 16:09:02 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:09:02 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:09:02 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:09:04 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:09:04 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:09:04 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:09:08 INFO  ui.pages.ProductsPage - Selected random product: Regular Fit Straight Jeans
+2024-10-04 16:09:09 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart: Regular Fit Straight Jeans
+2024-10-04 16:09:13 INFO  ui.pages.ProductsPage - Selected random product: Green Side Placket Detail T-Shirt
+2024-10-04 16:09:15 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Green Side Placket Detail T-Shirt
+2024-10-04 16:09:15 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart: Regular Fit Straight Jeans
+2024-10-04 16:09:15 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product 'Regular Fit Straight Jeans' is not in the cart
+2024-10-04 16:09:15 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the cart contains only the remaining product
+2024-10-04 16:09:15 INFO  utils.Hooks - Test passed: Remove a product from the cart
+2024-10-04 16:09:15 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728050955888.png
+2024-10-04 16:09:16 INFO  utils.Hooks - Driver quit
+2024-10-04 16:09:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:09:16 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:09:16 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:09:18 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:09:18 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:09:18 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:09:19 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:09:21 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:09:21 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:09:21 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:09:23 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:09:23 INFO  utils.Hooks - Test passed: Successful login with valid credentials
+2024-10-04 16:09:23 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_login_with_valid_credentials_1728050963511.png
+2024-10-04 16:09:23 INFO  utils.Hooks - Driver quit
+2024-10-04 16:09:23 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:09:23 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:09:24 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:09:25 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:09:25 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:09:26 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:09:28 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:09:30 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:09:30 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-04 16:09:30 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:09:32 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-04 16:09:32 INFO  utils.Hooks - Test passed: Unsuccessful login with invalid credentials
+2024-10-04 16:09:32 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Unsuccessful_login_with_invalid_credentials_1728050972113.png
+2024-10-04 16:09:32 INFO  utils.Hooks - Driver quit
+2024-10-04 16:09:32 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:09:32 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:09:32 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:09:34 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:09:34 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:09:34 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:09:39 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-04 16:09:40 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-04 16:09:40 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-04 16:09:40 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-04 16:09:40 INFO  utils.Hooks - Test passed: Successful logout
+2024-10-04 16:09:40 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_logout_1728050980953.png
+2024-10-04 16:09:41 INFO  utils.Hooks - Driver quit
+2024-10-04 16:09:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:09:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:09:41 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:09:43 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:09:43 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:09:43 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:09:44 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:09:48 INFO  ui.pages.ProductsPage - Selected random product: Cotton Silk Hand Block Print Saree
+2024-10-04 16:09:48 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Cotton Silk Hand Block Print Saree
+2024-10-04 16:09:49 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:09:50 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:09:50 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:09:50 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:09:51 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 16:09:52 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Farah and email: candie.moen@yahoo.com
+2024-10-04 16:09:53 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:09:55 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:09:56 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:09:56 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:09:58 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:09:58 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:09:59 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 16:10:00 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:10:00 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:10:02 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:10:02 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:10:04 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:10:04 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:10:06 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 16:10:08 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 16:10:08 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT DELETED!
+2024-10-04 16:10:09 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 16:10:09 INFO  ui.stepsdef.LogoutSteps - Redirected to the homepage
+2024-10-04 16:10:09 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 16:10:09 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728051009815.png
+2024-10-04 16:10:09 INFO  utils.Hooks - Driver quit
+2024-10-04 16:10:10 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:10:10 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:10:10 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:10:13 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:10:13 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:10:13 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:10:14 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:10:15 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:10:16 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:10:16 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:10:17 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:10:20 INFO  ui.pages.ProductsPage - Selected random product: Printed Off Shoulder Top - White
+2024-10-04 16:10:20 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Printed Off Shoulder Top - White
+2024-10-04 16:10:21 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:10:22 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:10:22 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:10:24 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:10:24 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:10:26 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:10:26 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:10:28 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:10:28 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:10:28 INFO  utils.Hooks - Test passed: Place Order - Login before Checkout
+2024-10-04 16:10:28 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728051028856.png
+2024-10-04 16:10:28 INFO  utils.Hooks - Driver quit
+2024-10-04 16:10:28 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:10:28 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:10:29 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:10:30 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:10:30 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:10:30 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:10:32 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:10:33 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:10:34 INFO  ui.pages.ProductsPage - No banner found, proceeding.
+2024-10-04 16:10:35 INFO  ui.pages.ProductsPage - Scrolled to the product at index: 0 and clicked.
+2024-10-04 16:10:35 INFO  ui.stepsdef.ProductDetailsInformationSteps - Clicked on the 'View Product' button for the first product
+2024-10-04 16:10:36 INFO  ui.stepsdef.ProductDetailsInformationSteps - Product details are displayed correctly
+2024-10-04 16:10:36 INFO  utils.Hooks - Test passed: View product details
+2024-10-04 16:10:36 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_product_details_1728051036137.png
+2024-10-04 16:10:36 INFO  utils.Hooks - Driver quit
+2024-10-04 16:10:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:10:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:10:36 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:10:38 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:10:38 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:10:38 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:10:41 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:10:43 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:10:43 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Tova and email: margorie.stehr@hotmail.com
+2024-10-04 16:10:44 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:10:45 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:10:47 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:10:47 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:10:48 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:10:48 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:10:48 INFO  utils.Hooks - Test passed: Successful user registration
+2024-10-04 16:10:48 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_user_registration_1728051048706.png
+2024-10-04 16:10:48 INFO  utils.Hooks - Driver quit
+2024-10-04 16:10:48 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:10:48 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:10:49 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:10:50 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:10:50 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:10:50 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:10:52 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:10:53 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:10:53 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Product list is displayed
+2024-10-04 16:10:53 INFO  utils.Hooks - Test passed: View all products
+2024-10-04 16:10:53 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_all_products_1728051053984.png
+2024-10-04 16:10:54 INFO  utils.Hooks - Driver quit
+2024-10-04 16:10:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:10:54 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:10:54 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:10:56 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:10:56 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:10:56 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:10:59 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:10:59 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Women category
+2024-10-04 16:11:00 INFO  ui.pages.HomePage - Clicked on Dress subcategory successfully
+2024-10-04 16:11:00 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Dress subcategory
+2024-10-04 16:11:00 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Filtered products are displayed
+2024-10-04 16:11:00 INFO  utils.Hooks - Test passed: Filter products by category "Women > Dress"
+2024-10-04 16:11:00 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Filter_products_by_category_Women__Dress_1728051060972.png
+2024-10-04 16:11:01 INFO  utils.Hooks - Driver quit
+2024-10-04 16:13:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:13:56 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:13:57 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:13:59 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:13:59 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:13:59 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:14:00 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:14:03 INFO  ui.pages.ProductsPage - Selected random product: Pure Cotton Neon Green Tshirt
+2024-10-04 16:14:03 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Pure Cotton Neon Green Tshirt
+2024-10-04 16:14:04 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:14:04 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 16:14:06 INFO  ui.pages.ProductsPage - Selected random product: Blue Cotton Indie Mickey Dress
+2024-10-04 16:14:07 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Blue Cotton Indie Mickey Dress
+2024-10-04 16:14:07 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:14:08 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:14:10 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 16:14:10 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 16:14:10 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728051250228.png
+2024-10-04 16:14:10 INFO  utils.Hooks - Driver quit
+2024-10-04 16:14:10 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:14:10 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:14:11 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:14:13 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:14:13 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:14:13 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:14:16 INFO  ui.pages.ProductsPage - Selected random product:  Men Tshirt
+2024-10-04 16:14:17 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart:  Men Tshirt
+2024-10-04 16:14:20 INFO  ui.pages.ProductsPage - Selected random product: Fancy Green Top
+2024-10-04 16:14:22 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Fancy Green Top
+2024-10-04 16:14:22 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart:  Men Tshirt
+2024-10-04 16:14:22 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product ' Men Tshirt' is not in the cart
+2024-10-04 16:14:22 ERROR utils.Hooks - Test failed: Remove a product from the cart
+2024-10-04 16:14:22 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728051262691.png
+2024-10-04 16:14:22 INFO  utils.Hooks - Driver quit
+2024-10-04 16:14:22 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:14:22 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:14:23 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:14:24 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:14:24 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:14:24 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:14:25 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:14:26 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:14:27 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:14:27 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:14:28 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:14:28 INFO  utils.Hooks - Test passed: Successful login with valid credentials
+2024-10-04 16:14:28 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_login_with_valid_credentials_1728051268496.png
+2024-10-04 16:14:28 INFO  utils.Hooks - Driver quit
+2024-10-04 16:14:28 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:14:28 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:14:29 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:14:31 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:14:31 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:14:31 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:14:33 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:14:34 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:14:34 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-04 16:14:34 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:14:35 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-04 16:14:35 INFO  utils.Hooks - Test passed: Unsuccessful login with invalid credentials
+2024-10-04 16:14:36 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Unsuccessful_login_with_invalid_credentials_1728051276125.png
+2024-10-04 16:14:36 INFO  utils.Hooks - Driver quit
+2024-10-04 16:14:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:14:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:14:36 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:14:38 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:14:38 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:14:38 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:14:42 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-04 16:14:43 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-04 16:14:43 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-04 16:14:43 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-04 16:14:43 INFO  utils.Hooks - Test passed: Successful logout
+2024-10-04 16:14:44 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_logout_1728051284006.png
+2024-10-04 16:14:44 INFO  utils.Hooks - Driver quit
+2024-10-04 16:14:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:14:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:14:44 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:14:46 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:14:46 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:14:46 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:14:48 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:14:52 INFO  ui.pages.ProductsPage - Selected random product: Green Side Placket Detail T-Shirt
+2024-10-04 16:14:52 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Green Side Placket Detail T-Shirt
+2024-10-04 16:14:53 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:14:54 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:14:54 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:14:54 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:14:56 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 16:14:56 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Taisha and email: joyce.zboncak@hotmail.com
+2024-10-04 16:14:58 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:14:59 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:15:01 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:15:01 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:15:03 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:15:03 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:15:04 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 16:15:05 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:15:06 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:15:07 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:15:07 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:15:09 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:15:09 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:15:11 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 16:15:12 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 16:15:12 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT DELETED!
+2024-10-04 16:15:14 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 16:15:14 INFO  ui.stepsdef.LogoutSteps - Redirected to the homepage
+2024-10-04 16:15:14 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 16:15:14 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728051314296.png
+2024-10-04 16:15:14 INFO  utils.Hooks - Driver quit
+2024-10-04 16:15:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:15:14 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:15:15 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:15:16 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:15:16 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:15:16 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:15:18 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:15:19 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:15:19 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:15:19 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:15:21 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:15:23 INFO  ui.pages.ProductsPage - Selected random product: Soft Stretch Jeans
+2024-10-04 16:15:23 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Soft Stretch Jeans
+2024-10-04 16:15:24 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:15:25 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:15:25 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:15:27 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:15:27 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:15:28 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:15:28 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:15:30 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:15:30 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:15:30 INFO  utils.Hooks - Test passed: Place Order - Login before Checkout
+2024-10-04 16:15:31 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728051331009.png
+2024-10-04 16:15:31 INFO  utils.Hooks - Driver quit
+2024-10-04 16:15:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:15:31 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:15:31 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:15:33 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:15:33 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:15:33 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:15:35 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:15:37 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:15:37 INFO  ui.pages.ProductsPage - No banner found, proceeding.
+2024-10-04 16:15:38 INFO  ui.pages.ProductsPage - Scrolled to the product at index: 0 and clicked.
+2024-10-04 16:15:38 INFO  ui.stepsdef.ProductDetailsInformationSteps - Clicked on the 'View Product' button for the first product
+2024-10-04 16:15:38 INFO  ui.stepsdef.ProductDetailsInformationSteps - Product details are displayed correctly
+2024-10-04 16:15:38 INFO  utils.Hooks - Test passed: View product details
+2024-10-04 16:15:38 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_product_details_1728051338859.png
+2024-10-04 16:15:38 INFO  utils.Hooks - Driver quit
+2024-10-04 16:15:39 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:15:39 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:15:39 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:15:41 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:15:41 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:15:41 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:15:42 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:15:43 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:15:43 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Maryjane and email: otto.murazik@gmail.com
+2024-10-04 16:15:44 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:15:45 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:15:47 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:15:47 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:15:48 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:15:48 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:15:48 INFO  utils.Hooks - Test passed: Successful user registration
+2024-10-04 16:15:48 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_user_registration_1728051348740.png
+2024-10-04 16:15:48 INFO  utils.Hooks - Driver quit
+2024-10-04 16:15:48 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:15:48 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:15:49 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:15:50 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:15:50 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:15:50 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:15:52 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:15:53 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:15:53 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Product list is displayed
+2024-10-04 16:15:53 INFO  utils.Hooks - Test passed: View all products
+2024-10-04 16:15:53 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_all_products_1728051353821.png
+2024-10-04 16:15:53 INFO  utils.Hooks - Driver quit
+2024-10-04 16:15:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:15:53 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:15:54 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:15:56 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:15:56 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:15:56 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:15:58 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:15:58 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Women category
+2024-10-04 16:16:01 INFO  ui.pages.HomePage - Clicked on Dress subcategory successfully
+2024-10-04 16:16:01 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Dress subcategory
+2024-10-04 16:16:01 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Filtered products are displayed
+2024-10-04 16:16:01 INFO  utils.Hooks - Test passed: Filter products by category "Women > Dress"
+2024-10-04 16:16:01 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Filter_products_by_category_Women__Dress_1728051361274.png
+2024-10-04 16:16:01 INFO  utils.Hooks - Driver quit
+2024-10-04 16:18:18 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 16:18:19 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:18:19 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:18:20 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:18:22 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:18:22 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:18:22 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:18:24 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:18:25 INFO  ui.pages.ProductsPage - Selected random product: Pure Cotton Neon Green Tshirt
+2024-10-04 16:18:25 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Pure Cotton Neon Green Tshirt
+2024-10-04 16:18:26 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:18:26 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 16:18:28 INFO  ui.pages.ProductsPage - Selected random product: Premium Polo T-Shirts
+2024-10-04 16:18:28 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Premium Polo T-Shirts
+2024-10-04 16:18:28 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:18:29 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:18:30 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 16:18:30 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 16:18:30 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728051510314.png
+2024-10-04 16:18:30 INFO  utils.Hooks - Driver quit
+2024-10-04 16:18:30 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:18:30 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:18:31 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:18:32 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:18:32 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:18:32 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:18:35 INFO  ui.pages.ProductsPage - Selected random product: Little Girls Mr. Panda Shirt
+2024-10-04 16:18:36 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart: Little Girls Mr. Panda Shirt
+2024-10-04 16:18:38 INFO  ui.pages.ProductsPage - Selected random product: Fancy Green Top
+2024-10-04 16:18:39 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Fancy Green Top
+2024-10-04 16:18:40 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart: Little Girls Mr. Panda Shirt
+2024-10-04 16:18:40 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product 'Little Girls Mr. Panda Shirt' is not in the cart
+2024-10-04 16:18:40 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the cart contains only the remaining product
+2024-10-04 16:18:40 INFO  utils.Hooks - Test passed: Remove a product from the cart
+2024-10-04 16:18:40 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728051520898.png
+2024-10-04 16:18:41 INFO  utils.Hooks - Driver quit
+2024-10-04 16:18:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:18:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:18:41 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:18:42 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:18:42 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:18:42 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:18:44 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:18:45 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:18:45 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:18:45 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:18:47 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:18:47 INFO  utils.Hooks - Test passed: Successful login with valid credentials
+2024-10-04 16:18:47 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_login_with_valid_credentials_1728051527687.png
+2024-10-04 16:18:47 INFO  utils.Hooks - Driver quit
+2024-10-04 16:18:47 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:18:47 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:18:48 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:18:50 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:18:50 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:18:50 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:18:52 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:18:54 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:18:54 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-04 16:18:54 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:18:55 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-04 16:18:55 INFO  utils.Hooks - Test passed: Unsuccessful login with invalid credentials
+2024-10-04 16:18:55 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Unsuccessful_login_with_invalid_credentials_1728051535612.png
+2024-10-04 16:18:55 INFO  utils.Hooks - Driver quit
+2024-10-04 16:18:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:18:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:18:56 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:18:58 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:18:58 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:18:58 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:19:02 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-04 16:19:03 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-04 16:19:03 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-04 16:19:03 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-04 16:19:03 INFO  utils.Hooks - Test passed: Successful logout
+2024-10-04 16:19:03 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_logout_1728051543346.png
+2024-10-04 16:19:03 INFO  utils.Hooks - Driver quit
+2024-10-04 16:19:03 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:19:03 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:19:04 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:19:05 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:19:05 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:19:06 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:19:08 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:19:09 INFO  ui.pages.ProductsPage - Selected random product: Beautiful Peacock Blue Cotton Linen Saree
+2024-10-04 16:19:09 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Beautiful Peacock Blue Cotton Linen Saree
+2024-10-04 16:19:10 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:19:11 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:19:11 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:19:11 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:19:12 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 16:19:12 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Noble and email: king.skiles@gmail.com
+2024-10-04 16:19:13 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:19:16 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:19:17 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:19:17 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:19:18 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:19:18 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:19:18 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 16:19:19 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:19:20 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:19:21 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:19:21 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:19:23 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:19:23 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:19:24 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 16:19:25 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 16:19:25 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT DELETED!
+2024-10-04 16:19:26 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 16:19:26 INFO  ui.stepsdef.LogoutSteps - Redirected to the homepage
+2024-10-04 16:19:26 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 16:19:27 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728051567111.png
+2024-10-04 16:19:27 INFO  utils.Hooks - Driver quit
+2024-10-04 16:19:27 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:19:27 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:19:27 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:19:29 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:19:29 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:19:29 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:19:31 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:19:31 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:19:32 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:19:32 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:19:33 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:19:35 INFO  ui.pages.ProductsPage - Selected random product: Colour Blocked Shirt � Sky Blue
+2024-10-04 16:19:35 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Colour Blocked Shirt � Sky Blue
+2024-10-04 16:19:35 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:19:36 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:19:36 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:19:37 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:19:37 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:19:38 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:19:39 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:19:40 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:19:40 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:19:40 INFO  utils.Hooks - Test passed: Place Order - Login before Checkout
+2024-10-04 16:19:41 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728051581123.png
+2024-10-04 16:19:41 INFO  utils.Hooks - Driver quit
+2024-10-04 16:19:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:19:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:19:42 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:19:43 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:19:43 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:19:43 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:19:45 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:19:46 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:19:46 INFO  ui.pages.ProductsPage - No banner found, proceeding.
+2024-10-04 16:19:47 INFO  ui.pages.ProductsPage - Scrolled to the product at index: 0 and clicked.
+2024-10-04 16:19:47 INFO  ui.stepsdef.ProductDetailsInformationSteps - Clicked on the 'View Product' button for the first product
+2024-10-04 16:19:47 INFO  ui.stepsdef.ProductDetailsInformationSteps - Product details are displayed correctly
+2024-10-04 16:19:47 INFO  utils.Hooks - Test passed: View product details
+2024-10-04 16:19:48 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_product_details_1728051588189.png
+2024-10-04 16:19:48 INFO  utils.Hooks - Driver quit
+2024-10-04 16:19:48 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:19:48 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:19:48 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:19:50 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:19:50 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:19:50 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:19:52 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:19:52 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:19:52 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Laquita and email: cody.nikolaus@hotmail.com
+2024-10-04 16:19:53 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:19:54 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:19:55 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:19:55 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:19:56 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:19:56 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:19:56 INFO  utils.Hooks - Test passed: Successful user registration
+2024-10-04 16:19:56 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_user_registration_1728051596939.png
+2024-10-04 16:19:57 INFO  utils.Hooks - Driver quit
+2024-10-04 16:19:57 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:19:57 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:19:57 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:19:59 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:19:59 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:19:59 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:20:01 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:20:02 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:20:02 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Product list is displayed
+2024-10-04 16:20:02 INFO  utils.Hooks - Test passed: View all products
+2024-10-04 16:20:02 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_all_products_1728051602797.png
+2024-10-04 16:20:02 INFO  utils.Hooks - Driver quit
+2024-10-04 16:20:02 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:20:02 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:20:03 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:20:05 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:20:05 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:20:05 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:20:07 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:20:07 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Women category
+2024-10-04 16:20:08 INFO  ui.pages.HomePage - Clicked on Dress subcategory successfully
+2024-10-04 16:20:08 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Dress subcategory
+2024-10-04 16:20:08 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Filtered products are displayed
+2024-10-04 16:20:08 INFO  utils.Hooks - Test passed: Filter products by category "Women > Dress"
+2024-10-04 16:20:08 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Filter_products_by_category_Women__Dress_1728051608826.png
+2024-10-04 16:20:08 INFO  utils.Hooks - Driver quit
+2024-10-04 16:22:41 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 16:22:42 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:22:42 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:22:43 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:22:47 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:22:47 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:22:47 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:22:50 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:22:55 INFO  ui.pages.ProductsPage - Selected random product: Stylish Dress
+2024-10-04 16:22:55 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Stylish Dress
+2024-10-04 16:22:55 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:22:55 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 16:22:58 INFO  ui.pages.ProductsPage - Selected random product: Lace Top For Women
+2024-10-04 16:22:58 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Lace Top For Women
+2024-10-04 16:22:58 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:22:59 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:23:00 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 16:23:00 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 16:23:00 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728051780904.png
+2024-10-04 16:23:01 INFO  utils.Hooks - Driver quit
+2024-10-04 16:23:01 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:23:01 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:23:02 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:23:04 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:23:04 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:23:04 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:23:08 INFO  ui.pages.ProductsPage - Selected random product: Pure Cotton Neon Green Tshirt
+2024-10-04 16:23:09 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart: Pure Cotton Neon Green Tshirt
+2024-10-04 16:23:12 INFO  ui.pages.ProductsPage - Selected random product: Cotton Mull Embroidered Dress
+2024-10-04 16:23:14 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Cotton Mull Embroidered Dress
+2024-10-04 16:23:24 ERROR utils.Hooks - Test failed: Remove a product from the cart
+2024-10-04 16:23:24 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728051804599.png
+2024-10-04 16:23:25 INFO  utils.Hooks - Driver quit
+2024-10-04 16:23:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:23:25 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:23:26 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:23:27 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:23:27 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:23:28 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:23:30 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:23:31 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:23:31 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:23:31 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:23:34 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:23:34 INFO  utils.Hooks - Test passed: Successful login with valid credentials
+2024-10-04 16:23:34 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_login_with_valid_credentials_1728051814336.png
+2024-10-04 16:23:34 INFO  utils.Hooks - Driver quit
+2024-10-04 16:23:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:23:34 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:23:35 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:23:37 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:23:37 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:23:37 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:23:40 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:23:42 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:23:42 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-04 16:23:42 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:23:43 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-04 16:23:43 INFO  utils.Hooks - Test passed: Unsuccessful login with invalid credentials
+2024-10-04 16:23:43 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Unsuccessful_login_with_invalid_credentials_1728051823784.png
+2024-10-04 16:23:44 INFO  utils.Hooks - Driver quit
+2024-10-04 16:23:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:23:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:23:45 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:23:47 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:23:47 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:23:47 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:23:53 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-04 16:23:55 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-04 16:23:55 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-04 16:23:55 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-04 16:23:55 INFO  utils.Hooks - Test passed: Successful logout
+2024-10-04 16:23:55 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_logout_1728051835347.png
+2024-10-04 16:23:55 INFO  utils.Hooks - Driver quit
+2024-10-04 16:23:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:23:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:23:56 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:23:58 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:23:58 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:23:58 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:24:01 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:24:06 INFO  ui.pages.ProductsPage - Selected random product: Frozen Tops For Kids
+2024-10-04 16:24:06 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Frozen Tops For Kids
+2024-10-04 16:24:06 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:24:07 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:24:07 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:24:07 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:24:08 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 16:24:08 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Kasey and email: troy.marvin@hotmail.com
+2024-10-04 16:24:08 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:24:10 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:24:11 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:24:11 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:24:14 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:24:14 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:24:16 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 16:24:17 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:24:17 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:24:17 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 16:24:18 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728051858001.png
+2024-10-04 16:24:18 INFO  utils.Hooks - Driver quit
+2024-10-04 16:24:18 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:24:18 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:24:19 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:24:21 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:24:21 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:24:21 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:24:23 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:24:25 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:24:25 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:24:25 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:24:27 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:24:35 INFO  ui.pages.ProductsPage - Selected random product: Little Girls Mr. Panda Shirt
+2024-10-04 16:24:35 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Little Girls Mr. Panda Shirt
+2024-10-04 16:24:35 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:24:36 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:24:36 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:24:37 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:24:37 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:24:38 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:24:38 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:24:40 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:24:40 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:24:40 INFO  utils.Hooks - Test passed: Place Order - Login before Checkout
+2024-10-04 16:24:40 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728051880648.png
+2024-10-04 16:24:41 INFO  utils.Hooks - Driver quit
+2024-10-04 16:24:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:24:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:24:42 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:24:43 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:24:43 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:24:44 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:24:47 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:24:49 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:24:49 INFO  ui.pages.ProductsPage - No banner found, proceeding.
+2024-10-04 16:24:49 INFO  ui.pages.ProductsPage - Scrolled to the product at index: 0 and clicked.
+2024-10-04 16:24:49 INFO  ui.stepsdef.ProductDetailsInformationSteps - Clicked on the 'View Product' button for the first product
+2024-10-04 16:24:49 ERROR utils.Hooks - Test failed: View product details
+2024-10-04 16:24:49 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_product_details_1728051889932.png
+2024-10-04 16:24:50 INFO  utils.Hooks - Driver quit
+2024-10-04 16:24:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:24:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:24:51 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:24:53 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:24:53 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:24:53 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:24:55 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:24:57 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:24:57 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Frances and email: tracey.jacobs@yahoo.com
+2024-10-04 16:24:58 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:24:59 ERROR utils.Hooks - Test failed: Successful user registration
+2024-10-04 16:24:59 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_user_registration_1728051899197.png
+2024-10-04 16:24:59 INFO  utils.Hooks - Driver quit
+2024-10-04 16:24:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:24:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:25:00 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:25:02 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:25:02 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:25:02 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:25:04 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:25:06 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:25:06 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Product list is displayed
+2024-10-04 16:25:06 INFO  utils.Hooks - Test passed: View all products
+2024-10-04 16:25:06 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_all_products_1728051906903.png
+2024-10-04 16:25:07 INFO  utils.Hooks - Driver quit
+2024-10-04 16:25:07 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 130)
+2024-10-04 16:25:07 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\iryna\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-10-04 16:25:08 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:25:10 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:25:10 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:25:10 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:25:12 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:25:12 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Women category
+2024-10-04 16:25:12 INFO  ui.pages.HomePage - Clicked on Dress subcategory successfully
+2024-10-04 16:25:12 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Dress subcategory
+2024-10-04 16:25:12 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Filtered products are displayed
+2024-10-04 16:25:12 INFO  utils.Hooks - Test passed: Filter products by category "Women > Dress"
+2024-10-04 16:25:12 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Filter_products_by_category_Women__Dress_1728051912690.png
+2024-10-04 16:25:13 INFO  utils.Hooks - Driver quit
+2024-10-04 16:30:47 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 16:30:48 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:30:48 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:30:49 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:30:50 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:30:51 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:30:51 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:30:52 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:30:54 INFO  ui.pages.ProductsPage - Selected random product: Little Girls Mr. Panda Shirt
+2024-10-04 16:30:54 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Little Girls Mr. Panda Shirt
+2024-10-04 16:30:54 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:30:55 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 16:30:56 INFO  ui.pages.ProductsPage - Selected random product:  Blue Top
+2024-10-04 16:30:56 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product:  Blue Top
+2024-10-04 16:30:57 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:30:58 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:30:59 ERROR utils.Hooks - Test failed: Add random products to cart
+2024-10-04 16:30:59 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728052259784.png
+2024-10-04 16:30:59 INFO  utils.Hooks - Driver quit
+2024-10-04 16:30:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:30:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:31:00 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:31:02 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:31:02 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:31:02 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:31:05 INFO  ui.pages.ProductsPage - Selected random product: Winter Top
+2024-10-04 16:31:05 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart: Winter Top
+2024-10-04 16:31:07 INFO  ui.pages.ProductsPage - Selected random product: Green Side Placket Detail T-Shirt
+2024-10-04 16:31:08 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Green Side Placket Detail T-Shirt
+2024-10-04 16:31:09 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart: Winter Top
+2024-10-04 16:31:09 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product 'Winter Top' is not in the cart
+2024-10-04 16:31:09 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the cart contains only the remaining product
+2024-10-04 16:31:09 INFO  utils.Hooks - Test passed: Remove a product from the cart
+2024-10-04 16:31:09 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728052269908.png
+2024-10-04 16:31:10 INFO  utils.Hooks - Driver quit
+2024-10-04 16:31:10 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:31:10 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:31:10 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:31:12 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:31:12 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:31:12 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:31:13 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:31:14 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:31:14 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:31:14 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:31:15 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:31:15 INFO  utils.Hooks - Test passed: Successful login with valid credentials
+2024-10-04 16:31:15 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_login_with_valid_credentials_1728052275666.png
+2024-10-04 16:31:15 INFO  utils.Hooks - Driver quit
+2024-10-04 16:31:15 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:31:15 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:31:16 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:31:18 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:31:18 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:31:18 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:31:20 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:31:21 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:31:21 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-04 16:31:21 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:31:22 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-04 16:31:22 INFO  utils.Hooks - Test passed: Unsuccessful login with invalid credentials
+2024-10-04 16:31:22 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Unsuccessful_login_with_invalid_credentials_1728052282606.png
+2024-10-04 16:31:22 INFO  utils.Hooks - Driver quit
+2024-10-04 16:31:22 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:31:22 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:31:23 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:31:24 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:31:24 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:31:25 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:31:29 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-04 16:31:29 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-04 16:31:29 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-04 16:31:30 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-04 16:31:30 INFO  utils.Hooks - Test passed: Successful logout
+2024-10-04 16:31:30 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_logout_1728052290477.png
+2024-10-04 16:31:30 INFO  utils.Hooks - Driver quit
+2024-10-04 16:31:30 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:31:30 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:31:31 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:31:33 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:31:33 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:31:33 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:31:35 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:31:37 INFO  ui.pages.ProductsPage - Selected random product: Green Side Placket Detail T-Shirt
+2024-10-04 16:31:37 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Green Side Placket Detail T-Shirt
+2024-10-04 16:31:37 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:31:38 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:31:38 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:31:38 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:31:39 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 16:31:39 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Chet and email: nicholle.bernier@hotmail.com
+2024-10-04 16:31:40 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:31:40 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:31:41 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:31:41 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:31:42 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:31:42 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:31:43 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 16:31:43 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:31:44 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:31:44 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:31:45 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:31:46 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:31:46 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:31:47 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 16:31:48 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 16:31:48 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT DELETED!
+2024-10-04 16:31:49 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 16:31:49 INFO  ui.stepsdef.LogoutSteps - Redirected to the homepage
+2024-10-04 16:31:49 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 16:31:49 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728052309983.png
+2024-10-04 16:31:50 INFO  utils.Hooks - Driver quit
+2024-10-04 16:31:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:31:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:31:50 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:31:52 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:31:52 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:31:52 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:31:53 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:31:54 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:31:54 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 16:31:54 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 16:31:55 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 16:31:57 INFO  ui.pages.ProductsPage - Selected random product: Sleeveless Unicorn Patch Gown - Pink
+2024-10-04 16:31:57 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Sleeveless Unicorn Patch Gown - Pink
+2024-10-04 16:31:57 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:31:58 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:31:58 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 16:31:59 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 16:31:59 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 16:32:00 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 16:32:00 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 16:32:02 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 16:32:02 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 16:32:02 INFO  utils.Hooks - Test passed: Place Order - Login before Checkout
+2024-10-04 16:32:03 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728052323046.png
+2024-10-04 16:32:03 INFO  utils.Hooks - Driver quit
+2024-10-04 16:32:03 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:32:03 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:32:03 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:32:05 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:32:05 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:32:05 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:32:08 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:32:09 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:32:09 INFO  ui.pages.ProductsPage - No banner found, proceeding.
+2024-10-04 16:32:10 INFO  ui.pages.ProductsPage - Scrolled to the product at index: 0 and clicked.
+2024-10-04 16:32:10 INFO  ui.stepsdef.ProductDetailsInformationSteps - Clicked on the 'View Product' button for the first product
+2024-10-04 16:32:11 INFO  ui.stepsdef.ProductDetailsInformationSteps - Product details are displayed correctly
+2024-10-04 16:32:11 INFO  utils.Hooks - Test passed: View product details
+2024-10-04 16:32:11 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_product_details_1728052331400.png
+2024-10-04 16:32:11 INFO  utils.Hooks - Driver quit
+2024-10-04 16:32:11 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:32:11 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:32:12 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:32:13 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:32:13 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:32:13 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:32:17 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:32:17 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 16:32:17 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Alfonzo and email: stanley.schaden@hotmail.com
+2024-10-04 16:32:18 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 16:32:19 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 16:32:19 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 16:32:19 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 16:32:20 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 16:32:20 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 16:32:20 INFO  utils.Hooks - Test passed: Successful user registration
+2024-10-04 16:32:21 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_user_registration_1728052341354.png
+2024-10-04 16:32:21 INFO  utils.Hooks - Driver quit
+2024-10-04 16:32:21 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:32:21 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:32:22 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:32:23 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:32:23 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:32:23 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:32:25 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:32:26 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 16:32:26 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Product list is displayed
+2024-10-04 16:32:26 INFO  utils.Hooks - Test passed: View all products
+2024-10-04 16:32:26 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_all_products_1728052346875.png
+2024-10-04 16:32:26 INFO  utils.Hooks - Driver quit
+2024-10-04 16:32:26 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:32:27 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:32:27 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:32:29 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:32:29 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:32:29 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:32:31 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:32:31 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Women category
+2024-10-04 16:32:32 INFO  ui.pages.HomePage - Clicked on Dress subcategory successfully
+2024-10-04 16:32:32 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Dress subcategory
+2024-10-04 16:32:32 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Filtered products are displayed
+2024-10-04 16:32:32 INFO  utils.Hooks - Test passed: Filter products by category "Women > Dress"
+2024-10-04 16:32:32 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Filter_products_by_category_Women__Dress_1728052352853.png
+2024-10-04 16:32:32 INFO  utils.Hooks - Driver quit
+2024-10-04 16:47:22 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 16:47:23 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:47:23 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:47:24 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:47:26 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:47:26 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:47:26 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:47:28 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:47:31 INFO  ui.pages.ProductsPage - Selected random product: Frozen Tops For Kids
+2024-10-04 16:47:31 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Frozen Tops For Kids
+2024-10-04 16:47:31 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:47:32 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 16:47:35 INFO  ui.pages.ProductsPage - Selected random product: Full Sleeves Top Cherry - Pink
+2024-10-04 16:47:35 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Full Sleeves Top Cherry - Pink
+2024-10-04 16:47:35 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 16:47:37 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 16:47:38 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 16:47:38 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 16:47:38 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728053258160.png
+2024-10-04 16:47:38 INFO  utils.Hooks - Driver quit
+2024-10-04 16:47:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:47:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:47:39 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:47:40 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:47:40 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:47:41 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:47:44 INFO  ui.pages.ProductsPage - Selected random product:  Madame Top For Women
+2024-10-04 16:47:45 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart:  Madame Top For Women
+2024-10-04 16:47:48 INFO  ui.pages.ProductsPage - Selected random product: Printed Off Shoulder Top - White
+2024-10-04 16:47:50 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Printed Off Shoulder Top - White
+2024-10-04 16:47:50 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart:  Madame Top For Women
+2024-10-04 16:47:50 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product ' Madame Top For Women' is not in the cart
+2024-10-04 16:47:50 ERROR utils.Hooks - Test failed: Remove a product from the cart
+2024-10-04 16:47:50 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728053270527.png
+2024-10-04 16:47:50 INFO  utils.Hooks - Driver quit
+2024-10-04 16:47:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 16:47:50 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 16:47:51 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:47:53 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 16:47:53 INFO  utils.Hooks - Checking for popup...
+2024-10-04 16:47:53 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 16:48:46 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: Successful login with valid credentials
+2024-10-04 16:48:46 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: Unsuccessful login with invalid credentials
+2024-10-04 16:48:46 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: Successful logout
+2024-10-04 16:48:46 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: Place Order - Register while Checkout
+2024-10-04 16:48:46 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: Place Order - Login before Checkout
+2024-10-04 16:48:46 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: View product details
+2024-10-04 16:48:46 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: Successful user registration
+2024-10-04 16:48:46 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: View all products
+2024-10-04 16:48:46 INFO  utils.Hooks - Driver initialized
+2024-10-04 16:48:46 ERROR utils.Hooks - Test failed: Filter products by category "Women > Dress"
+2024-10-04 17:18:50 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 17:18:51 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:18:51 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:18:51 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:18:53 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:18:53 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:18:53 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:18:54 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:19:01 INFO  ui.pages.ProductsPage - Selected random product: Cotton Mull Embroidered Dress
+2024-10-04 17:19:01 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Cotton Mull Embroidered Dress
+2024-10-04 17:19:01 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 17:19:01 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue Shopping' button
+2024-10-04 17:19:04 INFO  ui.pages.ProductsPage - Selected random product: Fancy Green Top
+2024-10-04 17:19:04 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Fancy Green Top
+2024-10-04 17:19:05 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 17:19:06 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 17:19:07 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Both products are present in the cart
+2024-10-04 17:19:07 INFO  utils.Hooks - Test passed: Add random products to cart
+2024-10-04 17:19:07 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Add_random_products_to_cart_1728055147735.png
+2024-10-04 17:19:07 INFO  utils.Hooks - Driver quit
+2024-10-04 17:19:08 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:19:08 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:19:08 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:19:10 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:19:10 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:19:10 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:19:15 INFO  ui.pages.ProductsPage - Selected random product: Winter Top
+2024-10-04 17:19:15 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added first product to the cart: Winter Top
+2024-10-04 17:19:18 INFO  ui.pages.ProductsPage - Selected random product: Full Sleeves Top Cherry - Pink
+2024-10-04 17:19:20 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added second product to the cart: Full Sleeves Top Cherry - Pink
+2024-10-04 17:19:21 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Removed product from cart: Winter Top
+2024-10-04 17:19:21 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the removed product 'Winter Top' is not in the cart
+2024-10-04 17:19:21 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Verified that the cart contains only the remaining product
+2024-10-04 17:19:21 INFO  utils.Hooks - Test passed: Remove a product from the cart
+2024-10-04 17:19:21 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Remove_a_product_from_the_cart_1728055161300.png
+2024-10-04 17:19:21 INFO  utils.Hooks - Driver quit
+2024-10-04 17:19:21 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:19:21 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:19:22 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:19:24 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:19:24 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:19:25 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:19:26 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:19:27 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 17:19:27 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 17:19:27 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 17:19:29 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 17:19:29 INFO  utils.Hooks - Test passed: Successful login with valid credentials
+2024-10-04 17:19:29 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_login_with_valid_credentials_1728055169546.png
+2024-10-04 17:19:29 INFO  utils.Hooks - Driver quit
+2024-10-04 17:19:29 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:19:29 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:19:30 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:19:33 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:19:33 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:19:34 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:19:35 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:19:37 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 17:19:37 INFO  ui.stepsdef.LoginSteps - Entered invalid login credentials
+2024-10-04 17:19:37 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 17:19:38 INFO  ui.stepsdef.LoginSteps - Error message is displayed: Your email or password is incorrect!
+2024-10-04 17:19:38 INFO  utils.Hooks - Test passed: Unsuccessful login with invalid credentials
+2024-10-04 17:19:38 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Unsuccessful_login_with_invalid_credentials_1728055178831.png
+2024-10-04 17:19:38 INFO  utils.Hooks - Driver quit
+2024-10-04 17:19:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:19:38 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:19:39 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:19:41 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:19:41 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:19:41 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:19:47 INFO  ui.stepsdef.LogoutSteps - Logged in as user
+2024-10-04 17:19:49 INFO  ui.stepsdef.LogoutSteps - Clicked on Logout link
+2024-10-04 17:19:49 ERROR ui.stepsdef.LogoutSteps - Not redirected to the homepage
+2024-10-04 17:19:49 INFO  ui.stepsdef.LogoutSteps - User is not logged in
+2024-10-04 17:19:49 INFO  utils.Hooks - Test passed: Successful logout
+2024-10-04 17:19:49 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_logout_1728055189331.png
+2024-10-04 17:19:49 INFO  utils.Hooks - Driver quit
+2024-10-04 17:19:49 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:19:49 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:19:50 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:19:51 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:19:51 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:19:51 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:19:53 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:19:57 INFO  ui.pages.ProductsPage - Selected random product: Sleeves Top and Short - Blue & Pink
+2024-10-04 17:19:57 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Sleeves Top and Short - Blue & Pink
+2024-10-04 17:19:58 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 17:19:59 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 17:19:59 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 17:19:59 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 17:20:01 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 17:20:01 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Shon and email: eugene.rolfson@yahoo.com
+2024-10-04 17:20:03 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 17:20:04 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 17:20:05 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 17:20:05 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 17:20:07 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 17:20:07 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 17:20:08 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 17:20:09 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 17:20:09 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 17:20:11 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 17:20:11 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 17:20:14 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 17:20:14 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 17:20:15 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 17:20:16 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 17:20:16 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT DELETED!
+2024-10-04 17:20:18 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 17:20:18 INFO  ui.stepsdef.LogoutSteps - Redirected to the homepage
+2024-10-04 17:20:18 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 17:20:18 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728055218348.png
+2024-10-04 17:20:18 INFO  utils.Hooks - Driver quit
+2024-10-04 17:20:18 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:20:18 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:20:19 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:20:20 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:20:21 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:20:21 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:20:23 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:20:24 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 17:20:24 INFO  ui.stepsdef.LoginSteps - Entered valid login credentials
+2024-10-04 17:20:24 INFO  ui.stepsdef.CommonSteps - Clicking login button
+2024-10-04 17:20:26 INFO  ui.stepsdef.LoginSteps - User is logged in
+2024-10-04 17:20:28 INFO  ui.pages.ProductsPage - Selected random product: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+2024-10-04 17:20:28 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+2024-10-04 17:20:29 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 17:20:30 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 17:20:30 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 17:20:32 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 17:20:32 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 17:20:33 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 17:20:33 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 17:20:36 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 17:20:36 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 17:20:36 INFO  utils.Hooks - Test passed: Place Order - Login before Checkout
+2024-10-04 17:20:36 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Login_before_Checkout_1728055236231.png
+2024-10-04 17:20:36 INFO  utils.Hooks - Driver quit
+2024-10-04 17:20:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:20:36 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:20:36 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:20:39 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:20:39 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:20:39 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:20:40 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:20:42 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 17:20:42 INFO  ui.pages.ProductsPage - No banner found, proceeding.
+2024-10-04 17:20:44 INFO  ui.pages.ProductsPage - Scrolled to the product at index: 0 and clicked.
+2024-10-04 17:20:44 INFO  ui.stepsdef.ProductDetailsInformationSteps - Clicked on the 'View Product' button for the first product
+2024-10-04 17:20:44 INFO  ui.stepsdef.ProductDetailsInformationSteps - Product details are displayed correctly
+2024-10-04 17:20:44 INFO  utils.Hooks - Test passed: View product details
+2024-10-04 17:20:44 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_product_details_1728055244636.png
+2024-10-04 17:20:44 INFO  utils.Hooks - Driver quit
+2024-10-04 17:20:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:20:44 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:20:45 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:20:47 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:20:47 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:20:47 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:20:49 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:20:50 INFO  ui.stepsdef.CommonSteps - Clicked on Signup / Login link
+2024-10-04 17:20:50 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Bonita and email: niki.balistreri@gmail.com
+2024-10-04 17:20:51 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 17:20:52 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 17:20:53 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 17:20:53 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 17:20:55 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 17:20:55 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 17:20:55 INFO  utils.Hooks - Test passed: Successful user registration
+2024-10-04 17:20:55 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Successful_user_registration_1728055255535.png
+2024-10-04 17:20:55 INFO  utils.Hooks - Driver quit
+2024-10-04 17:20:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:20:55 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:20:56 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:20:58 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:20:58 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:20:58 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:21:00 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:21:01 INFO  ui.stepsdef.CommonSteps - Clicked on Products link
+2024-10-04 17:21:01 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Product list is displayed
+2024-10-04 17:21:01 INFO  utils.Hooks - Test passed: View all products
+2024-10-04 17:21:01 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/View_all_products_1728055261948.png
+2024-10-04 17:21:02 INFO  utils.Hooks - Driver quit
+2024-10-04 17:21:02 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:21:02 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:21:02 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:21:04 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:21:04 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:21:04 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:21:06 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:21:06 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Women category
+2024-10-04 17:21:09 INFO  ui.pages.HomePage - Clicked on Dress subcategory successfully
+2024-10-04 17:21:09 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Clicked on Dress subcategory
+2024-10-04 17:21:09 INFO  ui.stepsdef.ViewAndFilterProductsSteps - Filtered products are displayed
+2024-10-04 17:21:09 INFO  utils.Hooks - Test passed: Filter products by category "Women > Dress"
+2024-10-04 17:21:09 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Filter_products_by_category_Women__Dress_1728055269402.png
+2024-10-04 17:21:09 INFO  utils.Hooks - Driver quit
+2024-10-04 17:29:23 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 17:29:23 WARN  org.testng.internal.Utils - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
+2024-10-04 17:36:07 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 17:36:08 WARN  org.testng.internal.Utils - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
+2024-10-04 17:36:35 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 17:36:35 WARN  org.testng.internal.Utils - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
+2024-10-04 17:36:45 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 17:36:45 WARN  org.testng.internal.Utils - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
+2024-10-04 17:37:51 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 17:37:52 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:37:52 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:37:52 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:37:54 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:37:54 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:37:55 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:37:56 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:38:01 INFO  ui.pages.ProductsPage - Selected random product: Lace Top For Women
+2024-10-04 17:38:01 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product: Lace Top For Women
+2024-10-04 17:38:02 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 17:38:03 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 17:38:03 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 17:38:03 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 17:38:04 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 17:38:05 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Aron and email: bernadette.fadel@yahoo.com
+2024-10-04 17:38:06 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 17:38:07 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 17:38:08 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 17:38:08 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 17:38:10 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 17:38:10 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 17:38:12 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 17:38:13 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 17:38:13 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 17:38:15 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 17:38:15 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 17:38:17 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 17:38:17 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 17:38:19 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 17:38:20 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 17:38:20 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT DELETED!
+2024-10-04 17:38:21 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 17:38:21 INFO  ui.stepsdef.LogoutSteps - Redirected to the homepage
+2024-10-04 17:38:21 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 17:38:21 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728056301746.png
+2024-10-04 17:38:21 INFO  utils.Hooks - Driver quit
+2024-10-04 17:46:40 INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2024-10-04 17:46:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-04 17:46:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\iryna\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-04 17:46:42 INFO  utils.Hooks - Driver initialized
+2024-10-04 17:46:44 INFO  utils.Hooks - Navigated to base URL
+2024-10-04 17:46:44 INFO  utils.Hooks - Checking for popup...
+2024-10-04 17:46:44 INFO  utils.Hooks - Popup window closed by clicking 'I agree' button
+2024-10-04 17:46:46 INFO  ui.stepsdef.CommonSteps - Opened the homepage
+2024-10-04 17:46:49 INFO  ui.pages.ProductsPage - Selected random product:  Blue Top
+2024-10-04 17:46:49 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Added product:  Blue Top
+2024-10-04 17:46:50 INFO  ui.stepsdef.AddRemoveCartProductsSteps - Confirmation message is displayed
+2024-10-04 17:46:51 INFO  ui.stepsdef.CommonSteps - Clicked 'View Cart' button
+2024-10-04 17:46:51 INFO  ui.stepsdef.PlaceOrderSteps - Verified that we are on the cart page
+2024-10-04 17:46:51 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 17:46:52 INFO  ui.stepsdef.PlaceOrderSteps - Clicked on 'Register/Login' button on the checkout page
+2024-10-04 17:46:52 INFO  ui.stepsdef.RegistrationSteps - Entered signup name: Bess and email: kip.spencer@yahoo.com
+2024-10-04 17:46:54 INFO  ui.stepsdef.CommonSteps - Clicked on Signup button
+2024-10-04 17:46:55 INFO  ui.stepsdef.RegistrationSteps - Filled out registration form with faker data
+2024-10-04 17:46:57 INFO  ui.stepsdef.RegistrationSteps - Submitted the registration form
+2024-10-04 17:46:57 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT CREATED!
+2024-10-04 17:46:58 INFO  ui.stepsdef.RegistrationSteps - Clicked on button: Continue
+2024-10-04 17:46:58 INFO  ui.stepsdef.RegistrationSteps - User is logged in
+2024-10-04 17:46:59 INFO  ui.stepsdef.CommonSteps - Clicked 'Cart' button
+2024-10-04 17:47:01 INFO  ui.stepsdef.CommonSteps - Clicked 'Proceed To Checkout' button
+2024-10-04 17:47:01 INFO  ui.stepsdef.PlaceOrderSteps - Verified that Address Details are displayed
+2024-10-04 17:47:03 INFO  ui.stepsdef.PlaceOrderSteps - Entered comment and clicked 'Place Order'
+2024-10-04 17:47:03 INFO  ui.stepsdef.PlaceOrderSteps - Entered payment details
+2024-10-04 17:47:05 INFO  ui.stepsdef.CommonSteps - Clicked 'Pay and Confirm Order' button
+2024-10-04 17:47:05 INFO  ui.stepsdef.PlaceOrderSteps - Verified that the message 'Congratulations! Your order has been confirmed!' is displayed
+2024-10-04 17:47:06 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on payment page' button
+2024-10-04 17:47:08 INFO  ui.stepsdef.CommonSteps - Clicked 'Delete Account' button
+2024-10-04 17:47:08 INFO  ui.stepsdef.RegistrationSteps - Expected message is displayed: ACCOUNT DELETED!
+2024-10-04 17:47:09 INFO  ui.stepsdef.CommonSteps - Clicked 'Continue on account deleted page' button
+2024-10-04 17:47:09 INFO  ui.stepsdef.LogoutSteps - Redirected to the homepage
+2024-10-04 17:47:09 INFO  utils.Hooks - Test passed: Place Order - Register while Checkout
+2024-10-04 17:47:09 INFO  utils.ScreenshotUtil - Screenshot taken: screenshots/Place_Order__Register_while_Checkout_1728056829892.png
+2024-10-04 17:47:10 INFO  utils.Hooks - Driver quit

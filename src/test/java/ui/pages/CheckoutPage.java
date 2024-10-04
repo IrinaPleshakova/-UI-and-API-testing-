@@ -1,5 +1,6 @@
 package ui.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,8 +11,12 @@ import java.util.stream.Collectors;
 
 public class CheckoutPage {
 
+	@FindBy(xpath = "//u[contains(text(),'Register / Login')]")
+	private WebElement registerLoginButton;
+
 	@FindBy(xpath = "//ul[contains(@id, 'address_delivery')]//li")
 	private List<WebElement> addressDelivery;
+
 	@FindBy(xpath = "//ul[contains(@id, 'address_invoice')]//li")
 	private List<WebElement> addressInvoice;
 
@@ -47,6 +52,18 @@ public class CheckoutPage {
 
 	public WebElement getTotalAmount() {
 		return totalAmount;
+	}
+
+	public void clickRegisterLogin() {
+		registerLoginButton.click();
+	}
+
+	public void enterComment(String text) {
+		comment.sendKeys(text);
+	}
+
+	public void clickPlaceOrderButton() {
+		placeOrderButton.click();
 	}
 }
 

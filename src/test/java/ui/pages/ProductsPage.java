@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class ProductsPage {
 	private static final Logger logger = LogManager.getLogger(ProductsPage.class);
@@ -91,4 +92,25 @@ public class ProductsPage {
 		}
 	}
 
+	public void navigateTo() {
+		driver.get("http://automationexercise.com/products");
+	}
+
+	public String selectRandomProduct() {
+		int randomIndex = ThreadLocalRandom.current().nextInt(productList.size());
+		WebElement randomProduct = productList.get(randomIndex);
+
+		// Get the product name
+		String productName = randomProduct.findElement(By.cssSelector(".productinfo p")).getText();
+
+		// Scroll to the product
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", randomProduct);
+		new Actions(driver).moveToElement(randomProduct).perform();
+
+		// Click on "View Product"
+		randomProduct.findElement(By.cssSelector("a[href*='product_details']")).click();
+
+		logger.info("Selected random product: " + productName);
+		return productName;
+	}
 }
