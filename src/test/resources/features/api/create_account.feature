@@ -1,17 +1,21 @@
 Feature: Create Account API
 
-#  @api
-  @ignore
+  @ignore # Test disabled due to incorrect handling of POST requests: the server returns an error about missing fields when valid data is sent
+  @api
   @positive
+  @smoke
+  @account
   Scenario: Create account with valid data
     Given I have a valid user data for account creation
     When I send a POST request to "/api/createAccount" endpoint
     Then I should receive a response code 201
     And the response message should be "User created!"
 
-#  @api
-  @ignore
+  @ignore # Test disabled due to incorrect handling of POST requests: the server returns an error about missing fields when valid data is sent
+  @api
   @negative
+  @regression
+  @account
   Scenario: Create account with existing email
     Given I have user data with existing email for account creation
     When I send a POST request to "/api/createAccount" endpoint

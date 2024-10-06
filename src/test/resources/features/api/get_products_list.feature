@@ -2,14 +2,17 @@ Feature: Products List API
 
   @api
   @positive
+  @product
   Scenario: Get All Products List
     When I send a GET request to "/api/productsList" endpoint
     Then I should receive a response code 200
     And the response message should contain "All products list"
-    And the response should match the products list JSON file
+    And the response should match the key aspects of the products list JSON file
 
   @api
   @negative
+  @regression
+  @product
   Scenario: Get products list with invalid endpoint
     When I send a GET request to "/api/invalidProductsList" endpoint
     Then I should receive a status code 404

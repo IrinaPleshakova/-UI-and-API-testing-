@@ -1,16 +1,20 @@
 Feature: Delete Account API
 
-#  @api
-  @ignore
+  @ignore # Test disabled due to incorrect handling of DELETE requests: the server returns an error about missing fields when valid data is sent
+  @api
   @positive
+  @smoke
+  @account
   Scenario: Delete account with valid credentials
     Given I have valid credentials for account deletion
     When I send a DELETE request to "/api/deleteAccount" endpoint
     Then I should receive a response code 200
     And the response message should be "Account deleted successfully!"
 
-  @ignore
+  @ignore # Test disabled due to incorrect handling of DELETE requests: the server returns an error about missing fields when valid data is sent
+  @api
   @negative
+  @account
   Scenario: Delete account with invalid credentials
     Given I have invalid credentials for account deletion
     When I send a DELETE request to "/api/deleteAccount" endpoint

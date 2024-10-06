@@ -1,17 +1,19 @@
 Feature: Verify Login API
 
-#  @api
-  @ignore
+  @ignore # Test disabled due to incorrect handling of POST requests: the server returns an error about missing fields when valid data is sent
+  @api
   @positive
+  @login
   Scenario: Verify login with valid credentials
     Given I have valid login credentials
     When I send a POST request to "/api/verifyLogin" endpoint
     Then I should receive a response code 200
     And the response message should be "User exists!"
 
-#  @api
-  @ignore
+  @ignore # Test disabled due to incorrect handling of POST requests: the server returns an error about missing fields when valid data is sent
+  @api
   @negative
+  @login
   Scenario: Verify login with invalid credentials
     Given I have invalid login credentials
     When I send a POST request to "/api/verifyLogin" endpoint
