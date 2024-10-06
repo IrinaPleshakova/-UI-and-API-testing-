@@ -2,6 +2,8 @@ package ui.runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import org.testng.annotations.BeforeSuite;
+import utils.ConfigProvider;
 
 /**
  * TestRunner class to execute Cucumber tests with TestNG.
@@ -16,5 +18,9 @@ import io.cucumber.testng.CucumberOptions;
 //		tags = "@important"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
-	// No need to implement any methods here
+	@BeforeSuite
+	public void setupConfig() {
+		ConfigProvider configProvider = new ConfigProvider();
+		configProvider.setConfigFile("ui");  // Устанавливаем конфигурацию для API тестов
+	}
 }
