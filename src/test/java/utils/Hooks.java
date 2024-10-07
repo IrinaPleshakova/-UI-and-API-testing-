@@ -43,10 +43,10 @@ public class Hooks {
 	public void teardown(Scenario scenario) {
 		if (scenario.isFailed()) {
 			logger.error("Test failed: " + scenario.getName());
-			ScreenshotUtil.takeScreenshot(driver, scenario.getName());
+			ScreenshotUtil.captureAndAttachScreenshot(driver, "Failed scenario: " + scenario.getName());
 		} else {
 			logger.info("Test passed: " + scenario.getName());
-			ScreenshotUtil.takeScreenshot(driver, scenario.getName());
+			ScreenshotUtil.captureAndAttachScreenshot(driver, "Passed scenario: " + scenario.getName());
 		}
 		DriverManager.quitDriver();
 		logger.info("Driver quit");

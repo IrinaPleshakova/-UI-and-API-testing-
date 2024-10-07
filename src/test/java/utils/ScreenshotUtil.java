@@ -1,5 +1,6 @@
 package utils;
 
+import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 
@@ -33,5 +35,14 @@ public class ScreenshotUtil {
 		} catch (IOException e) {
 			logger.error("Failed to take screenshot: ", e);
 		}
+	}
+
+	/**
+	 * Method to capture a screenshot and attach it to Allure report.
+	 */
+	public static void captureAndAttachScreenshot(WebDriver driver, String stepName) {
+		// Capture screenshot as byte array and attach it to Allure report
+		Allure.addAttachment(stepName, new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+		logger.info("Screenshot captured and attached to Allure report: " + stepName);
 	}
 }

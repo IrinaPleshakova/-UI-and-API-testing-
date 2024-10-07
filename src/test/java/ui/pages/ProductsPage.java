@@ -29,6 +29,9 @@ public class ProductsPage {
 	@FindBy(css = "a[href='/product_details/1']")
 	private WebElement viewProduct1Button;
 
+	@FindBy(xpath = "(//a[contains(text(),'View Product')])[1]")
+	private WebElement viewFirstProductButton;
+
 	@FindBy(xpath = "//a[contains(text(),'View Product')]")
 	private List<WebElement> viewProductLinks;
 
@@ -43,8 +46,29 @@ public class ProductsPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	// Get the number of products on the page
 	public int getProductCount() {
+		// Wait until all products are visible
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfAllElements(productList));
 		return productList.size();
+	}
+
+	// Verify that all displayed products are from the Dress category
+	public boolean areAllProductsRelatedToDress() {
+		for (WebElement productName : productNames) {
+			if (!productName.getText().contains("Dress")) {
+				logger.error("Product {} does not belong to the Dress category", productName.getText());
+				return false;
+			}
+		}
+		return true;
+	}
+
+	// Verify that the page URL corresponds to the Dress category
+	public boolean isOnDressCategoryPage() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.urlContains("/category_products/1"));
 	}
 
 	public void closeBannerIfPresent() {
@@ -66,7 +90,6 @@ public class ProductsPage {
 
 	public void scrollToProduct(int index) {
 		WebElement product = viewProductLinks.get(index);
-
 		// Scroll the product into view
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", product);
 		// Perform the click on the product
@@ -74,22 +97,35 @@ public class ProductsPage {
 		logger.info("Scrolled to the product at index: " + index + " and clicked.");
 	}
 
-	// Method to click on the "View Product" button for any product
+	//Scrolls to the product at the specified index and clicks on "View Product" button.
+	//Handles both the first product and other products via list.
 	public void clickViewProduct(int index) {
 		if (index == 0) {
-			// If the index is 0, click on the first product using the direct locator
+			// For the first product, use a direct locator
 			logger.info("Clicking on the first product");
-			new Actions(driver).moveToElement(viewProduct1Button).click().perform();
-			logger.info("Successfully clicked on the first product");
+			scrollToElement(viewFirstProductButton);
+			clickElement(viewFirstProductButton);
 		} else if (index >= 0 && index < viewProductLinks.size()) {
 			// For other products, click using the list of "View Product" buttons
 			logger.info("Clicking on the product at index: " + index);
-			new Actions(driver).moveToElement(viewProductLinks.get(index)).click().perform();
-			logger.info("Successfully clicked on the product at index: " + index);
+			WebElement product = viewProductLinks.get(index);
+			scrollToElement(product);
+			clickElement(product);
 		} else {
 			logger.error("Invalid product index: " + index);
 			throw new IndexOutOfBoundsException("Invalid product index: " + index);
 		}
+	}
+
+	//Scrolls the given WebElement into view using JavaScript.
+	private void scrollToElement(WebElement element) {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+
+	//Clicks the given WebElement using Actions to ensure the element is clicked reliably.
+	private void clickElement(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
+		logger.info("Clicked on the element: {}", element);
 	}
 
 	public void navigateTo() {
@@ -99,17 +135,13 @@ public class ProductsPage {
 	public String selectRandomProduct() {
 		int randomIndex = ThreadLocalRandom.current().nextInt(productList.size());
 		WebElement randomProduct = productList.get(randomIndex);
-
 		// Get the product name
 		String productName = randomProduct.findElement(By.cssSelector(".productinfo p")).getText();
-
 		// Scroll to the product
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", randomProduct);
 		new Actions(driver).moveToElement(randomProduct).perform();
-
 		// Click on "View Product"
 		randomProduct.findElement(By.cssSelector("a[href*='product_details']")).click();
-
 		logger.info("Selected random product: " + productName);
 		return productName;
 	}

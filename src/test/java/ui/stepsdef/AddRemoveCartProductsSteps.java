@@ -1,11 +1,13 @@
 package ui.stepsdef;
 
 import io.cucumber.java.en.*;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import ui.pages.*;
 import utils.DriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +23,7 @@ public class AddRemoveCartProductsSteps {
 	private List<String> addedProductNames = new ArrayList<>();
 	private String removedProductName;
 
+	@Step("Adding a random product to the cart")
 	@When("I add a random product to the cart")
 	public void iAddARandomProductToTheCart() {
 		productsPage.navigateTo();
@@ -30,6 +33,7 @@ public class AddRemoveCartProductsSteps {
 		logger.info("Added product: " + productName);
 	}
 
+	@Step("Verifying the confirmation message is displayed")
 	@And("I should see a confirmation message")
 	public void iShouldSeeAConfirmationMessage() {
 		boolean isDisplayed = productDetailPage.isConfirmationMessageDisplayed();
@@ -37,6 +41,7 @@ public class AddRemoveCartProductsSteps {
 		logger.info("Confirmation message is displayed");
 	}
 
+	@Step("Checking that both products are in the cart")
 	@Then("I should see both products in the cart")
 	public void iShouldSeeBothProductsInTheCart() {
 		cartPage.navigateTo();
@@ -45,6 +50,7 @@ public class AddRemoveCartProductsSteps {
 		logger.info("Both products are present in the cart");
 	}
 
+	@Step("Adding two products to the cart")
 	@Given("I have two products in my cart")
 	public void iHaveTwoProductsInMyCart() {
 		// Add first product
@@ -65,6 +71,7 @@ public class AddRemoveCartProductsSteps {
 		logger.info("Added second product to the cart: {}", productName2);
 	}
 
+	@Step("Removing a product from the cart")
 	@When("I remove one product from the cart")
 	public void iRemoveOneProductFromTheCart() {
 		// Remove the first product from the cart
@@ -73,6 +80,7 @@ public class AddRemoveCartProductsSteps {
 		logger.info("Removed product from cart: {}", removedProductName);
 	}
 
+	@Step("Verifying the removed product is not in the cart")
 	@Then("I should not see that product in the cart")
 	public void iShouldNotSeeThatProductInTheCart() {
 		List<String> productsInCart = cartPage.getProductNamesInCart();
@@ -80,6 +88,7 @@ public class AddRemoveCartProductsSteps {
 		logger.info("Verified that the removed product '{}' is not in the cart", removedProductName);
 	}
 
+	@Step("Verifying only the remaining product is in the cart")
 	@And("I should see only the remaining product in the cart")
 	public void iShouldSeeOnlyTheRemainingProductInTheCart() {
 		List<String> productsInCart = cartPage.getProductNamesInCart();

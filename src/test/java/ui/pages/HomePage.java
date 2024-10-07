@@ -36,6 +36,9 @@ public class HomePage {
 	@FindBy(xpath = "//a[@href='/logout']")
 	private WebElement logoutButton;
 
+	@FindBy(xpath = "//a[contains(text(),'Logged in as')]")
+	private WebElement loggedInAsElement;
+
 	@FindBy(css = "a[href='#Women']")
 	private WebElement womenCategoryLink;
 
@@ -96,6 +99,10 @@ public class HomePage {
 	public LoginPage ClickOnLogOutButton() {
 		logoutButton.click();
 		return new LoginPage(driver);
+	}
+
+	public String getLoggedInUserName() {
+		return loggedInAsElement.getText().replace("Logged in as ", "").trim();
 	}
 
 	public void clickDeleteAccount() {

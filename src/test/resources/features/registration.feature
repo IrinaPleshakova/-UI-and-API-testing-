@@ -11,3 +11,4 @@ Feature: User Registration
     Then I should see the "ACCOUNT CREATED!" message
     When I click on the "Continue" button on the account created page
     Then I should be logged in as the new user
+    Then I should see "Logged in as the new user"
