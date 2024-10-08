@@ -1,6 +1,7 @@
 package api.stepsdef;
 
 import io.cucumber.java.en.Given;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,6 +19,7 @@ public class UserDetailByEmailSteps {
 	public void iHaveAValidEmailForGettingUserDetail() {
 		logger.info("Setting valid email for user detail retrieval.");
 		email = ConfigProvider.getValidEmail();
+		Allure.addAttachment("Valid Email", email);
 	}
 
 	@Step("Setting invalid email for user detail retrieval")
@@ -25,5 +27,6 @@ public class UserDetailByEmailSteps {
 	public void iHaveAnInvalidEmailForGettingUserDetail() {
 		logger.info("Setting invalid email for user detail retrieval.");
 		email = ConfigProvider.getInvalidEmail();
+		Allure.addAttachment("Invalid Email", email);
 	}
 }

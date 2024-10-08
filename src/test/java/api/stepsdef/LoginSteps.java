@@ -2,6 +2,7 @@ package api.stepsdef;
 
 import api.models.VerifyLoginRequest;
 import io.cucumber.java.en.Given;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,6 +20,7 @@ public class LoginSteps {
 	public void iHaveValidLoginCredentials() {
 		logger.info("Generating valid login credentials.");
 		verifyLoginRequest = TestDataGenerator.generateValidVerifyLoginRequest();
+		Allure.addAttachment("Valid Login Request", verifyLoginRequest.toString());
 	}
 
 	@Step("Generating invalid login credentials")
@@ -26,5 +28,6 @@ public class LoginSteps {
 	public void iHaveInvalidLoginCredentials() {
 		logger.info("Generating invalid login credentials.");
 		verifyLoginRequest = TestDataGenerator.generateInvalidVerifyLoginRequest();
+		Allure.addAttachment("Invalid Login Request", verifyLoginRequest.toString());
 	}
 }

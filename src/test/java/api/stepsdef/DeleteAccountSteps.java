@@ -2,6 +2,7 @@ package api.stepsdef;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import utils.ConfigProvider;
 import io.cucumber.java.en.Given;
@@ -22,6 +23,8 @@ public class DeleteAccountSteps {
 		email = ConfigProvider.getGeneratedEmail();  // Fetching generated email
 		password = ConfigProvider.getGeneratedPassword();  // Fetching generated password
 		logger.info("Valid credentials for deletion - Email: " + email);
+		Allure.addAttachment("Email for Deletion", email);
+		Allure.addAttachment("Password for Deletion", password);
 	}
 
 	@Step("Setting invalid credentials for account deletion")
@@ -30,5 +33,7 @@ public class DeleteAccountSteps {
 		logger.info("Setting invalid credentials for account deletion.");
 		email = ConfigProvider.getInvalidEmail();  // Using invalid email from config
 		password = ConfigProvider.getInvalidPassword();  // Using invalid password from config
+		Allure.addAttachment("Invalid Email for Deletion", email);
+		Allure.addAttachment("Invalid Password for Deletion", password);
 	}
 }

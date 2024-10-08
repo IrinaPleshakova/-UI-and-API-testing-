@@ -3,6 +3,7 @@ package api.stepsdef;
 import api.clients.AccountApiClient;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
@@ -26,18 +27,22 @@ public class CommonSteps {
 		switch (endpoint) {
 			case "/api/createAccount":
 				logger.info("Creating account with request: {}", AccountSteps.createAccountRequest);
+				Allure.addAttachment("Account Creation Request", AccountSteps.createAccountRequest.toString());
 				response = client.createAccount(AccountSteps.createAccountRequest);
 				break;
 			case "/api/verifyLogin":
 				logger.info("Verifying login with request: {}", LoginSteps.verifyLoginRequest);
+				Allure.addAttachment("Login Verification Request", LoginSteps.verifyLoginRequest.toString());
 				response = client.verifyLogin(LoginSteps.verifyLoginRequest);
 				break;
 			case "/api/searchProduct":
 				logger.info("Searching product with name: {}", SearchProductsSteps.searchProduct);
+				Allure.addAttachment("Product Search Request", SearchProductsSteps.searchProduct);
 				response = client.searchProduct(SearchProductsSteps.searchProduct);
 				break;
 			case "/api/getUserDetailByEmail":
 				logger.info("Getting user details for email: {}", UserDetailByEmailSteps.email);
+				Allure.addAttachment("User Detail Request", UserDetailByEmailSteps.email);
 				response = client.getUserDetailByEmail(UserDetailByEmailSteps.email);
 				break;
 			case "/api/productsList":
@@ -50,6 +55,7 @@ public class CommonSteps {
 				break;
 			case "/api/deleteAccount":
 				logger.info("Deleting account with email: {}", DeleteAccountSteps.email);
+				Allure.addAttachment("Account Deletion Request", "Email: " + DeleteAccountSteps.email);
 				response = client.deleteAccount(DeleteAccountSteps.email, DeleteAccountSteps.password);
 				break;
 			default:
@@ -80,6 +86,8 @@ public class CommonSteps {
 	public void iShouldReceiveAResponseCode(Integer expectedResponseCode) {
 		int actualResponseCode = response.jsonPath().getInt("responseCode");
 		logger.info("Asserting response code: Expected = {}, Actual = {}", expectedResponseCode, actualResponseCode);
+		Allure.addAttachment("Expected Response Code", String.valueOf(expectedResponseCode));
+		Allure.addAttachment("Actual Response Code", String.valueOf(actualResponseCode));
 		Assert.assertEquals(actualResponseCode, expectedResponseCode.intValue(), "Response code mismatch");
 	}
 
@@ -88,6 +96,8 @@ public class CommonSteps {
 	public void iShouldReceiveAStatusCode(int expectedStatusCode) {
 		int actualStatusCode = response.getStatusCode();
 		logger.info("Asserting HTTP status code: Expected = {}, Actual = {}", expectedStatusCode, actualStatusCode);
+		Allure.addAttachment("Expected Status Code", String.valueOf(expectedStatusCode));
+		Allure.addAttachment("Actual Status Code", String.valueOf(actualStatusCode));
 		Assert.assertEquals(actualStatusCode, expectedStatusCode, "HTTP status code mismatch");
 	}
 
@@ -96,6 +106,8 @@ public class CommonSteps {
 	public void theResponseMessageShouldBe(String expectedMessage) {
 		String actualMessage = response.jsonPath().getString("message");
 		logger.info("Asserting response message: Expected = {}, Actual = {}", expectedMessage, actualMessage);
+		Allure.addAttachment("Expected Response Message", expectedMessage);
+		Allure.addAttachment("Actual Response Message", actualMessage);
 		Assert.assertEquals(actualMessage, expectedMessage, "Response message mismatch");
 	}
 

@@ -21,19 +21,32 @@ public class AccountApiClient {
 
 	/**
 	 * Sends a POST request to create an account.
-	 * This method takes an object and sends it as a JSON body in the POST request
-	 * to the /api/createAccount endpoint.
+	 * This method takes an object and sends it as multipart form-data in the POST request
+	 * to the /api/createAccount endpoint. Each field in the request is sent as a separate part.
 	 */
-	public Response createAccount(CreateAccountRequest request) {
-		// Use Gson to convert the request object into a JSON string
-		Gson gson = new Gson();
-		String jsonBody = gson.toJson(request);  // Serialize the object into a JSON string
 
-		logger.info("Sending POST request to /api/createAccount with JSON: " + jsonBody);
+	public Response createAccount(CreateAccountRequest request) {
+		logger.info("Sending POST request to /api/createAccount with multipart form data.");
 
 		Response response = given()
-				.contentType("application/json")
-				.body(jsonBody)  // Send the JSON string as the request body
+				.contentType("multipart/form-data")
+				.multiPart("name", request.getName())
+				.multiPart("email", request.getEmail())
+				.multiPart("password", request.getPassword())
+				.multiPart("title", request.getTitle())
+				.multiPart("birth_month", request.getBirth_month())
+				.multiPart("birth_date", request.getBirth_date())
+				.multiPart("birth_year", request.getBirth_year())
+				.multiPart("firstname", request.getFirstname())
+				.multiPart("lastname", request.getLastname())
+				.multiPart("company", request.getCompany())
+				.multiPart("address1", request.getAddress1())
+				.multiPart("address2", request.getAddress2())
+				.multiPart("country", request.getCountry())
+				.multiPart("zipcode", request.getZipcode())
+				.multiPart("state", request.getState())
+				.multiPart("city", request.getCity())
+				.multiPart("mobile_number", request.getMobile_number())
 				.post(ConfigProvider.getBaseUri() + "/api/createAccount")
 				.then()
 				.extract()
@@ -45,18 +58,16 @@ public class AccountApiClient {
 
 	/**
 	 * Sends a POST request to verify login.
-	 * This method takes an object and sends it as a JSON body in the POST request
-	 * to the /api/verifyLogin endpoint.
+	 * This method takes an object and sends it as multipart form-data in the POST request
+	 * to the /api/verifyLogin endpoint. Each field (email and password) is sent as a separate part.
 	 */
 	public Response verifyLogin(VerifyLoginRequest request) {
-		Gson gson = new Gson();
-		String jsonBody = gson.toJson(request);
-
-		logger.info("Sending POST request to /api/verifyLogin with JSON: " + jsonBody);
+		logger.info("Sending POST request to /api/verifyLogin with multipart form data.");
 
 		Response response = given()
-				.contentType("application/json")
-				.body(jsonBody)  // Send the JSON string as the request body
+				.contentType("multipart/form-data")
+				.multiPart("email", request.getEmail())
+				.multiPart("password", request.getPassword())
 				.post(ConfigProvider.getBaseUri() + "/api/verifyLogin")
 				.then()
 				.extract()
@@ -121,14 +132,15 @@ public class AccountApiClient {
 
 	/**
 	 * Sends a POST request to search for a product.
-	 * This method sends a request to the /api/searchProduct endpoint with a search query as a parameter.
+	 * This method sends a request to the /api/searchProduct endpoint with a search query as multipart form-data.
+	 * The search query is sent as a form field using the multipart format.
 	 */
 	public Response searchProduct(String searchProduct) {
-		logger.info("Sending POST request to /api/searchProduct with search_product: " + searchProduct);
+		logger.info("Sending POST request to /api/searchProduct with multipart form data.");
 
 		Response response = given()
-				.contentType("application/json")
-				.queryParam("search_product", searchProduct)
+				.contentType("multipart/form-data")
+				.multiPart("search_product", searchProduct)
 				.post(ConfigProvider.getBaseUri() + "/api/searchProduct")
 				.then()
 				.extract()
@@ -141,14 +153,17 @@ public class AccountApiClient {
 	/**
 	 * Sends a DELETE request to delete an account.
 	 * This method sends a request to the /api/deleteAccount endpoint
-	 * with the provided email and password as query parameters.
+	 * with the provided email and password as form data (multipart).
+	 * Each field (email and password) is sent as a separate part in the request.
+	 * The request is made with the content type set to "multipart/form-data".
 	 */
 	public Response deleteAccount(String email, String password) {
-		logger.info("Sending DELETE request to /api/deleteAccount with email: " + email);
+		logger.info("Sending DELETE request to /api/deleteAccount with multipart form data.");
 
 		Response response = given()
-				.queryParam("email", email)
-				.queryParam("password", password)
+				.contentType("multipart/form-data")
+				.multiPart("email", email)
+				.multiPart("password", password)
 				.delete(ConfigProvider.getBaseUri() + "/api/deleteAccount")
 				.then()
 				.extract()

@@ -1,6 +1,5 @@
 Feature: Delete Account API
 
-  @ignore # Test disabled due to incorrect handling of DELETE requests: the server returns an error about missing fields when valid data is sent
   @api
   @positive
   @smoke
@@ -9,9 +8,8 @@ Feature: Delete Account API
     Given I have valid credentials for account deletion
     When I send a DELETE request to "/api/deleteAccount" endpoint
     Then I should receive a response code 200
-    And the response message should be "Account deleted successfully!"
+    And the response message should be "Account deleted!"
 
-  @ignore # Test disabled due to incorrect handling of DELETE requests: the server returns an error about missing fields when valid data is sent
   @api
   @negative
   @account
@@ -21,22 +19,5 @@ Feature: Delete Account API
     Then I should receive a response code 404
     And the response message should be "Account not found!"
 
-#  API 12: DELETE METHOD To Delete User Account
-#  API URL: https://automationexercise.com/api/deleteAccount
-#  Request Method: DELETE
-#  Request Parameters: email, password
-#  Response Code: 200
-#  Response Message: Account deleted!
-#  actual {"responseCode": 400, "message": "Bad request, name parameter is missing in POST request."}
-
-#  Delete Account
-#  GET /api/deleteAccount
-#  HTTP 405 Method Not Allowed
-#  Allow: DELETE, OPTIONS
-#  Content-Type: application/json
-#  Vary: Accept
-#  {
-#  "detail": "Method \"GET\" not allowed."
-#  }
 
 
