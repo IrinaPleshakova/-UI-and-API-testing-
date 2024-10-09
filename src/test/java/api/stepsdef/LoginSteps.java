@@ -15,18 +15,7 @@ public class LoginSteps {
 	public static VerifyLoginRequest verifyLoginRequest;
 	private static final Logger logger = LogManager.getLogger(LoginSteps.class);
 
-	/**
-	 * Helper method to create VerifyLoginRequest and log the request details.
-	 */
-	private void createLoginRequest(String email, String password, String requestType) {
-		verifyLoginRequest = VerifyLoginRequest.builder()
-				.email(email)
-				.password(password)
-				.build();
 
-		logger.info("Generated {} login credentials: email={}, password={}", requestType, email, password);
-		Allure.addAttachment(requestType + " Login Request", verifyLoginRequest.toString());
-	}
 
 	@Step("Generating valid login credentials")
 	@Given("I have valid login credentials")
@@ -50,5 +39,18 @@ public class LoginSteps {
 		String invalidPassword = TestDataGenerator.generateInvalidVerifyLoginRequest().getPassword();
 
 		createLoginRequest(invalidEmail, invalidPassword, "Invalid");
+	}
+
+	/**
+	 * Helper method to create VerifyLoginRequest and log the request details.
+	 */
+	private void createLoginRequest(String email, String password, String requestType) {
+		verifyLoginRequest = VerifyLoginRequest.builder()
+				.email(email)
+				.password(password)
+				.build();
+
+		logger.info("Generated {} login credentials: email={}, password={}", requestType, email, password);
+		Allure.addAttachment(requestType + " Login Request", verifyLoginRequest.toString());
 	}
 }

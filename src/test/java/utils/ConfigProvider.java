@@ -53,12 +53,12 @@ public class ConfigProvider {
 		properties.setProperty("BASE_URI", "https://automationexercise.com");
 		properties.setProperty("BROWSER", "chrome");
 		properties.setProperty("HEADLESS", "false");
-		properties.setProperty("VALID_NAME", "Valid User");
 		properties.setProperty("VALID_EMAIL", "validuser@example.com");
 		properties.setProperty("VALID_PASSWORD", "validpass");
 		properties.setProperty("INVALID_EMAIL", "invaliduser@example.com");
 		properties.setProperty("INVALID_PASSWORD", "wrongpass");
 		properties.setProperty("EXISTING_EMAIL", "existinguser@example.com");
+		properties.setProperty("EXISTING_PASSWORD", "qwerty123");
 		logger.info("Default values set for properties.");
 	}
 
@@ -69,17 +69,16 @@ public class ConfigProvider {
 
 	// Method to get the browser type from the configuration
 	public static String getBrowser() {
-		return properties.getProperty("BROWSER", "chrome");
+		String browser = properties.getProperty("BROWSER", "chrome");
+		logger.info("Browser from config: " + browser);  // Logging browser configurations
+		return browser;
 	}
 
 	// Method to check if headless mode is enabled
 	public static boolean isHeadless() {
-		return Boolean.parseBoolean(properties.getProperty("HEADLESS", "false"));
-	}
-
-	// Method to get valid name
-	public static String getValidUserName() {
-		return properties.getProperty("VALID_NAME", "Valid User");
+		String headlessProperty = properties.getProperty("HEADLESS", "false");
+		logger.info("Headless mode: " + headlessProperty);  // Headless mode logging
+		return Boolean.parseBoolean(headlessProperty);
 	}
 
 	// Method to get valid email
@@ -105,6 +104,10 @@ public class ConfigProvider {
 	// Method to get existing email
 	public static String getExistingEmail() {
 		return properties.getProperty("EXISTING_EMAIL", "existinguser@example.com");
+	}
+	// Method to get existing password
+	public static String getExistingPassword() {
+		return properties.getProperty("EXISTING_PASSWORD", "Password123!");
 	}
 
 	// Methods to set and retrieve generated email and password (used for API tests)

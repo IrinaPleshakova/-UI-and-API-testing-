@@ -7,6 +7,8 @@ import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Map;
+
 /**
  * Utility class for generating test data with Allure reporting.
  */
@@ -37,10 +39,46 @@ public class TestDataGenerator {
 	/**
 	 * Generates a CreateAccountRequest with an existing email.
 	 */
-	@Step("Generating CreateAccountRequest with an existing email")
-	public static CreateAccountRequest generateCreateAccountRequestWithExistingEmail() {
-		// Use existing email from configuration file
-		return buildCreateAccountRequest(ConfigProvider.getValidEmail(), "Password123!");
+	@Step("Generating CreateAccountRequest with existing email")
+	public static CreateAccountRequest generateCreateAccountRequestWithExistingEmail(String existingEmail) {
+		logger.info("Generating CreateAccountRequest with existing email: {}", existingEmail);
+
+		// Retrieve an existing password from the configuration or generate a new one
+		String password = ConfigProvider.getExistingPassword();
+		if (password == null || password.isEmpty()) {
+			password = faker.internet().password(8, 16);
+			ConfigProvider.setGeneratedPassword(password);
+		}
+
+		return buildCreateAccountRequest(existingEmail, password);
+	}
+
+	/**
+	 * Builds CreateAccountRequest from existing user data (response from GET request).
+	 */
+	@Step("Building CreateAccountRequest from existing data")
+	public static CreateAccountRequest buildCreateAccountRequestFromExistingData(Map<String, Object> userData) {
+		logger.info("Building CreateAccountRequest using data from existing account: {}", userData);
+
+		return CreateAccountRequest.builder()
+				.name((String) userData.getOrDefault("name", faker.name().fullName()))
+				.email((String) userData.get("email"))
+				.password(ConfigProvider.getExistingPassword()) // Используем существующий пароль из конфигурации
+				.title("Mr") // или используем значение, если оно доступно
+				.birth_date("01")
+				.birth_month("01")
+				.birth_year("1990")
+				.firstname((String) userData.getOrDefault("first_name", faker.name().firstName()))
+				.lastname((String) userData.getOrDefault("last_name", faker.name().lastName()))
+				.company((String) userData.getOrDefault("company", faker.company().name()))
+				.address1((String) userData.getOrDefault("address1", faker.address().streetAddress()))
+				.address2((String) userData.getOrDefault("address2", faker.address().secondaryAddress()))
+				.country((String) userData.getOrDefault("country", "United States"))
+				.zipcode((String) userData.getOrDefault("zipcode", faker.address().zipCode()))
+				.state((String) userData.getOrDefault("state", faker.address().state()))
+				.city((String) userData.getOrDefault("city", faker.address().city()))
+				.mobile_number((String) userData.getOrDefault("mobile_number", faker.phoneNumber().cellPhone()))
+				.build();
 	}
 
 	/**
@@ -66,27 +104,6 @@ public class TestDataGenerator {
 				.state(faker.address().state())
 				.city(faker.address().city())
 				.mobile_number(faker.phoneNumber().cellPhone())
-				.build();
-	}
-
-	/**
-	 * Generates a valid VerifyLoginRequest using newly generated email and password.
-	 */
-	@Step("Generating valid VerifyLoginRequest with Faker")
-	public static VerifyLoginRequest generateValidVerifyLoginRequestWithGeneratedData() {
-		String generatedEmail = faker.internet().emailAddress();
-		String generatedPassword = faker.internet().password(8, 16);
-
-		logger.info("Generated email: " + generatedEmail);
-		logger.info("Generated password: " + generatedPassword);
-
-		// Optionally save the generated email and password to config if needed
-		ConfigProvider.setGeneratedEmail(generatedEmail);
-		ConfigProvider.setGeneratedPassword(generatedPassword);
-
-		return VerifyLoginRequest.builder()
-				.email(generatedEmail) // Use the generated email
-				.password(generatedPassword) // Use the generated password
 				.build();
 	}
 
@@ -119,3 +136,4 @@ public class TestDataGenerator {
 				.build();
 	}
 }
+

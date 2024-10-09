@@ -3,7 +3,7 @@ Feature: Create Account API
   @api
   @positive
   @smoke
-  @account
+  @account_create
   Scenario: Create account with valid data
     Given I have a valid user data for account creation
     When I send a POST request to "/api/createAccount" endpoint
