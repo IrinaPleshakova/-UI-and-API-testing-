@@ -19,15 +19,15 @@ public class TestDataGenerator {
 	 * Generates a valid CreateAccountRequest and saves generated email and password
 	 * into config_api.properties for future use.
 	 */
-	@Step("Generating valid CreateAccountRequest")
+	@Step("Generating valid CreateAccountRequest with Faker")
 	public static CreateAccountRequest generateValidCreateAccountRequest() {
-		// Генерация email и пароля с помощью Faker
+		// Generating email and password with Faker
 		String email = faker.internet().emailAddress();
 		String password = faker.internet().password(8, 16);
 		logger.info("Generated email: " + email);
 		logger.info("Generated password: " + password);
 
-		// Сохранение сгенерированных данных в config_api.properties
+		// Saving the generated data in config_api.properties
 		ConfigProvider.setGeneratedEmail(email);
 		ConfigProvider.setGeneratedPassword(password);
 
@@ -70,13 +70,41 @@ public class TestDataGenerator {
 	}
 
 	/**
-	 * Generates a valid VerifyLoginRequest using previously generated credentials
+	 * Generates a valid VerifyLoginRequest using newly generated email and password.
 	 */
-	@Step("Generating valid VerifyLoginRequest")
-	public static VerifyLoginRequest generateValidVerifyLoginRequest() {
+	@Step("Generating valid VerifyLoginRequest with Faker")
+	public static VerifyLoginRequest generateValidVerifyLoginRequestWithGeneratedData() {
+		String generatedEmail = faker.internet().emailAddress();
+		String generatedPassword = faker.internet().password(8, 16);
+
+		logger.info("Generated email: " + generatedEmail);
+		logger.info("Generated password: " + generatedPassword);
+
+		// Optionally save the generated email and password to config if needed
+		ConfigProvider.setGeneratedEmail(generatedEmail);
+		ConfigProvider.setGeneratedPassword(generatedPassword);
+
 		return VerifyLoginRequest.builder()
-				.email(ConfigProvider.getGeneratedEmail()) // Use the generated email
-				.password(ConfigProvider.getGeneratedPassword()) // Use the generated password
+				.email(generatedEmail) // Use the generated email
+				.password(generatedPassword) // Use the generated password
+				.build();
+	}
+
+	/**
+	 * Generates a valid VerifyLoginRequest using credentials from config_api.properties
+	 */
+	@Step("Generating valid VerifyLoginRequest from config_api.properties")
+	public static VerifyLoginRequest generateValidVerifyLoginRequestFromConfig() {
+		// Retrieve the valid email and password from config_api.properties
+		String email = ConfigProvider.getValidEmail();
+		String password = ConfigProvider.getValidPassword();
+
+		logger.info("Using email from config: " + email);
+		logger.info("Using password from config: " + password);
+
+		return VerifyLoginRequest.builder()
+				.email(email) // Use the valid email from config
+				.password(password) // Use the valid password from config
 				.build();
 	}
 

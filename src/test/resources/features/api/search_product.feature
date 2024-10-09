@@ -1,5 +1,6 @@
 Feature: Search Product API
 
+  @api
   @positive
   @search
   Scenario: POST to Search product with valid name

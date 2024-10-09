@@ -15,19 +15,40 @@ public class LoginSteps {
 	public static VerifyLoginRequest verifyLoginRequest;
 	private static final Logger logger = LogManager.getLogger(LoginSteps.class);
 
+	/**
+	 * Helper method to create VerifyLoginRequest and log the request details.
+	 */
+	private void createLoginRequest(String email, String password, String requestType) {
+		verifyLoginRequest = VerifyLoginRequest.builder()
+				.email(email)
+				.password(password)
+				.build();
+
+		logger.info("Generated {} login credentials: email={}, password={}", requestType, email, password);
+		Allure.addAttachment(requestType + " Login Request", verifyLoginRequest.toString());
+	}
+
 	@Step("Generating valid login credentials")
 	@Given("I have valid login credentials")
 	public void iHaveValidLoginCredentials() {
 		logger.info("Generating valid login credentials.");
-		verifyLoginRequest = TestDataGenerator.generateValidVerifyLoginRequest();
-		Allure.addAttachment("Valid Login Request", verifyLoginRequest.toString());
+
+		// Retrieve valid email and password from the configuration (or use generated data)
+		String validEmail = TestDataGenerator.generateValidVerifyLoginRequestFromConfig().getEmail();
+		String validPassword = TestDataGenerator.generateValidVerifyLoginRequestFromConfig().getPassword();
+
+		createLoginRequest(validEmail, validPassword, "Valid");
 	}
 
 	@Step("Generating invalid login credentials")
 	@Given("I have invalid login credentials")
 	public void iHaveInvalidLoginCredentials() {
 		logger.info("Generating invalid login credentials.");
-		verifyLoginRequest = TestDataGenerator.generateInvalidVerifyLoginRequest();
-		Allure.addAttachment("Invalid Login Request", verifyLoginRequest.toString());
+
+		// Retrieve invalid email and password from the configuration
+		String invalidEmail = TestDataGenerator.generateInvalidVerifyLoginRequest().getEmail();
+		String invalidPassword = TestDataGenerator.generateInvalidVerifyLoginRequest().getPassword();
+
+		createLoginRequest(invalidEmail, invalidPassword, "Invalid");
 	}
 }

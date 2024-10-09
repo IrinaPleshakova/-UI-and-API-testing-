@@ -2,6 +2,7 @@ package api.clients;
 
 import api.models.CreateAccountRequest;
 import api.models.VerifyLoginRequest;
+import com.google.gson.JsonObject;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -135,16 +136,40 @@ public class AccountApiClient {
 	 * This method sends a request to the /api/searchProduct endpoint with a search query as multipart form-data.
 	 * The search query is sent as a form field using the multipart format.
 	 */
-	public Response searchProduct(String searchProduct) {
-		logger.info("Sending POST request to /api/searchProduct with multipart form data.");
+	public Response searchProduct(String searchProduct, boolean useJson) {
+		logger.info("Sending POST request to /api/searchProduct.");
 
-		Response response = given()
-				.contentType("multipart/form-data")
-				.multiPart("search_product", searchProduct)
-				.post(ConfigProvider.getBaseUri() + "/api/searchProduct")
-				.then()
-				.extract()
-				.response();
+		Response response;
+
+		if (useJson) {
+			//  Send the request in JSON format
+			// (this item is necessary only for negative testing for the product search feature,
+			// only when sending the request in this format you can get the required error)
+			logger.info("Sending request with search_product in JSON format.");
+			JsonObject jsonBody = new JsonObject();
+
+			if (searchProduct != null && !searchProduct.isEmpty()) {
+				jsonBody.addProperty("search_product", searchProduct);
+			} // If searchProduct is null, the field is not added to simulate a missing parameter
+
+			response = given()
+					.contentType("application/json")
+					.body(jsonBody.toString())
+					.post(ConfigProvider.getBaseUri() + "/api/searchProduct")
+					.then()
+					.extract()
+					.response();
+		} else {
+			// Send the request in multipart/form-data format (used for valid requests)
+			logger.info("Sending request in multipart/form-data format.");
+			response = given()
+					.contentType("multipart/form-data")
+					.multiPart("search_product", searchProduct)
+					.post(ConfigProvider.getBaseUri() + "/api/searchProduct")
+					.then()
+					.extract()
+					.response();
+		}
 
 		logger.info("Received response: " + response.asString());
 		return response;

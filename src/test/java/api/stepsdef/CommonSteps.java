@@ -38,7 +38,7 @@ public class CommonSteps {
 			case "/api/searchProduct":
 				logger.info("Searching product with name: {}", SearchProductsSteps.searchProduct);
 				Allure.addAttachment("Product Search Request", SearchProductsSteps.searchProduct);
-				response = client.searchProduct(SearchProductsSteps.searchProduct);
+				response = client.searchProduct(SearchProductsSteps.searchProduct, true);
 				break;
 			case "/api/getUserDetailByEmail":
 				logger.info("Getting user details for email: {}", UserDetailByEmailSteps.email);
@@ -68,7 +68,23 @@ public class CommonSteps {
 
 	@When("I send a POST request to {string} endpoint")
 	public void iSendAPostRequestToEndpoint(String endpoint) {
-		sendRequest("POST", endpoint);
+		if ("/api/searchProduct".equals(endpoint)) {
+			handleSearchProductRequest();  // Call of special logic for searchProduct
+		} else {
+			sendRequest("POST", endpoint);  // Common logic for all other POST requests
+		}
+	}
+
+	// Special logic for searchProduct
+	private void handleSearchProductRequest() {
+		logger.info("Searching product with name: {}", SearchProductsSteps.searchProduct);
+
+		// If needed for a negative test, pass JSON
+		boolean useJson = SearchProductsSteps.searchProduct == null;
+		response = new AccountApiClient().searchProduct(SearchProductsSteps.searchProduct, useJson);
+
+		logger.info("Response received for search product: {}", response.asString());
+		addResponseToAllure(response);
 	}
 
 	@When("I send a GET request to {string} endpoint")
