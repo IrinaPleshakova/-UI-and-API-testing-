@@ -9,6 +9,7 @@ import utils.DriverManager;
 import utils.ConfigProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import utils.UserApiHelper;
 
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
@@ -23,19 +24,42 @@ public class LoginSteps {
 	private LoginPage loginPage = new LoginPage(driver);
 	private static final Logger logger = LogManager.getLogger(LoginSteps.class);
 
+	/**
+	 * Method to enter login credentials
+	 */
+	private void enterLoginCredentials(String email, String password) {
+		loginPage.enterLoginEmail(email);
+		loginPage.enterLoginPassword(password);
+
+		// Adding credentials to Allure report
+		Allure.addAttachment("Login Email", new ByteArrayInputStream(email.getBytes(StandardCharsets.UTF_8)));
+		Allure.addAttachment("Login Password", new ByteArrayInputStream(password.getBytes(StandardCharsets.UTF_8)));
+
+		logger.info("Entered login credentials for email: {}", email);
+	}
+
+	//	@Step("Using an existing user account")
+//	@Given("I have an existing user account")
+//	public void iHaveAnExistingUserAccount() {
+//		String email = ConfigProvider.getValidEmail();
+//		String password = ConfigProvider.getValidPassword();
+//		enterLoginCredentials(email, password);
+//		logger.info("Using existing user account from config");
+//	}
 	@Step("Using an existing user account")
 	@Given("I have an existing user account")
 	public void iHaveAnExistingUserAccount() {
 		String email = ConfigProvider.getValidEmail();
 		String password = ConfigProvider.getValidPassword();
-		loginPage.enterLoginEmail(email);
-		loginPage.enterLoginPassword(password);
 
-		// Adding login details to Allure report
-		Allure.addAttachment("Login Email", new ByteArrayInputStream(email.getBytes(StandardCharsets.UTF_8)));
-		Allure.addAttachment("Login Password", new ByteArrayInputStream(password.getBytes(StandardCharsets.UTF_8)));
+		// Check if the user exists via API
+		boolean userExists = UserApiHelper.doesUserExist(email);
+		if (!userExists) {
+			logger.error("User with email {} does not exist", email);
+			throw new AssertionError("User with email " + email + " does not exist");
+		}
 
-		logger.info("Using existing user account from config");
+		logger.info("User with email {} exists on the site", email);
 	}
 
 	@Step("Entering valid login credentials")
@@ -43,14 +67,7 @@ public class LoginSteps {
 	public void iEnterValidLoginCredentials() {
 		String email = ConfigProvider.getValidEmail();
 		String password = ConfigProvider.getValidPassword();
-		loginPage.enterLoginEmail(email);
-		loginPage.enterLoginPassword(password);
-
-		// Adding valid credentials to Allure report
-		Allure.addAttachment("Login Email", new ByteArrayInputStream(email.getBytes(StandardCharsets.UTF_8)));
-		Allure.addAttachment("Login Password", new ByteArrayInputStream(password.getBytes(StandardCharsets.UTF_8)));
-
-		logger.info("Entered valid login credentials");
+		enterLoginCredentials(email, password);
 	}
 
 	@Step("Entering invalid login credentials")
@@ -58,14 +75,7 @@ public class LoginSteps {
 	public void iEnterInvalidLoginCredentials() {
 		String email = ConfigProvider.getInvalidEmail();
 		String password = ConfigProvider.getInvalidPassword();
-		loginPage.enterLoginEmail(email);
-		loginPage.enterLoginPassword(password);
-
-		// Adding invalid credentials to Allure report
-		Allure.addAttachment("Login Email", new ByteArrayInputStream(email.getBytes(StandardCharsets.UTF_8)));
-		Allure.addAttachment("Login Password", new ByteArrayInputStream(password.getBytes(StandardCharsets.UTF_8)));
-
-		logger.info("Entered invalid login credentials");
+		enterLoginCredentials(email, password);
 	}
 
 	@Step("Verifying user is logged in")
@@ -88,7 +98,7 @@ public class LoginSteps {
 		if (isErrorDisplayed) {
 			logger.info("Error message is displayed: {}", expectedMessage);
 		} else {
-			logger.error("Error message is not displayed");
+			logger.error("Error message is not displayed. Expected: {}", expectedMessage);
 		}
 	}
 }

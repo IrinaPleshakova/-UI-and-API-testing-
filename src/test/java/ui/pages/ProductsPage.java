@@ -88,15 +88,6 @@ public class ProductsPage {
 		}
 	}
 
-	public void scrollToProduct(int index) {
-		WebElement product = viewProductLinks.get(index);
-		// Scroll the product into view
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", product);
-		// Perform the click on the product
-		new Actions(driver).moveToElement(product).click().perform();
-		logger.info("Scrolled to the product at index: " + index + " and clicked.");
-	}
-
 	//Scrolls to the product at the specified index and clicks on "View Product" button.
 	//Handles both the first product and other products via list.
 	public void clickViewProduct(int index) {

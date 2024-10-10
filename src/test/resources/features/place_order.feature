@@ -15,7 +15,7 @@ Feature: Placing an Order
     And I submit the registration form
     Then I should see the "ACCOUNT CREATED!" message
     When I click on the "Continue" button on the account created page
-    Then I should be logged in as the new user
+    Then I should be logged in as the "new user"
     And I click "Cart" button
     And I click "Proceed To Checkout" button
     Then I should see Address Details and Review Your Order

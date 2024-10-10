@@ -4,6 +4,7 @@ import io.cucumber.java.en.*;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import ui.pages.*;
 import utils.DriverManager;
 import utils.ConfigProvider;
@@ -23,12 +24,11 @@ public class CommonSteps {
 	private CartPage cartPage = new CartPage(driver);
 	private CheckoutPage checkoutPage = new CheckoutPage(driver);
 	private PaymentPage paymentPage = new PaymentPage(driver);
-	private AccountCreatedPage accountCreatedPage = new AccountCreatedPage(driver);
 	private AccountDeletedPage accountDeletedPage = new AccountDeletedPage(driver);
 	private LoginPage loginPage = new LoginPage(driver);
-	private SignupPage signupPage = new SignupPage(driver);
 	private ProductDetailPage productDetailPage = new ProductDetailPage(driver);
 	private ProductsPage productsPage = new ProductsPage(driver);
+	private String actualUserName;
 	private static final Logger logger = LogManager.getLogger(CommonSteps.class);
 
 	@Step("Opening the homepage")
@@ -47,18 +47,21 @@ public class CommonSteps {
 		logger.info("Clicked on Signup / Login link");
 	}
 
-	@Step("Clicking the Signup button on the login page")
-	@When("I click on the \"Signup\" button on the login page")
-	public void iClickOnSignupButtonOnTheLoginPage() {
-		loginPage.clickSignupButton();
-		logger.info("Clicked on Signup button");
-	}
-
-	@Step("Clicking the Login button on the login page")
-	@And("I click on the \"Login\" button on the login page")
-	public void iClickOnTheLoginButtonOnTheLoginPage() {
-		logger.info("Clicking login button");
-		loginPage.clickLoginButton();
+	@Step("Clicking the {string} button on the login page")
+	@When("I click on the {string} button on the login page")
+	public void iClickOnButtonOnTheLoginPage(String buttonType) {
+		switch (buttonType.toLowerCase()) {
+			case "signup":
+				loginPage.clickSignupButton();
+				logger.info("Clicked on Signup button");
+				break;
+			case "login":
+				loginPage.clickLoginButton();
+				logger.info("Clicked on Login button");
+				break;
+			default:
+				throw new IllegalArgumentException("Unknown button type: " + buttonType);
+		}
 	}
 
 	@Step("Clicking the Products link")
@@ -107,5 +110,42 @@ public class CommonSteps {
 				throw new IllegalArgumentException("Unknown button: " + buttonName);
 		}
 		logger.info("Clicked '" + buttonName + "' button");
+	}
+
+	// Step to verify if the user is logged in
+	@Step("Verifying the user is logged in")
+	@Then("I should be logged in as the {string}")
+	public void iShouldBeLoggedInAs(String userType) {
+		boolean isLoggedIn = homePage.isLoggedIn();
+		Assert.assertTrue(isLoggedIn, "User is not logged in.");
+		logger.info("User is logged in as {}", userType);
+
+		// Save the actual username after login or registration
+		this.actualUserName = homePage.getLoggedInUserName();
+		logger.info("Saved the logged-in user's name: {}", actualUserName);
+
+		// Verify that the displayed username matches the actual username
+		String displayedUserName = homePage.getLoggedInUserName();
+		Assert.assertEquals(displayedUserName, actualUserName, "The logged-in user name does not match.");
+		logger.info("Expected Logged in User: {}, Actual Logged in User: {}", actualUserName, displayedUserName);
+
+		// Add attachments to Allure report
+		Allure.addAttachment("Expected Logged in User", new ByteArrayInputStream(actualUserName.getBytes(StandardCharsets.UTF_8)));
+		Allure.addAttachment("Actual Logged in User", new ByteArrayInputStream(displayedUserName.getBytes(StandardCharsets.UTF_8)));
+	}
+
+	// Step to delete the created account
+	@Step("Deleting the created account")
+	public void deleteCreatedAccount() {
+		homePage.clickDeleteAccount();
+
+		if (accountDeletedPage.isAccountDeletedMessageDisplayed("ACCOUNT DELETED!")) {
+			logger.info("Account deleted successfully.");
+		} else {
+			logger.error("Failed to delete the account.");
+		}
+
+		accountDeletedPage.clickContinueButton();
+		logger.info("Account deletion process completed, user returned to the homepage.");
 	}
 }

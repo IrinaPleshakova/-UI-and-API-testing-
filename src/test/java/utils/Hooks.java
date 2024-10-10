@@ -9,6 +9,7 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ui.stepsdef.CommonSteps;
 
 import java.time.Duration;
 import java.util.List;
@@ -36,18 +37,30 @@ public class Hooks {
 	}
 
 	/**
-	 * Takes a screenshot at the end of each test. If the test fails, the screenshot is logged as an error.
-	 * If the test passes, the screenshot is logged as informational.
+	 * Takes a screenshot at the end of each test.
+	 * If the test fails, the screenshot is attached and logged as an error.
+	 * If the test passes, the screenshot is attached and logged as informational.
+	 * Additionally, if the scenario is tagged with @account and passes, the account is deleted.
+	 * Finally, the browser is closed after all actions are completed.
 	 */
 	@After
 	public void teardown(Scenario scenario) {
+		// Take a screenshot immediately after the test
 		if (scenario.isFailed()) {
 			logger.error("Test failed: " + scenario.getName());
 			ScreenshotUtil.captureAndAttachScreenshot(driver, "Failed scenario: " + scenario.getName());
 		} else {
 			logger.info("Test passed: " + scenario.getName());
 			ScreenshotUtil.captureAndAttachScreenshot(driver, "Passed scenario: " + scenario.getName());
+
+			// Delete the account only if the test passed and the scenario has the @account tag
+			if (scenario.getSourceTagNames().contains("@account")) {
+				logger.info("Executing post-condition: deleting the created account.");
+				new CommonSteps().deleteCreatedAccount(); // Call the method to delete the account
+			}
 		}
+
+		// Quit the driver after all actions are completed
 		DriverManager.quitDriver();
 		logger.info("Driver quit");
 	}

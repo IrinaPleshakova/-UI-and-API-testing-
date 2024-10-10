@@ -1,9 +1,6 @@
 package ui.pages;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import utils.ConfigProvider;
 
 import java.time.Duration;
 
@@ -106,6 +104,22 @@ public class HomePage {
 	}
 
 	public void clickDeleteAccount() {
+		String currentUrl = driver.getCurrentUrl();
+		String homePageUrl = ConfigProvider.getBaseUri();  // URL домашней страницы
+
+		if (!currentUrl.startsWith(homePageUrl)) {
+			logger.error("Not on the homepage. Current URL: " + currentUrl);
+			throw new IllegalStateException("You must be on the homepage to delete the account.");
+		} else {
+			logger.info("Confirmed: on the homepage.");
+		}
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement deleteAccountButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/delete_account']")));
+
 		deleteAccountButton.click();
+		logger.info("Clicked on 'Delete Account' button.");
 	}
+
+
 }
