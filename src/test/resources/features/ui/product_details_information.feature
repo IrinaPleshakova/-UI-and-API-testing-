@@ -1,6 +1,8 @@
 Feature: Viewing Product Information
 
   @ui
+  @positive
+  @product_information
   Scenario: View product details
     Given I open the homepage
     And I click on "Products" link

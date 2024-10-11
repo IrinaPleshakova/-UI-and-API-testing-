@@ -1,6 +1,8 @@
 Feature: Placing an Order
 
   @ui
+  @positive
+  @order
   Scenario: Place Order - Register while Checkout
     Given I open the homepage
     When I add a random product to the cart
@@ -30,6 +32,8 @@ Feature: Placing an Order
     Then I should be redirected to the homepage
 
   @ui
+  @positive
+  @order
   Scenario: Place Order - Login before Checkout
     Given I open the homepage
     When I click on the "SignupLogin" link on the homepage

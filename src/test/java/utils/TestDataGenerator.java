@@ -26,7 +26,7 @@ public class TestDataGenerator {
 
 	/**
 	 * Generates a valid CreateAccountRequest and saves generated email and password
-	 * into config_api.properties for future use.
+	 * into config.properties for future use.
 	 */
 	@Step("Generating valid CreateAccountRequest with Faker")
 	public static CreateAccountRequest generateValidCreateAccountRequest() {
@@ -50,11 +50,11 @@ public class TestDataGenerator {
 	}
 
 	/**
-	 * Generates a valid VerifyLoginRequest using credentials from config_api.properties.
+	 * Generates a valid VerifyLoginRequest using credentials from config.properties.
 	 */
-	@Step("Generating valid VerifyLoginRequest from config_api.properties")
+	@Step("Generating valid VerifyLoginRequest from config.properties")
 	public static VerifyLoginRequest generateValidVerifyLoginRequestFromConfig() {
-		// Retrieve the valid email and password from config_api.properties
+		// Retrieve the valid email and password from config.properties
 		String email = ConfigProvider.getValidEmail();
 		String password = ConfigProvider.getValidPassword();
 
@@ -69,7 +69,7 @@ public class TestDataGenerator {
 	}
 
 	/**
-	 * Generates an invalid VerifyLoginRequest using invalid credentials from config_api.properties.
+	 * Generates an invalid VerifyLoginRequest using invalid credentials from config.properties.
 	 */
 	@Step("Generating invalid VerifyLoginRequest")
 	public static VerifyLoginRequest generateInvalidVerifyLoginRequest() {

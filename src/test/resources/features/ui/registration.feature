@@ -5,7 +5,8 @@ Feature: User Registration
     And I click on the "SignupLogin" link on the homepage
 
   @ui
-  @account
+  @positive
+  @account_create
   Scenario: Successful user registration
     Given I enter a new user name and email
     When I click on the "Signup" button on the login page

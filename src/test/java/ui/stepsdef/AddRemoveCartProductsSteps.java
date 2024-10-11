@@ -17,7 +17,6 @@ import java.util.List;
 public class AddRemoveCartProductsSteps {
 
 	private WebDriver driver = DriverManager.getDriver();
-	private HomePage homePage = new HomePage(driver);
 	private ProductsPage productsPage = new ProductsPage(driver);
 	private ProductDetailPage productDetailPage = new ProductDetailPage(driver);
 	private CartPage cartPage = new CartPage(driver);
@@ -31,6 +30,12 @@ public class AddRemoveCartProductsSteps {
 	public void iAddARandomProductToTheCart() {
 		productsPage.navigateTo();
 		String productName = productsPage.selectRandomProduct();
+		// Check that the product has not been added earlier
+		while (addedProductNames.contains(productName)) {
+			logger.info("Product '{}' is already in the cart. Selecting another product.", productName);
+			productName = productsPage.selectRandomProduct();
+		}
+
 		addedProductNames.add(productName);
 		productDetailPage.clickAddToCart();
 		logger.info("Added product: " + productName);
@@ -69,9 +74,16 @@ public class AddRemoveCartProductsSteps {
 		logger.info("Added first product to the cart: {}", productName1);
 		Allure.addAttachment("First added product", new ByteArrayInputStream(productName1.getBytes(StandardCharsets.UTF_8)));
 
-		// Add second product
+		// Add second unique product
 		productsPage.navigateTo();
 		String productName2 = productsPage.selectRandomProduct();
+
+		// Checking that the second product is unique
+		while (addedProductNames.contains(productName2)) {
+			logger.info("Product '{}' is already in the cart. Selecting another product.", productName2);
+			productName2 = productsPage.selectRandomProduct();
+		}
+
 		addedProductNames.add(productName2);
 		productDetailPage.clickAddToCart();
 		productDetailPage.isConfirmationMessageDisplayed();

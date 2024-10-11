@@ -171,8 +171,6 @@
                 <version>2.12.0</version>
                 <configuration>
                     <reportVersion>${allure.version}</reportVersion>
-                    <resultsDirectory>target/allure-results</resultsDirectory>
-                    <reportDirectory>target/site/allure-report</reportDirectory>
                 </configuration>
                 <executions>
                     <execution>
@@ -195,6 +193,7 @@
                     </suiteXmlFiles>
                     <systemPropertyVariables>
                         <allure.results.directory>target/allure-results</allure.results.directory>
+                        <allure.report.directory>target/site/allure-report</allure.report.directory>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

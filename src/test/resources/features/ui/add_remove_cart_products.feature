@@ -1,6 +1,8 @@
 Feature: Adding and Removing Products from Cart
 
   @ui
+  @positive
+  @shopping_cart
   Scenario: Add random products to cart
     Given I open the homepage
     When I add a random product to the cart
@@ -11,8 +13,9 @@ Feature: Adding and Removing Products from Cart
     And I click "View Cart" button
     Then I should see both products in the cart
 
-
   @ui
+  @positive
+  @shopping_cart
   Scenario: Remove a product from the cart
     Given I have two products in my cart
     When I remove one product from the cart

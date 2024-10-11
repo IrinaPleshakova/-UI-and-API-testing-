@@ -24,12 +24,13 @@ public class Hooks {
 
 	@Before
 	public void setup() {
-		// Initialize the driver
+		// Initialize the WebDriver
+		DriverManager.initDriver();
 		driver = DriverManager.getDriver();
 		logger.info("Driver initialized");
 
 		// Open the base URL
-		driver.get("https://automationexercise.com");
+		driver.get(ConfigProvider.getBaseUri());
 		logger.info("Navigated to base URL");
 
 		// Close the popup window if it appears
@@ -53,8 +54,8 @@ public class Hooks {
 			logger.info("Test passed: " + scenario.getName());
 			ScreenshotUtil.captureAndAttachScreenshot(driver, "Passed scenario: " + scenario.getName());
 
-			// Delete the account only if the test passed and the scenario has the @account tag
-			if (scenario.getSourceTagNames().contains("@account")) {
+			// Delete the account only if the test passed and the scenario has the @account_create tag
+			if (scenario.getSourceTagNames().contains("@account_create")) {
 				logger.info("Executing post-condition: deleting the created account.");
 				new CommonSteps().deleteCreatedAccount(); // Call the method to delete the account
 			}
