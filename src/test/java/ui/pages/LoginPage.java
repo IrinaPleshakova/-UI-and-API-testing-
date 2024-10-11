@@ -29,9 +29,6 @@ public class LoginPage {
 	@FindBy(xpath = "//p[contains(text(),'Your email or password is incorrect!')]")
 	private WebElement incorrectLoginMessage;
 
-//	@FindBy(xpath = "//section/div/div/div[3]/div/form/p")
-//	private WebElement emailAddressAlreadyExist;
-
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

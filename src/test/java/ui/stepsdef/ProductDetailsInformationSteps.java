@@ -42,7 +42,7 @@ public class ProductDetailsInformationSteps {
 	@When("I click on button {string} at the first product")
 	public void iClickOnButtonAtFirstProduct(String buttonText) {
 		if (buttonText.equals("View Product")) {
-			productsPage.closeBannerIfPresent();  // Close any popup/banner if present
+//			productsPage.closeBannerIfPresent();  // Close any popup/banner if present
 			productsPage.clickViewProduct(0);  // method to click on the first product
 			productDetailPage = new ProductDetailPage(driver);
 			logger.info("Clicked on the 'View Product' button for the first product");

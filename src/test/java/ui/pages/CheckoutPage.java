@@ -50,10 +50,6 @@ public class CheckoutPage {
 				.collect(Collectors.toList());
 	}
 
-	public WebElement getTotalAmount() {
-		return totalAmount;
-	}
-
 	public void clickRegisterLogin() {
 		registerLoginButton.click();
 	}
@@ -66,11 +62,3 @@ public class CheckoutPage {
 		placeOrderButton.click();
 	}
 }
-
-//	public PaymentPage enterComment(String text) {
-//		comment.sendKeys(text);
-//		placeOrderButton.click();
-//		return new PaymentPage(driver);
-//	}
-
-

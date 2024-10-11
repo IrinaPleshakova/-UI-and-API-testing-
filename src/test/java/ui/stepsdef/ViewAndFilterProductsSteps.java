@@ -5,7 +5,8 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import ui.pages.*;
+import ui.pages.HomePage;
+import ui.pages.ProductsPage;
 import utils.DriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,10 +20,10 @@ import java.nio.charset.StandardCharsets;
 public class ViewAndFilterProductsSteps {
 
 	private WebDriver driver = DriverManager.getDriver();
-	private HomePage homePage = new HomePage(driver);
 	private ProductsPage productsPage = new ProductsPage(driver);
 	private final Logger logger = LogManager.getLogger(ViewAndFilterProductsSteps.class);
 
+	// Step definition for viewing all products
 	@Step("Verifying that the list of products is displayed")
 	@Then("I should see a list of products")
 	public void iShouldSeeAListOfProducts() {
@@ -34,27 +35,29 @@ public class ViewAndFilterProductsSteps {
 		logger.info("Product list is displayed with {} products", productCount);
 	}
 
+	// Step definition for clicking on the "Women" category
 	@Step("Clicking on the 'Women' category")
 	@When("I click on \"Women\" category")
 	public void iClickOnWomenCategory() {
-		homePage.clickWomenCategory();
+		productsPage.clickWomenCategory();
 
 		// Add the selected category as an attachment in the Allure report
 		Allure.addAttachment("Category Selected", "Women");
 		logger.info("Clicked on Women category");
 	}
 
+	// Step definition for clicking on the "Dress" subcategory
 	@Step("Clicking on the 'Dress' subcategory")
 	@When("I click on \"Dress\" subcategory")
 	public void iClickOnDressSubcategory() {
-		homePage.clickDressSubcategory();
-		productsPage = new ProductsPage(driver);
+		productsPage.clickDressSubcategory();
 
 		// Add the selected subcategory as an attachment in the Allure report
 		Allure.addAttachment("Subcategory Selected", "Dress");
 		logger.info("Clicked on Dress subcategory");
 	}
 
+	// Step definition for verifying products filtered by "Women > Dress"
 	@Step("Verifying products are filtered by 'Women > Dress'")
 	@Then("I should see products filtered by \"Women > Dress\"")
 	public void iShouldSeeProductsFilteredByWomenDress() {

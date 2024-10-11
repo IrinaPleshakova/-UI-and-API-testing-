@@ -31,17 +31,8 @@ public class HomePage {
 	@FindBy(xpath = "//a[@href='/delete_account']")
 	private WebElement deleteAccountButton;
 
-	@FindBy(xpath = "//a[@href='/logout']")
-	private WebElement logoutButton;
-
 	@FindBy(xpath = "//a[contains(text(),'Logged in as')]")
 	private WebElement loggedInAsElement;
-
-	@FindBy(css = "a[href='#Women']")
-	private WebElement womenCategoryLink;
-
-	@FindBy(css = "a[href='/category_products/1']")
-	private WebElement dressSubcategoryLink;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -64,39 +55,12 @@ public class HomePage {
 		cartLink.click();
 	}
 
-	public void clickWomenCategory() {
-		womenCategoryLink.click();
-	}
-
-	public void clickDressSubcategory() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-		try {
-			WebElement dressSubcategory = wait.until(ExpectedConditions.elementToBeClickable(dressSubcategoryLink));
-			// Use JavascriptExecutor to scroll to an element
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dressSubcategory);
-			// Use Actions to perform the click
-			Actions actions = new Actions(driver);
-			actions.moveToElement(dressSubcategory).click().perform();
-			logger.info("Clicked on Dress subcategory successfully");
-		} catch (TimeoutException e) {
-			logger.error("Dress subcategory is not clickable within the timeout period");
-		} catch (Exception e) {
-			logger.error("Failed to click on Dress subcategory: " + e.getMessage());
-		}
-	}
-
 	public boolean isLoggedIn() {
 		try {
 			return logoutLink.isDisplayed();
 		} catch (Exception e) {
 			return false;
 		}
-	}
-
-	public LoginPage ClickOnLogOutButton() {
-		logoutButton.click();
-		return new LoginPage(driver);
 	}
 
 	public String getLoggedInUserName() {
@@ -115,11 +79,8 @@ public class HomePage {
 		}
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement deleteAccountButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/delete_account']")));
+		wait.until(ExpectedConditions.elementToBeClickable(deleteAccountButton)).click();
 
-		deleteAccountButton.click();
 		logger.info("Clicked on 'Delete Account' button.");
 	}
-
-
 }

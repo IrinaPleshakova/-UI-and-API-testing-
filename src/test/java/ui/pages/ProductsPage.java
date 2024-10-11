@@ -23,12 +23,6 @@ public class ProductsPage {
 	@FindBy(xpath = "//div[@class='productinfo text-center']/p")
 	private List<WebElement> productNames;
 
-	@FindBy(xpath = "//div[@class='productinfo text-center']/h2")
-	private List<WebElement> productPrices;
-
-	@FindBy(css = "a[href='/product_details/1']")
-	private WebElement viewProduct1Button;
-
 	@FindBy(xpath = "(//a[contains(text(),'View Product')])[1]")
 	private WebElement viewFirstProductButton;
 
@@ -46,12 +40,44 @@ public class ProductsPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	// Existing methods
+
 	// Get the number of products on the page
 	public int getProductCount() {
 		// Wait until all products are visible
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfAllElements(productList));
 		return productList.size();
+	}
+
+	// New methods for filtering products
+	public void clickWomenCategory() {
+		womenCategoryLink.click();
+	}
+
+	public void clickDressSubcategory() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		try {
+			// Ensure the dress subcategory is both visible and clickable
+			WebElement dressSubcategory = wait.until(ExpectedConditions.visibilityOf(dressSubcategoryLink));
+			wait.until(ExpectedConditions.elementToBeClickable(dressSubcategoryLink));
+
+			// Scroll to the element if necessary
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dressSubcategory);
+
+			// Use Actions to click
+			Actions actions = new Actions(driver);
+			actions.moveToElement(dressSubcategory).click().perform();
+			logger.info("Successfully clicked on Dress subcategory");
+
+		} catch (TimeoutException e) {
+			logger.error("Dress subcategory is not clickable within the timeout period: " + e.getMessage());
+		} catch (NoSuchElementException e) {
+			logger.error("Dress subcategory element not found: " + e.getMessage());
+		} catch (Exception e) {
+			logger.error("Failed to click on Dress subcategory: " + e.getMessage());
+		}
 	}
 
 	// Verify that all displayed products are from the Dress category
@@ -67,32 +93,13 @@ public class ProductsPage {
 
 	// Verify that the page URL corresponds to the Dress category
 	public boolean isOnDressCategoryPage() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		return wait.until(ExpectedConditions.urlContains("/category_products/1"));
+		return driver.getCurrentUrl().contains("/category_products/1");
 	}
 
-	public void closeBannerIfPresent() {
-		try {
-			WebElement bannerCloseButton = driver.findElement(By.xpath("/html/body/ins[2]/div[1]//ins/span/svg/path"));
-			if (bannerCloseButton.isDisplayed()) {
-				bannerCloseButton.click();
-				logger.info("Banner closed successfully.");
-
-				// Add explicit wait to ensure the banner is closed
-				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-				wait.until(ExpectedConditions.invisibilityOf(bannerCloseButton));
-				logger.info("Confirmed banner is no longer visible.");
-			}
-		} catch (NoSuchElementException e) {
-			logger.info("No banner found, proceeding.");
-		}
-	}
-
-	//Scrolls to the product at the specified index and clicks on "View Product" button.
+	//Scroll to the product at the specified index and click on "View Product" button.
 	//Handles both the first product and other products via list.
 	public void clickViewProduct(int index) {
 		if (index == 0) {
-			// For the first product, use a direct locator
 			logger.info("Clicking on the first product");
 			scrollToElement(viewFirstProductButton);
 			clickElement(viewFirstProductButton);
@@ -108,12 +115,12 @@ public class ProductsPage {
 		}
 	}
 
-	//Scrolls the given WebElement into view using JavaScript.
+	// Scrolls the given WebElement into view using JavaScript.
 	private void scrollToElement(WebElement element) {
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
-	//Clicks the given WebElement using Actions to ensure the element is clicked reliably.
+	// Clicks the given WebElement using Actions to ensure the element is clicked reliably.
 	private void clickElement(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
 		logger.info("Clicked on the element: {}", element);

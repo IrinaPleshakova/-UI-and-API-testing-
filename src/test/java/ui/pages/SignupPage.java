@@ -27,12 +27,6 @@ public class SignupPage {
 	@FindBy(id = "years")
 	private WebElement yearsDropdown;
 
-	@FindBy(id = "newsletter")
-	private WebElement newsletterCheckbox;
-
-	@FindBy(id = "optin")
-	private WebElement specialOffersCheckbox;
-
 	@FindBy(id = "first_name")
 	private WebElement firstNameField;
 
@@ -92,18 +86,6 @@ public class SignupPage {
 
 		Select selectYear = new Select(yearsDropdown);
 		selectYear.selectByValue(year);
-	}
-
-	public void checkNewsletter() {
-		if (!newsletterCheckbox.isSelected()) {
-			newsletterCheckbox.click();
-		}
-	}
-
-	public void checkSpecialOffers() {
-		if (!specialOffersCheckbox.isSelected()) {
-			specialOffersCheckbox.click();
-		}
 	}
 
 	public void enterFirstName(String firstName) {

@@ -9,8 +9,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ui.pages.SignupPage;
 
-import java.io.ByteArrayInputStream;
-import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
@@ -34,7 +32,6 @@ public class TestDataGenerator {
 	public static CreateAccountRequest generateValidCreateAccountRequest() {
 		String email = faker.internet().emailAddress();
 		String password = faker.internet().password(8, 16);
-		saveGeneratedCredentials(email, password);
 		return buildCreateAccountRequest(email, password);
 	}
 
@@ -44,9 +41,9 @@ public class TestDataGenerator {
 	@Step("Generating CreateAccountRequest with existing email")
 	public static CreateAccountRequest generateCreateAccountRequestWithExistingEmail(String existingEmail) {
 		String password = ConfigProvider.getExistingPassword();
+
 		if (password == null || password.isEmpty()) {
 			password = faker.internet().password(8, 16);
-			ConfigProvider.setGeneratedPassword(password);
 		}
 
 		return buildCreateAccountRequest(existingEmail, password);
@@ -137,16 +134,6 @@ public class TestDataGenerator {
 				.city(faker.address().city())
 				.mobile_number(faker.phoneNumber().cellPhone())
 				.build();
-	}
-
-	/**
-	 * Generates and saves the generated credentials to config.
-	 */
-	private static void saveGeneratedCredentials(String email, String password) {
-		logger.info("Generated email: {}", email);
-		logger.info("Generated password: {}", password);
-		ConfigProvider.setGeneratedEmail(email);
-		ConfigProvider.setGeneratedPassword(password);
 	}
 
 	/**

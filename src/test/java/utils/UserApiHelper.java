@@ -5,6 +5,8 @@ import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Map;
+
 public class UserApiHelper {
 
 	private static final AccountApiClient client = new AccountApiClient();
@@ -23,5 +25,14 @@ public class UserApiHelper {
 		}
 
 		return userExists;
+	}
+
+	/**
+	 * Retrieves user data by email.
+	 * @return User data as a map.
+	 */
+	public static Map<String, Object> getUserDataByEmail(String email) {
+		Response response = client.getUserDetailByEmail(email);
+		return response.jsonPath().getMap("user");
 	}
 }

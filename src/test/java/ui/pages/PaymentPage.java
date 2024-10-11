@@ -62,11 +62,6 @@ public class PaymentPage {
 		}
 	}
 
-	public PaymentPage downloadInvoiceButtonClick() {
-		downloadInvoiceButton.click();
-		return this;
-	}
-
 	public HomePage continueButtonClick() {
 		continueButton.click();
 		return new HomePage(driver);

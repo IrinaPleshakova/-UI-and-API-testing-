@@ -11,13 +11,13 @@ import org.openqa.selenium.firefox.FirefoxOptions;
  * DriverManager class to manage WebDriver instances and configuration for different browsers.
  */
 public class DriverManager {
-	private static WebDriver driver;
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
 	/**
-	 * Method to get the WebDriver instance based on configuration.
+	 * Initializes the WebDriver instance based on configuration.
 	 */
-	public static WebDriver getDriver() {
-		if (driver == null) {
+	public static void initDriver() {
+		if (driver.get() == null) {
 			String browser = ConfigProvider.getBrowser(); // Retrieve browser type from configuration
 			boolean headless = ConfigProvider.isHeadless(); // Check if headless mode is enabled
 
@@ -28,7 +28,7 @@ public class DriverManager {
 					if (headless) {
 						chromeOptions.addArguments("--headless");
 					}
-					driver = new ChromeDriver(chromeOptions);
+					driver.set(new ChromeDriver(chromeOptions));
 					break;
 				case "firefox":
 					WebDriverManager.firefoxdriver().setup();
@@ -36,23 +36,32 @@ public class DriverManager {
 					if (headless) {
 						firefoxOptions.addArguments("--headless");
 					}
-					driver = new FirefoxDriver(firefoxOptions);
+					driver.set(new FirefoxDriver(firefoxOptions));
 					break;
 				default:
 					throw new RuntimeException("Unsupported browser: " + browser);
 			}
-			driver.manage().window().maximize();
+			driver.get().manage().window().maximize();
 		}
-		return driver;
+	}
+
+	/**
+	 * Method to get the WebDriver instance.
+	 */
+	public static WebDriver getDriver() {
+		if (driver.get() == null) {
+			throw new RuntimeException("Driver not initialized. Call initDriver() before getDriver().");
+		}
+		return driver.get();
 	}
 
 	/**
 	 * Method to quit the WebDriver instance.
 	 */
 	public static void quitDriver() {
-		if (driver != null) {
-			driver.quit();
-			driver = null;
+		if (driver.get() != null) {
+			driver.get().quit();
+			driver.remove();
 		}
 	}
 }

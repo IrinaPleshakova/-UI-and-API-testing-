@@ -73,11 +73,6 @@ public class ProductDetailPage {
 		return productBrand.getText();
 	}
 
-	public void enterQuantity(String quantity) {
-		quantityField.clear();
-		quantityField.sendKeys(quantity);
-	}
-
 	public void clickAddToCart() {
 		addToCartButton.click();
 	}

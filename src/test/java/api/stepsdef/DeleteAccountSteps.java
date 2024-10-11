@@ -42,20 +42,6 @@ public class DeleteAccountSteps {
 		Allure.addAttachment("Email for Account", email);
 		Allure.addAttachment("Password for Account", password);
 
-		// Saving data in config_api.properties for later use
-		ConfigProvider.setGeneratedEmail(email);
-		ConfigProvider.setGeneratedPassword(password);
-	}
-
-	@Step("Fetching valid credentials for account deletion from config")
-	@Given("I have valid credentials for account deletion")
-	public void iHaveValidCredentialsForAccountDeletion() {
-		logger.info("Fetching valid email and password for account deletion from config.");
-		email = ConfigProvider.getGeneratedEmail();  // Fetching generated email
-		password = ConfigProvider.getGeneratedPassword();  // Fetching generated password
-		logger.info("Valid credentials for deletion - Email: " + email);
-		Allure.addAttachment("Email for Deletion", email);
-		Allure.addAttachment("Password for Deletion", password);
 	}
 
 	@Step("Setting invalid credentials for account deletion")

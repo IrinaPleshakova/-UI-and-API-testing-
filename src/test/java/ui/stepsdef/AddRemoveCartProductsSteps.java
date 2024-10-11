@@ -1,6 +1,7 @@
 package ui.stepsdef;
 
 import io.cucumber.java.en.*;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import ui.pages.*;
@@ -8,6 +9,8 @@ import utils.DriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.ByteArrayInputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +34,7 @@ public class AddRemoveCartProductsSteps {
 		addedProductNames.add(productName);
 		productDetailPage.clickAddToCart();
 		logger.info("Added product: " + productName);
+		Allure.addAttachment("Added product", new ByteArrayInputStream(productName.getBytes(StandardCharsets.UTF_8)));
 	}
 
 	@Step("Verifying the confirmation message is displayed")
@@ -39,6 +43,7 @@ public class AddRemoveCartProductsSteps {
 		boolean isDisplayed = productDetailPage.isConfirmationMessageDisplayed();
 		assert isDisplayed : "Confirmation message is not displayed";
 		logger.info("Confirmation message is displayed");
+		Allure.addAttachment("Confirmation message displayed", new ByteArrayInputStream("Displayed".getBytes(StandardCharsets.UTF_8)));
 	}
 
 	@Step("Checking that both products are in the cart")
@@ -48,6 +53,7 @@ public class AddRemoveCartProductsSteps {
 		List<String> productsInCart = cartPage.getProductNamesInCart();
 		assert productsInCart.containsAll(addedProductNames) : "Not all added products are in the cart";
 		logger.info("Both products are present in the cart");
+		Allure.addAttachment("Products in cart", new ByteArrayInputStream(productsInCart.toString().getBytes(StandardCharsets.UTF_8)));
 	}
 
 	@Step("Adding two products to the cart")
@@ -61,6 +67,8 @@ public class AddRemoveCartProductsSteps {
 		productDetailPage.isConfirmationMessageDisplayed();
 		productDetailPage.clickContinueShopping();
 		logger.info("Added first product to the cart: {}", productName1);
+		Allure.addAttachment("First added product", new ByteArrayInputStream(productName1.getBytes(StandardCharsets.UTF_8)));
+
 		// Add second product
 		productsPage.navigateTo();
 		String productName2 = productsPage.selectRandomProduct();
@@ -69,6 +77,7 @@ public class AddRemoveCartProductsSteps {
 		productDetailPage.isConfirmationMessageDisplayed();
 		productDetailPage.clickViewCart();
 		logger.info("Added second product to the cart: {}", productName2);
+		Allure.addAttachment("Second added product", new ByteArrayInputStream(productName2.getBytes(StandardCharsets.UTF_8)));
 	}
 
 	@Step("Removing a product from the cart")
@@ -78,6 +87,7 @@ public class AddRemoveCartProductsSteps {
 		removedProductName = addedProductNames.remove(0);
 		cartPage.removeProductByName(removedProductName);
 		logger.info("Removed product from cart: {}", removedProductName);
+		Allure.addAttachment("Removed product", new ByteArrayInputStream(removedProductName.getBytes(StandardCharsets.UTF_8)));
 	}
 
 	@Step("Verifying the removed product is not in the cart")
@@ -86,6 +96,7 @@ public class AddRemoveCartProductsSteps {
 		List<String> productsInCart = cartPage.getProductNamesInCart();
 		assert !productsInCart.contains(removedProductName) : "Removed product is still in the cart";
 		logger.info("Verified that the removed product '{}' is not in the cart", removedProductName);
+		Allure.addAttachment("Remaining products in cart", new ByteArrayInputStream(productsInCart.toString().getBytes(StandardCharsets.UTF_8)));
 	}
 
 	@Step("Verifying only the remaining product is in the cart")
@@ -95,5 +106,6 @@ public class AddRemoveCartProductsSteps {
 		assert productsInCart.size() == 1 : "Cart does not contain exactly one product";
 		assert productsInCart.containsAll(addedProductNames) : "Remaining product is not in the cart";
 		logger.info("Verified that the cart contains only the remaining product");
+		Allure.addAttachment("Final cart products", new ByteArrayInputStream(productsInCart.toString().getBytes(StandardCharsets.UTF_8)));
 	}
 }

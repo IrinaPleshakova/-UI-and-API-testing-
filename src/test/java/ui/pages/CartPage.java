@@ -16,16 +16,6 @@ public class CartPage {
 
 	@FindBy(xpath = "//td[contains(@class, 'cart_description')]//a")
 	private List<WebElement> cartItems;
-	//private List<WebElement> productName;
-
-	@FindBy(xpath = "//td[contains(@class, 'cart_price')]/p")
-	private List<WebElement> price;
-
-	@FindBy(xpath = "//td[contains(@class, 'cart_quantity')]/button")
-	private List<WebElement> quantity;
-
-	@FindBy(xpath = "//p[contains(@class, 'cart_total_price')]")
-	private List<WebElement> totalPrice;
 
 	@FindBy(css = "a[class='btn btn-default check_out']")
 	private WebElement proceedToCheckoutButton;
@@ -33,8 +23,11 @@ public class CartPage {
 	@FindBy(css = "a[class='cart_quantity_delete']")
 	private List<WebElement> deleteButtons;
 
+	private WebDriverWait wait;
+
 	public CartPage(WebDriver driver) {
 		this.driver = driver;
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		PageFactory.initElements(driver, this);
 	}
 
@@ -42,34 +35,19 @@ public class CartPage {
 		driver.get("http://automationexercise.com/view_cart");
 	}
 
-	public int getCartItemCount() {
-		return cartItems.size() - 1; // минус один, чтобы исключить заголовок таблицы
-	}
-
 	public void clickProceedToCheckout() {
+		wait.until(ExpectedConditions.elementToBeClickable(proceedToCheckoutButton));
 		proceedToCheckoutButton.click();
 	}
 
 	public void deleteItem(int index) {
+		wait.until(ExpectedConditions.elementToBeClickable(deleteButtons.get(index)));
 		deleteButtons.get(index).click();
+		wait.until(ExpectedConditions.stalenessOf(cartItems.get(index)));
 	}
 
 	public List<String> getProductNamesInCart() {
 		return cartItems.stream()
-				.map(item -> item.getText())
-				.collect(Collectors.toList());
-	}
-
-	public List<String> getPrices() {
-		return price
-				.stream()
-				.map(WebElement::getText)
-				.collect(Collectors.toList());
-	}
-
-	public List<String> getQuantity() {
-		return quantity
-				.stream()
 				.map(WebElement::getText)
 				.collect(Collectors.toList());
 	}
@@ -78,9 +56,9 @@ public class CartPage {
 		for (int i = 0; i < cartItems.size(); i++) {
 			String name = cartItems.get(i).getText();
 			if (name.equals(productName)) {
+				wait.until(ExpectedConditions.elementToBeClickable(deleteButtons.get(i)));
 				deleteButtons.get(i).click();
 				// Wait for the cart to update
-				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 				wait.until(ExpectedConditions.stalenessOf(cartItems.get(i)));
 				break;
 			}
