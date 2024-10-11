@@ -2,13 +2,16 @@ package utils;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import io.cucumber.java.Scenario;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import ui.stepsdef.CommonSteps;
 
 import java.time.Duration;
@@ -17,35 +20,34 @@ import java.util.List;
 /**
  * Hooks for initializing and tearing down the WebDriver and handling screenshots for Cucumber tests.
  */
-
 public class Hooks {
-	private WebDriver driver;
 	private static final Logger logger = LogManager.getLogger(Hooks.class);
 
 	@Before
 	public void setup() {
-		// Initialize the WebDriver
+		// Initialize the WebDriver once for the entire suite
 		DriverManager.initDriver();
-		driver = DriverManager.getDriver();
-		logger.info("Driver initialized");
+		logger.info("Driver initialized for the test suite.");
 
 		// Open the base URL
+		WebDriver driver = DriverManager.getDriver();
 		driver.get(ConfigProvider.getBaseUri());
 		logger.info("Navigated to base URL");
 
 		// Close the popup window if it appears
-		closePopupIfPresent();
+		closePopupIfPresent(driver);
 	}
 
 	/**
 	 * Takes a screenshot at the end of each test.
 	 * If the test fails, the screenshot is attached and logged as an error.
 	 * If the test passes, the screenshot is attached and logged as informational.
-	 * Additionally, if the scenario is tagged with @account and passes, the account is deleted.
-	 * Finally, the browser is closed after all actions are completed.
+	 * Additionally, if the scenario is tagged with @account_create and passes, the account is deleted.
 	 */
 	@After
 	public void teardown(Scenario scenario) {
+		WebDriver driver = DriverManager.getDriver();
+
 		// Take a screenshot immediately after the test
 		if (scenario.isFailed()) {
 			logger.error("Test failed: " + scenario.getName());
@@ -61,15 +63,28 @@ public class Hooks {
 			}
 		}
 
-		// Quit the driver after all actions are completed
+		// Clear cookies and local storage to simulate a fresh session
+		driver.manage().deleteAllCookies();
+		((JavascriptExecutor) driver).executeScript("window.localStorage.clear();");
+		((JavascriptExecutor) driver).executeScript("window.sessionStorage.clear();");
+
+		logger.info("Cookies and storage cleared for a clean session");
+
+		// Optional: Navigate back to the homepage or login page
+		driver.navigate().refresh();
+	}
+
+	@AfterSuite
+	public void teardownSuite() {
+		// Quit the WebDriver once after all tests are done
 		DriverManager.quitDriver();
-		logger.info("Driver quit");
+		logger.info("Driver quit after the test suite.");
 	}
 
 	/**
 	 * Method to close the popup window if it appears.
 	 */
-	private void closePopupIfPresent() {
+	private void closePopupIfPresent(WebDriver driver) {
 		try {
 			// Wait a few seconds to make sure the window appears
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));

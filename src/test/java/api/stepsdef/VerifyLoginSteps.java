@@ -11,9 +11,9 @@ import utils.TestDataGenerator;
 /**
  * Step definition class for login verification API steps.
  */
-public class LoginSteps {
+public class VerifyLoginSteps {
 	public static VerifyLoginRequest verifyLoginRequest;
-	private static final Logger logger = LogManager.getLogger(LoginSteps.class);
+	private static final Logger logger = LogManager.getLogger(VerifyLoginSteps.class);
 
 
 

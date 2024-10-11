@@ -31,9 +31,9 @@ public class CommonSteps {
 				response = client.createAccount(AccountSteps.createAccountRequest);
 				break;
 			case "/api/verifyLogin":
-				logger.info("Verifying login with request: {}", LoginSteps.verifyLoginRequest);
-				Allure.addAttachment("Login Verification Request", LoginSteps.verifyLoginRequest.toString());
-				response = client.verifyLogin(LoginSteps.verifyLoginRequest);
+				logger.info("Verifying login with request: {}", VerifyLoginSteps.verifyLoginRequest);
+				Allure.addAttachment("Login Verification Request", VerifyLoginSteps.verifyLoginRequest.toString());
+				response = client.verifyLogin(VerifyLoginSteps.verifyLoginRequest);
 				break;
 			case "/api/searchProduct":
 				logger.info("Searching product with name: {}", SearchProductsSteps.searchProduct);
