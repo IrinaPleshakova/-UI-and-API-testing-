@@ -188,16 +188,109 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.3.1</version>
                 <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
+<!--                    <suiteXmlFiles>-->
+<!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
+<!--                    </suiteXmlFiles>-->
                     <systemPropertyVariables>
                         <allure.results.directory>target/allure-results</allure.results.directory>
                         <allure.report.directory>target/site/allure-report</allure.report.directory>
+                        <surefire.suite.name>AutomationExerciseTestSuite</surefire.suite.name>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <!-- Default profile for running both API and UI tests -->
+        <profile>
+            <id>default-profile</id>
+            <activation>
+                <property>
+                    <name>!testType</name> <!-- Activated if testType is not passed in -->
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <includes>
+                                <include>**/ApiTestRunner.java</include> <!-- Running API tests -->
+                                <include>**/TestRunner.java</include> <!-- Running UI tests -->
+                            </includes>
+                            <properties>
+                                <property>
+                                    <name>surefire.suite.name</name>
+                                    <value>AutomationExerciseTestSuite - API and UI Tests</value> <!-- Default suite name -->
+                                </property>
+                            </properties>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- Profile for running only API tests -->
+        <profile>
+            <id>api-tests</id>
+            <activation>
+                <property>
+                    <name>testType</name>
+                    <value>api</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <includes>
+                                <include>**/ApiTestRunner.java</include>
+                            </includes>
+                            <properties>
+                                <property>
+                                    <name>surefire.suite.name</name>
+                                    <value>API Test Suite</value> <!-- Name for API tests -->
+                                </property>
+                            </properties>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- Profile for running only UI tests -->
+        <profile>
+            <id>ui-tests</id>
+            <activation>
+                <property>
+                    <name>testType</name>
+                    <value>ui</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <includes>
+                                <include>**/TestRunner.java</include>
+                            </includes>
+                            <properties>
+                                <property>
+                                    <name>surefire.suite.name</name>
+                                    <value>UI Test Suite</value> <!-- Name for API tests -->
+                                </property>
+                            </properties>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>

@@ -8,6 +8,7 @@ import ui.pages.*;
 import utils.DriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import utils.Hooks;
 
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
@@ -64,6 +65,7 @@ public class AddRemoveCartProductsSteps {
 	@Step("Adding two products to the cart")
 	@Given("I have two products in my cart")
 	public void iHaveTwoProductsInMyCart() {
+		Hooks.closePopupIfPresent(driver);
 		// Add first product
 		productsPage.navigateTo();
 		String productName1 = productsPage.selectRandomProduct();
@@ -95,10 +97,21 @@ public class AddRemoveCartProductsSteps {
 	@Step("Removing a product from the cart")
 	@When("I remove one product from the cart")
 	public void iRemoveOneProductFromTheCart() {
+		// Log products in the cart before removal for debugging
+		List<String> productsBeforeRemoval = cartPage.getProductNamesInCart();
+		logger.info("Products in cart before removal: " + productsBeforeRemoval);
+
 		// Remove the first product from the cart
 		removedProductName = addedProductNames.remove(0);
 		cartPage.removeProductByName(removedProductName);
-		logger.info("Removed product from cart: {}", removedProductName);
+
+		// Refresh the cart page to ensure it is updated
+		cartPage.refresh();  // Adding refresh to update the cart view after removal
+
+		// Log products in the cart after removal for debugging
+		List<String> productsAfterRemoval = cartPage.getProductNamesInCart();
+		logger.info("Products in cart after removal: " + productsAfterRemoval);
+
 		Allure.addAttachment("Removed product", new ByteArrayInputStream(removedProductName.getBytes(StandardCharsets.UTF_8)));
 	}
 
@@ -115,9 +128,14 @@ public class AddRemoveCartProductsSteps {
 	@And("I should see only the remaining product in the cart")
 	public void iShouldSeeOnlyTheRemainingProductInTheCart() {
 		List<String> productsInCart = cartPage.getProductNamesInCart();
-		assert productsInCart.size() == 1 : "Cart does not contain exactly one product";
-		assert productsInCart.containsAll(addedProductNames) : "Remaining product is not in the cart";
-		logger.info("Verified that the cart contains only the remaining product");
+
+		// Additional logging for debugging
+		logger.info("Current products in the cart: " + productsInCart);
+		logger.info("Expected remaining product(s): " + addedProductNames);
+
+		assert productsInCart.size() == 1 : "Expected exactly one product in the cart, but found " + productsInCart.size();
+		assert productsInCart.containsAll(addedProductNames) : "The remaining product in the cart is incorrect. Expected: " + addedProductNames + ", but found: " + productsInCart;
+		logger.info("Verified that the cart contains only the remaining product: " + productsInCart.get(0));
 		Allure.addAttachment("Final cart products", new ByteArrayInputStream(productsInCart.toString().getBytes(StandardCharsets.UTF_8)));
 	}
 }

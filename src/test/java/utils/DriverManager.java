@@ -18,8 +18,9 @@ public class DriverManager {
 	 */
 	public static void initDriver() {
 		if (driver.get() == null) {
-			String browser = ConfigProvider.getBrowser(); // Retrieve browser type from configuration
-			boolean headless = ConfigProvider.isHeadless(); // Check if headless mode is enabled
+			// Using system variables for browser and headless mode
+			String browser = System.getProperty("BROWSER", ConfigProvider.getBrowser()); // Get the browser from a system property or configuration
+			boolean headless = Boolean.parseBoolean(System.getProperty("HEADLESS", String.valueOf(ConfigProvider.isHeadless()))); // Get headless from a system property or configuration
 
 			switch (browser.toLowerCase()) {
 				case "chrome":
@@ -27,6 +28,7 @@ public class DriverManager {
 					ChromeOptions chromeOptions = new ChromeOptions();
 					if (headless) {
 						chromeOptions.addArguments("--headless");
+						chromeOptions.addArguments("--disable-gpu"); // For more stable operation in headless mode
 					}
 					driver.set(new ChromeDriver(chromeOptions));
 					break;

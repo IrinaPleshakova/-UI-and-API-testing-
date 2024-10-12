@@ -10,6 +10,7 @@ import utils.DriverManager;
 import utils.ConfigProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import utils.Hooks;
 
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
@@ -38,6 +39,8 @@ public class CommonSteps {
 		Allure.addAttachment("Homepage URL", new ByteArrayInputStream(ConfigProvider.getBaseUri().getBytes(StandardCharsets.UTF_8)));
 		homePage = new HomePage(driver);
 		logger.info("Opened the homepage");
+
+		Hooks.closePopupIfPresent(driver);
 	}
 
 	@Step("Clicking the Signup/Login link on the homepage")

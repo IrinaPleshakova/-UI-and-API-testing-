@@ -2,6 +2,8 @@ package ui.runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import org.testng.SkipException;
+import org.testng.annotations.BeforeClass;
 
 /**
  * TestRunner class to execute Cucumber tests with TestNG.
@@ -14,5 +16,11 @@ import io.cucumber.testng.CucumberOptions;
 		tags = "@ui"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
-
+	@BeforeClass
+	public void checkTestType() {
+		String testType = System.getProperty("testType");
+		if (testType != null && !testType.equals("ui")) {
+			throw new SkipException("Skipping UI tests because testType is set to " + testType);
+		}
+	}
 }

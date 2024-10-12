@@ -84,7 +84,7 @@ public class Hooks {
 	/**
 	 * Method to close the popup window if it appears.
 	 */
-	private void closePopupIfPresent(WebDriver driver) {
+	public static void closePopupIfPresent(WebDriver driver) {
 		try {
 			// Wait a few seconds to make sure the window appears
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));

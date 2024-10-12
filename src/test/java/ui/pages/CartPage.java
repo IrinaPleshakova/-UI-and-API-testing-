@@ -35,6 +35,10 @@ public class CartPage {
 		driver.get("http://automationexercise.com/view_cart");
 	}
 
+	public void refresh() {
+		driver.navigate().refresh();
+	}
+
 	public void clickProceedToCheckout() {
 		wait.until(ExpectedConditions.elementToBeClickable(proceedToCheckoutButton));
 		proceedToCheckoutButton.click();
