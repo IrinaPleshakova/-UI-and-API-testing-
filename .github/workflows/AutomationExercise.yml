@@ -1,0 +1,42 @@
+name: AutomationExercise
+
+on:
+  push:
+    branches: [ "main", "qa_*" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      BROWSER: chrome
+      HEADLESS: true
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'corretto'
+        cache: maven
+
+    - name: Set up Browser Environment Variables
+      run: |
+        echo "BROWSER=${{ env.BROWSER }}" >> $GITHUB_ENV
+        echo "HEADLESS=${{ env.HEADLESS }}" >> $GITHUB_ENV
+
+    - name: Run All Tests (API + UI)
+      run: |
+        mvn clean test -DBROWSER=${{ env.BROWSER }} -DHEADLESS=${{ env.HEADLESS }} --file pom.xml
+
+    - name: 'Save test results'
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-results
+        path: target/surefire-reports/**/*
