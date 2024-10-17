@@ -34,6 +34,7 @@ public class AddRemoveCartProductsSteps {
 		// Check that the product has not been added earlier
 		while (addedProductNames.contains(productName)) {
 			logger.info("Product '{}' is already in the cart. Selecting another product.", productName);
+			productsPage.navigateTo(); // Navigate back to the products page
 			productName = productsPage.selectRandomProduct();
 		}
 
@@ -83,6 +84,7 @@ public class AddRemoveCartProductsSteps {
 		// Checking that the second product is unique
 		while (addedProductNames.contains(productName2)) {
 			logger.info("Product '{}' is already in the cart. Selecting another product.", productName2);
+			productsPage.navigateTo(); // Navigate back to the products page
 			productName2 = productsPage.selectRandomProduct();
 		}
 
@@ -121,7 +123,7 @@ public class AddRemoveCartProductsSteps {
 		List<String> productsInCart = cartPage.getProductNamesInCart();
 		assert !productsInCart.contains(removedProductName) : "Removed product is still in the cart";
 		logger.info("Verified that the removed product '{}' is not in the cart", removedProductName);
-		Allure.addAttachment("Remaining products in cart", new ByteArrayInputStream(productsInCart.toString().getBytes(StandardCharsets.UTF_8)));
+		Allure.addAttachment("Removed product", new ByteArrayInputStream(removedProductName.getBytes(StandardCharsets.UTF_8)));
 	}
 
 	@Step("Verifying only the remaining product is in the cart")

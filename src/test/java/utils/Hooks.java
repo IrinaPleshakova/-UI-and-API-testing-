@@ -1,6 +1,7 @@
 package utils;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
@@ -10,8 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
 import ui.stepsdef.CommonSteps;
 
 import java.time.Duration;
@@ -45,7 +45,7 @@ public class Hooks {
 	 * Additionally, if the scenario is tagged with @account_create and passes, the account is deleted.
 	 */
 	@After
-	public void teardown(Scenario scenario) {
+	public void tearDown(Scenario scenario) {
 		WebDriver driver = DriverManager.getDriver();
 
 		// Take a screenshot immediately after the test
@@ -74,8 +74,8 @@ public class Hooks {
 		driver.navigate().refresh();
 	}
 
-	@AfterSuite
-	public void teardownSuite() {
+	@AfterAll
+	public static void tearDown() {
 		// Quit the WebDriver once after all tests are done
 		DriverManager.quitDriver();
 		logger.info("Driver quit after the test suite.");

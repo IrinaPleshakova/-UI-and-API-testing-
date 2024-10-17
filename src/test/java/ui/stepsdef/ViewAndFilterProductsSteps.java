@@ -62,6 +62,9 @@ public class ViewAndFilterProductsSteps {
 	@Then("I should see products filtered by \"Women > Dress\"")
 	public void iShouldSeeProductsFilteredByWomenDress() {
 		// Verify that the URL is correct for the 'Dress' category
+		String currentUrl = driver.getCurrentUrl();
+		Allure.step("Verifying the page URL for 'Dress' category");
+		Allure.addAttachment("Current page URL", currentUrl);
 		Assert.assertTrue(productsPage.isOnDressCategoryPage(), "Page URL does not match the 'Women > Dress' filter");
 
 		// Get the number of filtered products

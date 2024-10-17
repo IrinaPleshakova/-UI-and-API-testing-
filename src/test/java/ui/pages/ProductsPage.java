@@ -40,8 +40,6 @@ public class ProductsPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	// Existing methods
-
 	// Get the number of products on the page
 	public int getProductCount() {
 		// Wait until all products are visible
@@ -56,42 +54,32 @@ public class ProductsPage {
 	}
 
 	public void clickDressSubcategory() {
+		Actions actions = new Actions(driver);
+		actions.moveToElement(womenCategoryLink).perform();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-		try {
-			// Ensure the dress subcategory is both visible and clickable
-			WebElement dressSubcategory = wait.until(ExpectedConditions.visibilityOf(dressSubcategoryLink));
-			wait.until(ExpectedConditions.elementToBeClickable(dressSubcategoryLink));
-
-			// Scroll to the element if necessary
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dressSubcategory);
-
-			// Use Actions to click
-			Actions actions = new Actions(driver);
-			actions.moveToElement(dressSubcategory).click().perform();
-			logger.info("Successfully clicked on Dress subcategory");
-
-		} catch (TimeoutException e) {
-			logger.error("Dress subcategory is not clickable within the timeout period: " + e.getMessage());
-		} catch (NoSuchElementException e) {
-			logger.error("Dress subcategory element not found: " + e.getMessage());
-		} catch (Exception e) {
-			logger.error("Failed to click on Dress subcategory: " + e.getMessage());
-		}
+		wait.until(ExpectedConditions.elementToBeClickable(dressSubcategoryLink));
+		actions.moveToElement(dressSubcategoryLink).click().perform();
+		logger.info("Successfully clicked on Dress subcategory");
 	}
 
 	// Verify that all displayed products are from the Dress category
 	public boolean areAllProductsRelatedToDress() {
+		// Wait until product names are visible
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfAllElements(productNames));
+
 		for (WebElement productName : productNames) {
-			if (!productName.getText().contains("Dress")) {
-				logger.error("Product {} does not belong to the Dress category", productName.getText());
+			String name = productName.getText().trim();
+			// Check if the product name contains "Dress"
+			if (!name.toLowerCase().contains("dress")) {
+				logger.error("Product '{}' does not belong to the 'Dress' category", name);
 				return false;
 			}
 		}
 		return true;
 	}
 
-	// Verify that the page URL corresponds to the Dress category
+	// Verify that the current URL corresponds to the Dress category page
 	public boolean isOnDressCategoryPage() {
 		return driver.getCurrentUrl().contains("/category_products/1");
 	}

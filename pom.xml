@@ -95,7 +95,6 @@
             <version>1.0.2</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -122,12 +121,12 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Allure TestNG Adapter -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <scope>test</scope>
-        </dependency>
+<!--        &lt;!&ndash; Allure TestNG Adapter &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.qameta.allure</groupId>-->
+<!--            <artifactId>allure-testng</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -194,7 +193,6 @@
                     <systemPropertyVariables>
                         <allure.results.directory>target/allure-results</allure.results.directory>
                         <allure.report.directory>target/site/allure-report</allure.report.directory>
-                        <surefire.suite.name>AutomationExerciseTestSuite</surefire.suite.name>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
@@ -220,12 +218,9 @@
                                 <include>**/ApiTestRunner.java</include> <!-- Running API tests -->
                                 <include>**/TestRunner.java</include> <!-- Running UI tests -->
                             </includes>
-                            <properties>
-                                <property>
-                                    <name>surefire.suite.name</name>
-                                    <value>AutomationExerciseTestSuite - API and UI Tests</value> <!-- Default suite name -->
-                                </property>
-                            </properties>
+                            <systemPropertyVariables>
+                                <surefire.suite.name>AutomationExerciseTestSuite - API and UI Tests</surefire.suite.name>
+                            </systemPropertyVariables>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -250,12 +245,9 @@
                             <includes>
                                 <include>**/ApiTestRunner.java</include>
                             </includes>
-                            <properties>
-                                <property>
-                                    <name>surefire.suite.name</name>
-                                    <value>API Test Suite</value> <!-- Name for API tests -->
-                                </property>
-                            </properties>
+                            <systemPropertyVariables>
+                                <surefire.suite.name>API Test Suite</surefire.suite.name>
+                            </systemPropertyVariables>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -280,12 +272,9 @@
                             <includes>
                                 <include>**/TestRunner.java</include>
                             </includes>
-                            <properties>
-                                <property>
-                                    <name>surefire.suite.name</name>
-                                    <value>UI Test Suite</value> <!-- Name for API tests -->
-                                </property>
-                            </properties>
+                            <systemPropertyVariables>
+                                <surefire.suite.name>UI Test Suite</surefire.suite.name>
+                            </systemPropertyVariables>
                         </configuration>
                     </plugin>
                 </plugins>
