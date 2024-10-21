@@ -4,10 +4,10 @@ import api.models.CreateAccountRequest;
 import api.models.VerifyLoginRequest;
 import com.google.gson.JsonObject;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import utils.ConfigProvider;
-import com.google.gson.Gson;
 
 import static io.restassured.RestAssured.given;
 
@@ -25,7 +25,6 @@ public class AccountApiClient {
 	 * This method takes an object and sends it as multipart form-data in the POST request
 	 * to the /api/createAccount endpoint. Each field in the request is sent as a separate part.
 	 */
-
 	public Response createAccount(CreateAccountRequest request) {
 		logger.info("Sending POST request to /api/createAccount with multipart form data.");
 
@@ -132,44 +131,47 @@ public class AccountApiClient {
 	}
 
 	/**
-	 * Sends a POST request to search for a product.
-	 * This method sends a request to the /api/searchProduct endpoint with a search query as multipart form-data.
-	 * The search query is sent as a form field using the multipart format.
+	 * Builds the RequestSpecification for searching a product with multipart/form-data content type.
+	 * This method builds the request with the necessary parameters and content type.
 	 */
-	public Response searchProduct(String searchProduct, boolean useJson) {
+	public RequestSpecification buildSearchProductRequest(String searchProduct) {
+		logger.info("Building RequestSpecification for search product with multipart/form-data.");
+
+		return given()
+				.contentType("multipart/form-data")
+				.multiPart("search_product", searchProduct);
+	}
+
+	/**
+	 * Builds the RequestSpecification for searching a product with application/json content type.
+	 * This is used for negative testing where we expect an error due to incorrect content type.
+	 */
+	public RequestSpecification buildSearchProductRequestWithJsonContentType(String searchProduct) {
+		logger.info("Building RequestSpecification for search product with application/json content type.");
+
+		JsonObject jsonBody = new JsonObject();
+
+		if (searchProduct != null && !searchProduct.isEmpty()) {
+			jsonBody.addProperty("search_product", searchProduct);
+		}
+
+		return given()
+				.contentType("application/json")
+				.body(jsonBody.toString());
+	}
+
+	/**
+	 * Sends a POST request to search for a product.
+	 * This method takes a RequestSpecification and sends the POST request to the /api/searchProduct endpoint.
+	 */
+	public Response sendSearchProductRequest(RequestSpecification requestSpec) {
 		logger.info("Sending POST request to /api/searchProduct.");
 
-		Response response;
-
-		if (useJson) {
-			//  Send the request in JSON format
-			// (this item is necessary only for negative testing for the product search feature,
-			// only when sending the request in this format you can get the required error)
-			logger.info("Sending request with search_product in JSON format.");
-			JsonObject jsonBody = new JsonObject();
-
-			if (searchProduct != null && !searchProduct.isEmpty()) {
-				jsonBody.addProperty("search_product", searchProduct);
-			} // If searchProduct is null, the field is not added to simulate a missing parameter
-
-			response = given()
-					.contentType("application/json")
-					.body(jsonBody.toString())
-					.post(ConfigProvider.getBaseUri() + "/api/searchProduct")
-					.then()
-					.extract()
-					.response();
-		} else {
-			// Send the request in multipart/form-data format (used for valid requests)
-			logger.info("Sending request in multipart/form-data format.");
-			response = given()
-					.contentType("multipart/form-data")
-					.multiPart("search_product", searchProduct)
-					.post(ConfigProvider.getBaseUri() + "/api/searchProduct")
-					.then()
-					.extract()
-					.response();
-		}
+		Response response = requestSpec
+				.post(ConfigProvider.getBaseUri() + "/api/searchProduct")
+				.then()
+				.extract()
+				.response();
 
 		logger.info("Received response: " + response.asString());
 		return response;
@@ -198,5 +200,3 @@ public class AccountApiClient {
 		return response;
 	}
 }
-
-

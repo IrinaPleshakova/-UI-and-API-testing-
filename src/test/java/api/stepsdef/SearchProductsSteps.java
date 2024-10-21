@@ -12,8 +12,6 @@ import org.testng.Assert;
 
 import java.util.List;
 
-import static api.stepsdef.CommonSteps.response;
-
 /**
  * Step definition class for product search API with Allure reporting.
  */
@@ -23,38 +21,25 @@ public class SearchProductsSteps {
 	public static String searchProduct;
 	private final AccountApiClient client = new AccountApiClient();
 
-	/**
-	 * Helper method to perform the product search and store the response.
-	 */
-	private void performSearch(String productName, boolean useJson) {
-		logger.info("Performing search for product: {}", productName != null ? productName : "No product name provided");
-
-		// Send request using either form-data or JSON
-		Response response = client.searchProduct(productName, useJson);
-		CommonSteps.response = response;  // Store response for later validation
-
-		// Log and attach product name or lack thereof
-		String attachmentName = productName != null ? productName : "No product name provided";
-		Allure.addAttachment("Search Product Name", attachmentName);
-	}
-
 	@Step("Setting valid product name for search")
 	@Given("I have a valid product name to search")
 	public void iHaveAValidProductNameToSearch() {
 		searchProduct = "top";
-		performSearch(searchProduct, false);  // Send multipart/form-data request
+		logger.info("Product name set for search: {}", searchProduct);
+		Allure.addAttachment("Search Product Name", searchProduct);
 	}
 
 	@Step("No product name provided for search")
 	@Given("I do not provide a product name for search")
 	public void iDoNotProvideAProductNameForSearch() {
 		searchProduct = null;  // No product name provided
-		performSearch(searchProduct, true);  // Send JSON request to trigger an error
+		logger.info("No product name provided for search.");
+		Allure.addAttachment("Search Product Name", "No product name provided");
 	}
 
 	@Then("the products list should contain searched products")
 	public void theProductsListShouldContainSearchedProducts() {
-		List<?> products = response.jsonPath().getList("products");
+		List<?> products = CommonSteps.response.jsonPath().getList("products");
 
 		if (products.isEmpty()) {
 			String errorMessage = "Products list is empty or no products match the search.";

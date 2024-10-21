@@ -7,6 +7,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -36,9 +37,8 @@ public class CommonSteps {
 				response = client.verifyLogin(VerifyLoginSteps.verifyLoginRequest);
 				break;
 			case "/api/searchProduct":
-				logger.info("Searching product with name: {}", SearchProductsSteps.searchProduct);
-				Allure.addAttachment("Product Search Request", SearchProductsSteps.searchProduct);
-				response = client.searchProduct(SearchProductsSteps.searchProduct, true);
+				logger.info("Preparing to search product.");
+				handleSearchProductRequest(method);
 				break;
 			case "/api/getUserDetailByEmail":
 				logger.info("Getting user details for email: {}", UserDetailByEmailSteps.email);
@@ -66,25 +66,27 @@ public class CommonSteps {
 		addResponseToAllure(response);
 	}
 
-	@When("I send a POST request to {string} endpoint")
-	public void iSendAPostRequestToEndpoint(String endpoint) {
-		if ("/api/searchProduct".equals(endpoint)) {
-			handleSearchProductRequest();  // Call of special logic for searchProduct
+	private void handleSearchProductRequest(String method) {
+		RequestSpecification requestSpec;
+		if ("POST".equalsIgnoreCase(method)) {
+			if (SearchProductsSteps.searchProduct != null) {
+				// Build the request with correct content type
+				requestSpec = client.buildSearchProductRequest(SearchProductsSteps.searchProduct);
+			} else {
+				// Build the request with incorrect content type for negative testing
+				requestSpec = client.buildSearchProductRequestWithJsonContentType(SearchProductsSteps.searchProduct);
+			}
+			// Send the request
+			response = client.sendSearchProductRequest(requestSpec);
 		} else {
-			sendRequest("POST", endpoint);  // Common logic for all other POST requests
+			logger.error("Unsupported method for /api/searchProduct: {}", method);
+			throw new IllegalArgumentException("Unsupported method for /api/searchProduct: " + method);
 		}
 	}
 
-	// Special logic for searchProduct
-	private void handleSearchProductRequest() {
-		logger.info("Searching product with name: {}", SearchProductsSteps.searchProduct);
-
-		// If needed for a negative test, pass JSON
-		boolean useJson = SearchProductsSteps.searchProduct == null;
-		response = new AccountApiClient().searchProduct(SearchProductsSteps.searchProduct, useJson);
-
-		logger.info("Response received for search product: {}", response.asString());
-		addResponseToAllure(response);
+	@When("I send a POST request to {string} endpoint")
+	public void iSendAPostRequestToEndpoint(String endpoint) {
+		sendRequest("POST", endpoint);
 	}
 
 	@When("I send a GET request to {string} endpoint")

@@ -37,7 +37,7 @@ public class ConfigProvider {
 		properties.setProperty("HEADLESS", "false");
 		properties.setProperty("VALID_EMAIL", "validuser@example.com");
 		properties.setProperty("VALID_PASSWORD", "validpass");
-		properties.setProperty("INVALID_EMAIL", "invaliduser@example.com");
+		properties.setProperty("INVALID_EMAIL", "someinvaliduser@example.com");
 		properties.setProperty("INVALID_PASSWORD", "wrongpass");
 		properties.setProperty("EXISTING_EMAIL", "existinguser@example.com");
 		properties.setProperty("EXISTING_PASSWORD", "qwerty123");
@@ -71,7 +71,7 @@ public class ConfigProvider {
 
 	// Method to get invalid email
 	public static String getInvalidEmail() {
-		return properties.getProperty("INVALID_EMAIL", "invaliduser@example.com");
+		return properties.getProperty("INVALID_EMAIL", "someinvaliduser@example.com");
 	}
 
 	// Method to get invalid password

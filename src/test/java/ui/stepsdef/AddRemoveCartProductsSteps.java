@@ -8,6 +8,7 @@ import ui.pages.*;
 import utils.DriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import utils.Hooks;
 
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
@@ -57,6 +58,7 @@ public class AddRemoveCartProductsSteps {
 	@Step("Adding {numberOfProducts} unique products to the cart for testing")
 	@Given("I have {int} unique products in my cart")
 	public void iHaveProductsInMyCart(int numberOfProducts) {
+		Hooks.closePopupIfPresent(driver);
 		addProductsToCart(numberOfProducts);
 		productDetailPage.clickViewCart();
 	}
