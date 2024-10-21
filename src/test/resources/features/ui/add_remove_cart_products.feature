@@ -3,21 +3,19 @@ Feature: Adding and Removing Products from Cart
   @ui
   @positive
   @shopping_cart
-  Scenario: Add random products to cart
+  Scenario: Add multiple random products to the cart
     Given I open the homepage
-    When I add a random product to the cart
-    And I should see a confirmation message
-    Then I click "Continue Shopping" button
-    And I add a random product to the cart
+    When I add 2 unique random products to the cart
     Then I should see a confirmation message
     And I click "View Cart" button
-    Then I should see both products in the cart
+    Then I should see all added products in the cart
 
   @ui
   @positive
   @shopping_cart
   Scenario: Remove a product from the cart
-    Given I have two products in my cart
-    When I remove one product from the cart
-    Then I should not see that product in the cart
-    And I should see only the remaining product in the cart
+    Given I have 2 unique products in my cart
+    When I remove 1 product from the cart
+    Then I should not see the removed product in the cart
+    And I should see only the remaining products in the cart
+

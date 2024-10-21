@@ -5,7 +5,7 @@ Feature: Placing an Order
   @order
   Scenario: Place Order - Register while Checkout
     Given I open the homepage
-    When I add a random product to the cart
+    When I add 1 unique random products to the cart
     And I should see a confirmation message
     Then I click "View Cart" button
     Then I should be on the cart page
@@ -40,7 +40,7 @@ Feature: Placing an Order
     And I enter valid login credentials
     And I click on the "Login" button on the login page
     Then I should be logged in as the user
-    When I add a random product to the cart
+    When I add 2 unique random products to the cart
     And I should see a confirmation message
     Then I click "View Cart" button
     Then I should be on the cart page

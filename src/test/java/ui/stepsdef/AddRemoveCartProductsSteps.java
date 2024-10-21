@@ -8,7 +8,6 @@ import ui.pages.*;
 import utils.DriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import utils.Hooks;
 
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
@@ -24,120 +23,127 @@ public class AddRemoveCartProductsSteps {
 	private static final Logger logger = LogManager.getLogger(AddRemoveCartProductsSteps.class);
 
 	private List<String> addedProductNames = new ArrayList<>();
-	private String removedProductName;
+	private List<String> removedProductNames = new ArrayList<>();
 
-	@Step("Adding a random product to the cart")
-	@When("I add a random product to the cart")
-	public void iAddARandomProductToTheCart() {
-		productsPage.navigateTo();
-		String productName = productsPage.selectRandomProduct();
-		// Check that the product has not been added earlier
-		while (addedProductNames.contains(productName)) {
-			logger.info("Product '{}' is already in the cart. Selecting another product.", productName);
-			productsPage.navigateTo(); // Navigate back to the products page
-			productName = productsPage.selectRandomProduct();
+	private void addProductsToCart(int numberOfProducts) {
+		addedProductNames.clear();
+		for (int i = 0; i < numberOfProducts; i++) {
+			productsPage.navigateTo();
+			String productName = productsPage.selectRandomProduct();
+			while (addedProductNames.contains(productName)) {
+				logger.info("Product '{}' is already in the cart. Selecting another product.", productName);
+				productsPage.navigateTo();
+				productName = productsPage.selectRandomProduct();
+			}
+			addedProductNames.add(productName);
+			productDetailPage.clickAddToCart();
+			logger.info("Added product: " + productName);
+			Allure.addAttachment("Added product", new ByteArrayInputStream(productName.getBytes(StandardCharsets.UTF_8)));
+
+			verifyConfirmationMessage();
+
+			if (i < numberOfProducts - 1) {
+				productDetailPage.clickContinueShopping();
+			}
 		}
+	}
 
-		addedProductNames.add(productName);
-		productDetailPage.clickAddToCart();
-		logger.info("Added product: " + productName);
-		Allure.addAttachment("Added product", new ByteArrayInputStream(productName.getBytes(StandardCharsets.UTF_8)));
+	@Step("Adding {numberOfProducts} random products to the cart")
+	@When("I add {int} unique random products to the cart")
+	public void iAddUniqueRandomProductsToTheCart(int numberOfProducts) {
+		addProductsToCart(numberOfProducts);
+	}
+
+	@Step("Adding {numberOfProducts} unique products to the cart for testing")
+	@Given("I have {int} unique products in my cart")
+	public void iHaveProductsInMyCart(int numberOfProducts) {
+		addProductsToCart(numberOfProducts);
+		productDetailPage.clickViewCart();
+	}
+
+	private void verifyConfirmationMessage() {
+		boolean isDisplayed = productDetailPage.isConfirmationMessageDisplayed();
+		assert isDisplayed : "Confirmation message is not displayed";
+		logger.info("Confirmation message is displayed");
 	}
 
 	@Step("Verifying the confirmation message is displayed")
 	@And("I should see a confirmation message")
 	public void iShouldSeeAConfirmationMessage() {
-		boolean isDisplayed = productDetailPage.isConfirmationMessageDisplayed();
-		assert isDisplayed : "Confirmation message is not displayed";
-		logger.info("Confirmation message is displayed");
+		verifyConfirmationMessage();
 		Allure.addAttachment("Confirmation message displayed", new ByteArrayInputStream("Displayed".getBytes(StandardCharsets.UTF_8)));
 	}
 
-	@Step("Checking that both products are in the cart")
-	@Then("I should see both products in the cart")
-	public void iShouldSeeBothProductsInTheCart() {
+	@Step("Verifying that all added products are in the cart")
+	@Then("I should see all added products in the cart")
+	public void iShouldSeeAllAddedProductsInTheCart() {
 		cartPage.navigateTo();
 		List<String> productsInCart = cartPage.getProductNamesInCart();
-		assert productsInCart.containsAll(addedProductNames) : "Not all added products are in the cart";
-		logger.info("Both products are present in the cart");
+
+		assert productsInCart.size() == addedProductNames.size() :
+				"Expected " + addedProductNames.size() + " products in the cart, but found " + productsInCart.size();
+
+		assert productsInCart.containsAll(addedProductNames) :
+				"Not all added products are in the cart. Expected: " + addedProductNames + ", but found: " + productsInCart;
+
+		logger.info("Verified that all added products are present in the cart");
 		Allure.addAttachment("Products in cart", new ByteArrayInputStream(productsInCart.toString().getBytes(StandardCharsets.UTF_8)));
 	}
 
-	@Step("Adding two products to the cart")
-	@Given("I have two products in my cart")
-	public void iHaveTwoProductsInMyCart() {
-		Hooks.closePopupIfPresent(driver);
-		// Add first product
-		productsPage.navigateTo();
-		String productName1 = productsPage.selectRandomProduct();
-		addedProductNames.add(productName1);
-		productDetailPage.clickAddToCart();
-		productDetailPage.isConfirmationMessageDisplayed();
-		productDetailPage.clickContinueShopping();
-		logger.info("Added first product to the cart: {}", productName1);
-		Allure.addAttachment("First added product", new ByteArrayInputStream(productName1.getBytes(StandardCharsets.UTF_8)));
+	@Step("Removing {int} product(s) from the cart")
+	@When("I remove {int} product(s) from the cart")
+	public void iRemoveProductsFromTheCart(int numberOfProductsToRemove) {
+		List<String> productsInCart = cartPage.getProductNamesInCart();
 
-		// Add second unique product
-		productsPage.navigateTo();
-		String productName2 = productsPage.selectRandomProduct();
-
-		// Checking that the second product is unique
-		while (addedProductNames.contains(productName2)) {
-			logger.info("Product '{}' is already in the cart. Selecting another product.", productName2);
-			productsPage.navigateTo(); // Navigate back to the products page
-			productName2 = productsPage.selectRandomProduct();
+		// Verify that the number of products to remove is not greater than the number of products in the cart
+		if (numberOfProductsToRemove >= productsInCart.size()) {
+			String errorMessage = "Invalid operation: You cannot remove the same or more products than added. " +
+					"Attempted to remove " + numberOfProductsToRemove + " product(s), but only " + productsInCart.size() + " product(s) are in the cart.";
+			logger.error(errorMessage);
+			throw new IllegalArgumentException(errorMessage);
 		}
 
-		addedProductNames.add(productName2);
-		productDetailPage.clickAddToCart();
-		productDetailPage.isConfirmationMessageDisplayed();
-		productDetailPage.clickViewCart();
-		logger.info("Added second product to the cart: {}", productName2);
-		Allure.addAttachment("Second added product", new ByteArrayInputStream(productName2.getBytes(StandardCharsets.UTF_8)));
-	}
+		removedProductNames.clear();
 
-	@Step("Removing a product from the cart")
-	@When("I remove one product from the cart")
-	public void iRemoveOneProductFromTheCart() {
-		// Log products in the cart before removal for debugging
-		List<String> productsBeforeRemoval = cartPage.getProductNamesInCart();
-		logger.info("Products in cart before removal: " + productsBeforeRemoval);
+		for (int i = 0; i < numberOfProductsToRemove; i++) {
+			// Remove the first product from the cart
+			String removedProductName = addedProductNames.remove(0);
+			cartPage.removeProductByName(removedProductName);
+			removedProductNames.add(removedProductName);
 
-		// Remove the first product from the cart
-		removedProductName = addedProductNames.remove(0);
-		cartPage.removeProductByName(removedProductName);
+			logger.info("Removed product: " + removedProductName);
+			Allure.addAttachment("Removed product", new ByteArrayInputStream(removedProductName.getBytes(StandardCharsets.UTF_8)));
+		}
 
-		// Refresh the cart page to ensure it is updated
-		cartPage.refresh();  // Adding refresh to update the cart view after removal
-
-		// Log products in the cart after removal for debugging
 		List<String> productsAfterRemoval = cartPage.getProductNamesInCart();
 		logger.info("Products in cart after removal: " + productsAfterRemoval);
-
-		Allure.addAttachment("Removed product", new ByteArrayInputStream(removedProductName.getBytes(StandardCharsets.UTF_8)));
 	}
 
-	@Step("Verifying the removed product is not in the cart")
-	@Then("I should not see that product in the cart")
-	public void iShouldNotSeeThatProductInTheCart() {
+	@Step("Verifying the removed product(s) is/are not in the cart")
+	@Then("I should not see the removed product(s) in the cart")
+	public void iShouldNotSeeRemovedProductsInTheCart() {
 		List<String> productsInCart = cartPage.getProductNamesInCart();
-		assert !productsInCart.contains(removedProductName) : "Removed product is still in the cart";
-		logger.info("Verified that the removed product '{}' is not in the cart", removedProductName);
-		Allure.addAttachment("Removed product", new ByteArrayInputStream(removedProductName.getBytes(StandardCharsets.UTF_8)));
+
+		// Verify that the removed products are not in the cart
+		for (String removedProductName : removedProductNames) {
+			assert !productsInCart.contains(removedProductName) : "Removed product '" + removedProductName + "' is still in the cart";
+			logger.info("Verified that the removed product '{}' is not in the cart", removedProductName);
+		}
+		Allure.addAttachment("Removed products", new ByteArrayInputStream(removedProductNames.toString().getBytes(StandardCharsets.UTF_8)));
 	}
 
-	@Step("Verifying only the remaining product is in the cart")
-	@And("I should see only the remaining product in the cart")
-	public void iShouldSeeOnlyTheRemainingProductInTheCart() {
+	@Step("Verifying only the remaining products are in the cart")
+	@And("I should see only the remaining products in the cart")
+	public void iShouldSeeOnlyRemainingProductsInTheCart() {
 		List<String> productsInCart = cartPage.getProductNamesInCart();
 
-		// Additional logging for debugging
 		logger.info("Current products in the cart: " + productsInCart);
 		logger.info("Expected remaining product(s): " + addedProductNames);
 
-		assert productsInCart.size() == 1 : "Expected exactly one product in the cart, but found " + productsInCart.size();
-		assert productsInCart.containsAll(addedProductNames) : "The remaining product in the cart is incorrect. Expected: " + addedProductNames + ", but found: " + productsInCart;
-		logger.info("Verified that the cart contains only the remaining product: " + productsInCart.get(0));
+		assert productsInCart.size() == addedProductNames.size() : "Expected " + addedProductNames.size() + " product(s) in the cart, but found " + productsInCart.size();
+		assert productsInCart.containsAll(addedProductNames) : "The remaining products in the cart are incorrect. Expected: " + addedProductNames + ", but found: " + productsInCart;
+		logger.info("Verified that the cart contains only the remaining products");
 		Allure.addAttachment("Final cart products", new ByteArrayInputStream(productsInCart.toString().getBytes(StandardCharsets.UTF_8)));
 	}
 }
+
