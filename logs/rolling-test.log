@@ -1,0 +1,778 @@
+2024-10-26 23:18:40 INFO  api.stepsdef.AccountSteps - Generating valid data for account creation.
+2024-10-26 23:18:40 INFO  api.stepsdef.CommonSteps - Sending POST request to endpoint: /api/createAccount
+2024-10-26 23:18:40 INFO  api.stepsdef.CommonSteps - Creating account with request: CreateAccountRequest(name=Mrs. Dion Emmerich, email=clayton.dubuque@yahoo.com, password=8mhqsnos5i991, title=Ms, birth_month=4, birth_date=20, birth_year=1993, firstname=Edmond, lastname=Christiansen, company=Klocko, Kunze and Hessel, address1=4375 Becker Extension, address2=Suite 367, country=United States, zipcode=64174-6070, state=West Virginia, city=South Rosemarymouth, mobile_number=127-668-9930)
+2024-10-26 23:18:40 INFO  api.clients.AccountApiClient - Sending POST request to /api/createAccount with multipart form data.
+2024-10-26 23:18:42 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 201, "message": "User created!"}
+2024-10-26 23:18:42 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 201, "message": "User created!"}
+2024-10-26 23:18:42 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 201, Actual = 201
+2024-10-26 23:18:42 INFO  api.stepsdef.CommonSteps - Asserting response message: Expected = User created!, Actual = User created!
+2024-10-26 23:18:42 WARN  api.stepsdef.DeleteAccountSteps - No valid account found for deletion.
+2024-10-26 23:18:42 INFO  api.stepsdef.AccountSteps - Checking if the account with existing email exists.
+2024-10-26 23:18:42 INFO  api.clients.AccountApiClient - Sending GET request to /api/getUserDetailByEmail with email: existinguser@example.com
+2024-10-26 23:18:43 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 200, "user": {"id": 427852, "name": "Young Kovacek", "email": "existinguser@example.com", "title": "Mr", "birth_day": "25", "birth_month": "4", "birth_year": "1997", "first_name": "Jaime", "last_name": "Kautzer", "company": "Ernser-Hauck", "address1": "8672 Altenwerth Vista", "address2": "Apt. 636", "country": "United States", "state": "California", "city": "Wilfordchester", "zipcode": "81400"}}
+2024-10-26 23:18:43 INFO  api.stepsdef.AccountSteps - Account with existing email already exists.
+2024-10-26 23:18:43 INFO  api.clients.AccountApiClient - Sending GET request to /api/getUserDetailByEmail with email: existinguser@example.com
+2024-10-26 23:18:44 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 200, "user": {"id": 427852, "name": "Young Kovacek", "email": "existinguser@example.com", "title": "Mr", "birth_day": "25", "birth_month": "4", "birth_year": "1997", "first_name": "Jaime", "last_name": "Kautzer", "company": "Ernser-Hauck", "address1": "8672 Altenwerth Vista", "address2": "Apt. 636", "country": "United States", "state": "California", "city": "Wilfordchester", "zipcode": "81400"}}
+2024-10-26 23:18:44 INFO  api.stepsdef.CommonSteps - Sending POST request to endpoint: /api/createAccount
+2024-10-26 23:18:44 INFO  api.stepsdef.CommonSteps - Creating account with request: CreateAccountRequest(name=Young Kovacek, email=existinguser@example.com, password=qwerty123, title=Mr, birth_month=8, birth_date=24, birth_year=1992, firstname=Jaime, lastname=Kautzer, company=Ernser-Hauck, address1=8672 Altenwerth Vista, address2=Apt. 636, country=United States, zipcode=81400, state=California, city=Wilfordchester, mobile_number=1-606-141-8239)
+2024-10-26 23:18:44 INFO  api.clients.AccountApiClient - Sending POST request to /api/createAccount with multipart form data.
+2024-10-26 23:18:44 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 400, "message": "Email already exists!"}
+2024-10-26 23:18:44 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 400, "message": "Email already exists!"}
+2024-10-26 23:18:44 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 400, Actual = 400
+2024-10-26 23:18:44 INFO  api.stepsdef.CommonSteps - Asserting response message: Expected = Email already exists!, Actual = Email already exists!
+2024-10-26 23:18:44 INFO  api.stepsdef.DeleteAccountSteps - Creating an account for deletion.
+2024-10-26 23:18:44 INFO  api.clients.AccountApiClient - Sending POST request to /api/createAccount with multipart form data.
+2024-10-26 23:18:45 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 201, "message": "User created!"}
+2024-10-26 23:18:45 INFO  api.stepsdef.DeleteAccountSteps - Generated email: winifred.yost@gmail.com
+2024-10-26 23:18:45 INFO  api.stepsdef.DeleteAccountSteps - Generated password: u0o00ppt7i
+2024-10-26 23:18:45 INFO  api.stepsdef.CommonSteps - Sending DELETE request to endpoint: /api/deleteAccount
+2024-10-26 23:18:45 INFO  api.stepsdef.CommonSteps - Deleting account with email: winifred.yost@gmail.com
+2024-10-26 23:18:45 INFO  api.clients.AccountApiClient - Sending DELETE request to /api/deleteAccount with multipart form data.
+2024-10-26 23:18:45 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 200, "message": "Account deleted!"}
+2024-10-26 23:18:45 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 200, "message": "Account deleted!"}
+2024-10-26 23:18:45 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 200, Actual = 200
+2024-10-26 23:18:45 INFO  api.stepsdef.CommonSteps - Asserting response message: Expected = Account deleted!, Actual = Account deleted!
+2024-10-26 23:18:45 INFO  api.stepsdef.DeleteAccountSteps - Setting invalid credentials for account deletion.
+2024-10-26 23:18:45 INFO  api.stepsdef.CommonSteps - Sending DELETE request to endpoint: /api/deleteAccount
+2024-10-26 23:18:45 INFO  api.stepsdef.CommonSteps - Deleting account with email: someinvaliduser@example.com
+2024-10-26 23:18:45 INFO  api.clients.AccountApiClient - Sending DELETE request to /api/deleteAccount with multipart form data.
+2024-10-26 23:18:46 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 404, "message": "Account not found!"}
+2024-10-26 23:18:46 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 404, "message": "Account not found!"}
+2024-10-26 23:18:46 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 404, Actual = 404
+2024-10-26 23:18:46 INFO  api.stepsdef.CommonSteps - Asserting response message: Expected = Account not found!, Actual = Account not found!
+2024-10-26 23:18:46 INFO  api.clients.AccountApiClient - Sending GET request to /api/productsList
+2024-10-26 23:18:46 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+2024-10-26 23:18:46 INFO  api.stepsdef.ProductListSteps - Catalog contains the following categories: [{usertype={usertype=Women}, category=Tops}, {usertype={usertype=Women}, category=Saree}, {usertype={usertype=Kids}, category=Tops & Shirts}, {usertype={usertype=Women}, category=Dress}, {usertype={usertype=Men}, category=Jeans}, {usertype={usertype=Kids}, category=Dress}, {usertype={usertype=Men}, category=Tshirts}]
+2024-10-26 23:18:46 INFO  api.stepsdef.CommonSteps - Sending GET request to endpoint: /api/productsList
+2024-10-26 23:18:46 INFO  api.stepsdef.CommonSteps - Fetching all products.
+2024-10-26 23:18:46 INFO  api.clients.AccountApiClient - Sending GET request to /api/productsList
+2024-10-26 23:18:47 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+2024-10-26 23:18:47 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+2024-10-26 23:18:47 INFO  api.stepsdef.CommonSteps - Asserting HTTP status code: Expected = 200, Actual = 200
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product list contains 34 products.
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 1, Name: Blue Top, Price: Rs. 500, Category: {usertype={usertype=Women}, category=Tops}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 2, Name: Men Tshirt, Price: Rs. 400, Category: {usertype={usertype=Men}, category=Tshirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 3, Name: Sleeveless Dress, Price: Rs. 1000, Category: {usertype={usertype=Women}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 4, Name: Stylish Dress, Price: Rs. 1500, Category: {usertype={usertype=Women}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 5, Name: Winter Top, Price: Rs. 600, Category: {usertype={usertype=Women}, category=Tops}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 6, Name: Summer White Top, Price: Rs. 400, Category: {usertype={usertype=Women}, category=Tops}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 7, Name: Madame Top For Women, Price: Rs. 1000, Category: {usertype={usertype=Women}, category=Tops}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 8, Name: Fancy Green Top, Price: Rs. 700, Category: {usertype={usertype=Women}, category=Tops}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 11, Name: Sleeves Printed Top - White, Price: Rs. 499, Category: {usertype={usertype=Kids}, category=Tops & Shirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 12, Name: Half Sleeves Top Schiffli Detailing - Pink, Price: Rs. 359, Category: {usertype={usertype=Kids}, category=Tops & Shirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 13, Name: Frozen Tops For Kids, Price: Rs. 278, Category: {usertype={usertype=Kids}, category=Tops & Shirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 14, Name: Full Sleeves Top Cherry - Pink, Price: Rs. 679, Category: {usertype={usertype=Kids}, category=Tops & Shirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 15, Name: Printed Off Shoulder Top - White, Price: Rs. 315, Category: {usertype={usertype=Kids}, category=Tops & Shirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 16, Name: Sleeves Top and Short - Blue & Pink, Price: Rs. 478, Category: {usertype={usertype=Kids}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 18, Name: Little Girls Mr. Panda Shirt, Price: Rs. 1200, Category: {usertype={usertype=Kids}, category=Tops & Shirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 19, Name: Sleeveless Unicorn Patch Gown - Pink, Price: Rs. 1050, Category: {usertype={usertype=Kids}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 20, Name: Cotton Mull Embroidered Dress, Price: Rs. 1190, Category: {usertype={usertype=Kids}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 21, Name: Blue Cotton Indie Mickey Dress, Price: Rs. 1530, Category: {usertype={usertype=Kids}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 22, Name: Long Maxi Tulle Fancy Dress Up Outfits -Pink, Price: Rs. 1600, Category: {usertype={usertype=Kids}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 23, Name: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi, Price: Rs. 1100, Category: {usertype={usertype=Kids}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 24, Name: Colour Blocked Shirt � Sky Blue, Price: Rs. 849, Category: {usertype={usertype=Kids}, category=Tops & Shirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 28, Name: Pure Cotton V-Neck T-Shirt, Price: Rs. 1299, Category: {usertype={usertype=Men}, category=Tshirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 29, Name: Green Side Placket Detail T-Shirt, Price: Rs. 1000, Category: {usertype={usertype=Men}, category=Tshirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 30, Name: Premium Polo T-Shirts, Price: Rs. 1500, Category: {usertype={usertype=Men}, category=Tshirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 31, Name: Pure Cotton Neon Green Tshirt, Price: Rs. 850, Category: {usertype={usertype=Men}, category=Tshirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 33, Name: Soft Stretch Jeans, Price: Rs. 799, Category: {usertype={usertype=Men}, category=Jeans}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 35, Name: Regular Fit Straight Jeans, Price: Rs. 1200, Category: {usertype={usertype=Men}, category=Jeans}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 37, Name: Grunt Blue Slim Fit Jeans, Price: Rs. 1400, Category: {usertype={usertype=Men}, category=Jeans}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 38, Name: Rose Pink Embroidered Maxi Dress, Price: Rs. 2300, Category: {usertype={usertype=Women}, category=Dress}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 39, Name: Cotton Silk Hand Block Print Saree, Price: Rs. 3000, Category: {usertype={usertype=Women}, category=Saree}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 40, Name: Rust Red Linen Saree, Price: Rs. 3500, Category: {usertype={usertype=Women}, category=Saree}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 41, Name: Beautiful Peacock Blue Cotton Linen Saree, Price: Rs. 5000, Category: {usertype={usertype=Women}, category=Saree}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 42, Name: Lace Top For Women, Price: Rs. 1400, Category: {usertype={usertype=Women}, category=Tops}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product ID: 43, Name: GRAPHIC DESIGN MEN T SHIRT - BLUE, Price: Rs. 1389, Category: {usertype={usertype=Men}, category=Tshirts}
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.5
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.4
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.1
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.15
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.6
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.4
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.1
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.7
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.499
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.359
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.278
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.679
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.315
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.478
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.12
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.105
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.119
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.153
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.16
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.11
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.849
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.1299
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.1
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.15
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.85
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.799
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.12
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.14
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.23
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.3
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.35
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.5
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.14
+2024-10-26 23:18:47 INFO  api.stepsdef.ProductListSteps - Product price is valid: 0.1389
+2024-10-26 23:18:47 INFO  api.stepsdef.CommonSteps - Sending GET request to endpoint: /api/invalidProductsList
+2024-10-26 23:18:47 INFO  api.stepsdef.CommonSteps - Fetching invalid products.
+2024-10-26 23:18:47 INFO  api.clients.AccountApiClient - Sending GET request to /api/invalidProductsList
+2024-10-26 23:18:47 INFO  api.clients.AccountApiClient - Received response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /api/invalidProductsList</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://automationexercise.com/api/invalidProductsList</td>
+      </tr>
+      
+    </table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>api/invalidProductsList</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+</body>
+</html>
+
+2024-10-26 23:18:47 INFO  api.stepsdef.CommonSteps - Response received: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /api/invalidProductsList</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://automationexercise.com/api/invalidProductsList</td>
+      </tr>
+      
+    </table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>api/invalidProductsList</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+</body>
+</html>
+
+2024-10-26 23:18:47 INFO  api.stepsdef.CommonSteps - Asserting HTTP status code: Expected = 404, Actual = 404
+2024-10-26 23:18:47 INFO  api.stepsdef.UserDetailByEmailSteps - Setting valid email for user detail retrieval.
+2024-10-26 23:18:47 INFO  api.stepsdef.CommonSteps - Sending GET request to endpoint: /api/getUserDetailByEmail
+2024-10-26 23:18:47 INFO  api.stepsdef.CommonSteps - Getting user details for email: validuser@example.com
+2024-10-26 23:18:47 INFO  api.clients.AccountApiClient - Sending GET request to /api/getUserDetailByEmail with email: validuser@example.com
+2024-10-26 23:18:48 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 200, "user": {"id": 419254, "name": "Valid User", "email": "validuser@example.com", "title": "", "birth_day": "", "birth_month": "", "birth_year": "", "first_name": "Valid", "last_name": "User", "company": "", "address1": "test 1", "address2": "", "country": "India", "state": "Dnipro", "city": "Dnipro", "zipcode": "49000"}}
+2024-10-26 23:18:48 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 200, "user": {"id": 419254, "name": "Valid User", "email": "validuser@example.com", "title": "", "birth_day": "", "birth_month": "", "birth_year": "", "first_name": "Valid", "last_name": "User", "company": "", "address1": "test 1", "address2": "", "country": "India", "state": "Dnipro", "city": "Dnipro", "zipcode": "49000"}}
+2024-10-26 23:18:48 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 200, Actual = 200
+2024-10-26 23:18:48 INFO  api.stepsdef.UserDetailByEmailSteps - Attaching full response message to Allure.
+2024-10-26 23:18:48 INFO  api.stepsdef.UserDetailByEmailSteps - User details in response: ID = 419254, Name = Valid User, Email = validuser@example.com
+2024-10-26 23:18:48 INFO  api.stepsdef.UserDetailByEmailSteps - Setting invalid email for user detail retrieval.
+2024-10-26 23:18:48 INFO  api.stepsdef.CommonSteps - Sending GET request to endpoint: /api/getUserDetailByEmail
+2024-10-26 23:18:48 INFO  api.stepsdef.CommonSteps - Getting user details for email: someinvaliduser@example.com
+2024-10-26 23:18:48 INFO  api.clients.AccountApiClient - Sending GET request to /api/getUserDetailByEmail with email: someinvaliduser@example.com
+2024-10-26 23:18:49 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 404, "message": "Account not found with this email, try another email!"}
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 404, "message": "Account not found with this email, try another email!"}
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 404, Actual = 404
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Asserting response message: Expected = Account not found with this email, try another email!, Actual = Account not found with this email, try another email!
+2024-10-26 23:18:49 INFO  api.stepsdef.SearchProductsSteps - Product name set for search: top
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Sending POST request to endpoint: /api/searchProduct
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Preparing to search product.
+2024-10-26 23:18:49 INFO  api.clients.AccountApiClient - Building RequestSpecification for search product with multipart/form-data
+2024-10-26 23:18:49 INFO  api.clients.AccountApiClient - Sending POST request to /api/searchProduct.
+2024-10-26 23:18:49 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}]}
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}]}
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 200, Actual = 200
+2024-10-26 23:18:49 INFO  api.stepsdef.SearchProductsSteps - Products list contains 14 products.
+2024-10-26 23:18:49 INFO  api.stepsdef.SearchProductsSteps - Products list contains searched products.
+2024-10-26 23:18:49 INFO  api.stepsdef.SearchProductsSteps - No product name provided for search.
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Sending POST request to endpoint: /api/searchProduct
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Preparing to search product.
+2024-10-26 23:18:49 INFO  api.clients.AccountApiClient - Building RequestSpecification for search product with application/json
+2024-10-26 23:18:49 INFO  api.clients.AccountApiClient - Sending POST request to /api/searchProduct.
+2024-10-26 23:18:49 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 400, "message": "Bad request, search_product parameter is missing in POST request."}
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 400, "message": "Bad request, search_product parameter is missing in POST request."}
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 400, Actual = 400
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Asserting response message: Expected = Bad request, search_product parameter is missing in POST request., Actual = Bad request, search_product parameter is missing in POST request.
+2024-10-26 23:18:49 INFO  api.stepsdef.VerifyLoginSteps - Generating valid login credentials.
+2024-10-26 23:18:49 INFO  api.stepsdef.VerifyLoginSteps - Generated Valid login credentials: email=validuser@example.com, password=validpass
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Sending POST request to endpoint: /api/verifyLogin
+2024-10-26 23:18:49 INFO  api.stepsdef.CommonSteps - Verifying login with request: VerifyLoginRequest(email=validuser@example.com, password=validpass)
+2024-10-26 23:18:49 INFO  api.clients.AccountApiClient - Sending POST request to /api/verifyLogin with multipart form data.
+2024-10-26 23:18:50 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 200, "message": "User exists!"}
+2024-10-26 23:18:50 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 200, "message": "User exists!"}
+2024-10-26 23:18:50 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 200, Actual = 200
+2024-10-26 23:18:50 INFO  api.stepsdef.CommonSteps - Asserting response message: Expected = User exists!, Actual = User exists!
+2024-10-26 23:18:50 INFO  api.stepsdef.VerifyLoginSteps - Generating invalid login credentials.
+2024-10-26 23:18:50 INFO  api.stepsdef.VerifyLoginSteps - Generated Invalid login credentials: email=someinvaliduser@example.com, password=wrongpass
+2024-10-26 23:18:50 INFO  api.stepsdef.CommonSteps - Sending POST request to endpoint: /api/verifyLogin
+2024-10-26 23:18:50 INFO  api.stepsdef.CommonSteps - Verifying login with request: VerifyLoginRequest(email=someinvaliduser@example.com, password=wrongpass)
+2024-10-26 23:18:50 INFO  api.clients.AccountApiClient - Sending POST request to /api/verifyLogin with multipart form data.
+2024-10-26 23:18:50 INFO  api.clients.AccountApiClient - Received response: {"responseCode": 404, "message": "User not found!"}
+2024-10-26 23:18:50 INFO  api.stepsdef.CommonSteps - Response received: {"responseCode": 404, "message": "User not found!"}
+2024-10-26 23:18:50 INFO  api.stepsdef.CommonSteps - Asserting response code: Expected = 404, Actual = 404
+2024-10-26 23:18:50 INFO  api.stepsdef.CommonSteps - Asserting response message: Expected = User not found!, Actual = User not found!

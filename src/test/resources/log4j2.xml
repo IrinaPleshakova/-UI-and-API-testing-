@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Console appender: logs output to console (terminal) -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- Layout: specify the format of log messages -->
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File appender: logs output to a file 'logs/test.log' -->
+        <File name="File" fileName="logs/test.log" append="true">
+            <!-- Layout: specify the format of log messages -->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+        </File>
+
+        <!-- RollingFile appender: rotates logs once the file reaches a specified size -->
+        <RollingFile name="RollingFile" fileName="logs/rolling-test.log"
+                     filePattern="logs/rolling-test-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- Rollover policy: rotate log file every 10MB -->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+                <!-- Time-based policy: rotate daily -->
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root logger: includes all loggers with 'info' level by default -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+
+        <!-- Specific logger for troubleshooting or detailed logging, set to 'debug' -->
+        <Logger name="utils" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+    </Loggers>
+</Configuration>
