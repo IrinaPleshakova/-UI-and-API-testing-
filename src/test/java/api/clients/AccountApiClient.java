@@ -20,16 +20,29 @@ public class AccountApiClient {
 
 	private static final Logger logger = LogManager.getLogger(AccountApiClient.class);
 
+	// Constants for endpoints
+	public static final String CREATE_ACCOUNT_ENDPOINT = "/api/createAccount";
+	public static final String VERIFY_LOGIN_ENDPOINT = "/api/verifyLogin";
+	public static final String GET_USER_DETAIL_BY_EMAIL_ENDPOINT = "/api/getUserDetailByEmail";
+	public static final String PRODUCTS_LIST_ENDPOINT = "/api/productsList";
+	public static final String INVALID_PRODUCTS_LIST_ENDPOINT = "/api/invalidProductsList";
+	public static final String SEARCH_PRODUCT_ENDPOINT = "/api/searchProduct";
+	public static final String DELETE_ACCOUNT_ENDPOINT = "/api/deleteAccount";
+
+	// Constants for content types
+	private static final String MULTIPART_FORM_DATA = "multipart/form-data";
+	private static final String APPLICATION_JSON = "application/json";
+
 	/**
 	 * Sends a POST request to create an account.
-	 * This method takes an object and sends it as multipart form-data in the POST request
+	 * This method takes a CreateAccountRequest object and sends it as multipart form-data in the POST request
 	 * to the /api/createAccount endpoint. Each field in the request is sent as a separate part.
 	 */
 	public Response createAccount(CreateAccountRequest request) {
-		logger.info("Sending POST request to /api/createAccount with multipart form data.");
+		logger.info("Sending POST request to {} with multipart form data.", CREATE_ACCOUNT_ENDPOINT);
 
 		Response response = given()
-				.contentType("multipart/form-data")
+				.contentType(MULTIPART_FORM_DATA)
 				.multiPart("name", request.getName())
 				.multiPart("email", request.getEmail())
 				.multiPart("password", request.getPassword())
@@ -47,33 +60,33 @@ public class AccountApiClient {
 				.multiPart("state", request.getState())
 				.multiPart("city", request.getCity())
 				.multiPart("mobile_number", request.getMobile_number())
-				.post(ConfigProvider.getBaseUri() + "/api/createAccount")
+				.post(ConfigProvider.getBaseUri() + CREATE_ACCOUNT_ENDPOINT)
 				.then()
 				.extract()
 				.response();
 
-		logger.info("Received response: " + response.asString());
+		logger.info("Received response: {}", response.asString());
 		return response;
 	}
 
 	/**
 	 * Sends a POST request to verify login.
-	 * This method takes an object and sends it as multipart form-data in the POST request
+	 * This method takes a VerifyLoginRequest object and sends it as multipart form-data in the POST request
 	 * to the /api/verifyLogin endpoint. Each field (email and password) is sent as a separate part.
 	 */
 	public Response verifyLogin(VerifyLoginRequest request) {
-		logger.info("Sending POST request to /api/verifyLogin with multipart form data.");
+		logger.info("Sending POST request to {} with multipart form data.", VERIFY_LOGIN_ENDPOINT);
 
 		Response response = given()
-				.contentType("multipart/form-data")
+				.contentType(MULTIPART_FORM_DATA)
 				.multiPart("email", request.getEmail())
 				.multiPart("password", request.getPassword())
-				.post(ConfigProvider.getBaseUri() + "/api/verifyLogin")
+				.post(ConfigProvider.getBaseUri() + VERIFY_LOGIN_ENDPOINT)
 				.then()
 				.extract()
 				.response();
 
-		logger.info("Received response: " + response.asString());
+		logger.info("Received response: {}", response.asString());
 		return response;
 	}
 
@@ -83,16 +96,16 @@ public class AccountApiClient {
 	 * with the provided email as a query parameter.
 	 */
 	public Response getUserDetailByEmail(String email) {
-		logger.info("Sending GET request to /api/getUserDetailByEmail with email: " + email);
+		logger.info("Sending GET request to {} with email: {}", GET_USER_DETAIL_BY_EMAIL_ENDPOINT, email);
 
 		Response response = given()
 				.queryParam("email", email)
-				.get(ConfigProvider.getBaseUri() + "/api/getUserDetailByEmail")
+				.get(ConfigProvider.getBaseUri() + GET_USER_DETAIL_BY_EMAIL_ENDPOINT)
 				.then()
 				.extract()
 				.response();
 
-		logger.info("Received response: " + response.asString());
+		logger.info("Received response: {}", response.asString());
 		return response;
 	}
 
@@ -101,15 +114,15 @@ public class AccountApiClient {
 	 * This method sends a request to the /api/productsList endpoint and logs the response.
 	 */
 	public Response getAllProducts() {
-		logger.info("Sending GET request to /api/productsList");
+		logger.info("Sending GET request to {}", PRODUCTS_LIST_ENDPOINT);
 
 		Response response = given()
-				.get(ConfigProvider.getBaseUri() + "/api/productsList")
+				.get(ConfigProvider.getBaseUri() + PRODUCTS_LIST_ENDPOINT)
 				.then()
 				.extract()
 				.response();
 
-		logger.info("Received response: " + response.asString());
+		logger.info("Received response: {}", response.asString());
 		return response;
 	}
 
@@ -118,15 +131,15 @@ public class AccountApiClient {
 	 * This method is used to test the response from an invalid API endpoint: /api/invalidProductsList.
 	 */
 	public Response getInvalidProducts() {
-		logger.info("Sending GET request to /api/invalidProductsList");
+		logger.info("Sending GET request to {}", INVALID_PRODUCTS_LIST_ENDPOINT);
 
 		Response response = given()
-				.get(ConfigProvider.getBaseUri() + "/api/invalidProductsList")
+				.get(ConfigProvider.getBaseUri() + INVALID_PRODUCTS_LIST_ENDPOINT)
 				.then()
 				.extract()
 				.response();
 
-		logger.info("Received response: " + response.asString());
+		logger.info("Received response: {}", response.asString());
 		return response;
 	}
 
@@ -135,10 +148,10 @@ public class AccountApiClient {
 	 * This method builds the request with the necessary parameters and content type.
 	 */
 	public RequestSpecification buildSearchProductRequest(String searchProduct) {
-		logger.info("Building RequestSpecification for search product with multipart/form-data.");
+		logger.info("Building RequestSpecification for search product with {}", MULTIPART_FORM_DATA);
 
 		return given()
-				.contentType("multipart/form-data")
+				.contentType(MULTIPART_FORM_DATA)
 				.multiPart("search_product", searchProduct);
 	}
 
@@ -147,7 +160,7 @@ public class AccountApiClient {
 	 * This is used for negative testing where we expect an error due to incorrect content type.
 	 */
 	public RequestSpecification buildSearchProductRequestWithJsonContentType(String searchProduct) {
-		logger.info("Building RequestSpecification for search product with application/json content type.");
+		logger.info("Building RequestSpecification for search product with {}", APPLICATION_JSON);
 
 		JsonObject jsonBody = new JsonObject();
 
@@ -156,7 +169,7 @@ public class AccountApiClient {
 		}
 
 		return given()
-				.contentType("application/json")
+				.contentType(APPLICATION_JSON)
 				.body(jsonBody.toString());
 	}
 
@@ -165,15 +178,15 @@ public class AccountApiClient {
 	 * This method takes a RequestSpecification and sends the POST request to the /api/searchProduct endpoint.
 	 */
 	public Response sendSearchProductRequest(RequestSpecification requestSpec) {
-		logger.info("Sending POST request to /api/searchProduct.");
+		logger.info("Sending POST request to {}.", SEARCH_PRODUCT_ENDPOINT);
 
 		Response response = requestSpec
-				.post(ConfigProvider.getBaseUri() + "/api/searchProduct")
+				.post(ConfigProvider.getBaseUri() + SEARCH_PRODUCT_ENDPOINT)
 				.then()
 				.extract()
 				.response();
 
-		logger.info("Received response: " + response.asString());
+		logger.info("Received response: {}", response.asString());
 		return response;
 	}
 
@@ -185,18 +198,18 @@ public class AccountApiClient {
 	 * The request is made with the content type set to "multipart/form-data".
 	 */
 	public Response deleteAccount(String email, String password) {
-		logger.info("Sending DELETE request to /api/deleteAccount with multipart form data.");
+		logger.info("Sending DELETE request to {} with multipart form data.", DELETE_ACCOUNT_ENDPOINT);
 
 		Response response = given()
-				.contentType("multipart/form-data")
+				.contentType(MULTIPART_FORM_DATA)
 				.multiPart("email", email)
 				.multiPart("password", password)
-				.delete(ConfigProvider.getBaseUri() + "/api/deleteAccount")
+				.delete(ConfigProvider.getBaseUri() + DELETE_ACCOUNT_ENDPOINT)
 				.then()
 				.extract()
 				.response();
 
-		logger.info("Received response: " + response.asString());
+		logger.info("Received response: {}", response.asString());
 		return response;
 	}
 }

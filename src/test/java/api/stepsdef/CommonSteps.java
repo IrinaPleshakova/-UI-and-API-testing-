@@ -13,47 +13,48 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 /**
- * Common step definitions for handling API requests and responses with Allure reporting.
+ * Common step definitions for sending requests and handling responses.
  */
 public class CommonSteps {
 
 	private static final Logger logger = LogManager.getLogger(CommonSteps.class);
-	public static Response response;
 	private final AccountApiClient client = new AccountApiClient();
+	public static Response response;
 
 	@Step("Sending {method} request to endpoint {endpoint}")
-	private void sendRequest(String method, String endpoint) {
+	@When("I send a {string} request to {string} endpoint")
+	public void sendRequest(String method, String endpoint) {
 		logger.info("Sending {} request to endpoint: {}", method, endpoint);
 
 		switch (endpoint) {
-			case "/api/createAccount":
+			case AccountApiClient.CREATE_ACCOUNT_ENDPOINT:
 				logger.info("Creating account with request: {}", AccountSteps.createAccountRequest);
 				Allure.addAttachment("Account Creation Request", AccountSteps.createAccountRequest.toString());
 				response = client.createAccount(AccountSteps.createAccountRequest);
 				break;
-			case "/api/verifyLogin":
+			case AccountApiClient.VERIFY_LOGIN_ENDPOINT:
 				logger.info("Verifying login with request: {}", VerifyLoginSteps.verifyLoginRequest);
 				Allure.addAttachment("Login Verification Request", VerifyLoginSteps.verifyLoginRequest.toString());
 				response = client.verifyLogin(VerifyLoginSteps.verifyLoginRequest);
 				break;
-			case "/api/searchProduct":
+			case AccountApiClient.SEARCH_PRODUCT_ENDPOINT:
 				logger.info("Preparing to search product.");
 				handleSearchProductRequest(method);
 				break;
-			case "/api/getUserDetailByEmail":
+			case AccountApiClient.GET_USER_DETAIL_BY_EMAIL_ENDPOINT:
 				logger.info("Getting user details for email: {}", UserDetailByEmailSteps.email);
 				Allure.addAttachment("User Detail Request", UserDetailByEmailSteps.email);
 				response = client.getUserDetailByEmail(UserDetailByEmailSteps.email);
 				break;
-			case "/api/productsList":
+			case AccountApiClient.PRODUCTS_LIST_ENDPOINT:
 				logger.info("Fetching all products.");
 				response = client.getAllProducts();
 				break;
-			case "/api/invalidProductsList":
+			case AccountApiClient.INVALID_PRODUCTS_LIST_ENDPOINT:
 				logger.info("Fetching invalid products.");
 				response = client.getInvalidProducts();
 				break;
-			case "/api/deleteAccount":
+			case AccountApiClient.DELETE_ACCOUNT_ENDPOINT:
 				logger.info("Deleting account with email: {}", DeleteAccountSteps.email);
 				Allure.addAttachment("Account Deletion Request", "Email: " + DeleteAccountSteps.email);
 				response = client.deleteAccount(DeleteAccountSteps.email, DeleteAccountSteps.password);
@@ -66,6 +67,7 @@ public class CommonSteps {
 		addResponseToAllure(response);
 	}
 
+	// Method to handle search product request
 	private void handleSearchProductRequest(String method) {
 		RequestSpecification requestSpec;
 		if ("POST".equalsIgnoreCase(method)) {
@@ -79,8 +81,8 @@ public class CommonSteps {
 			// Send the request
 			response = client.sendSearchProductRequest(requestSpec);
 		} else {
-			logger.error("Unsupported method for /api/searchProduct: {}", method);
-			throw new IllegalArgumentException("Unsupported method for /api/searchProduct: " + method);
+			logger.error("Unsupported method for search product: {}", method);
+			throw new IllegalArgumentException("Unsupported method for search product: " + method);
 		}
 	}
 
