@@ -16,7 +16,7 @@ This project includes both UI and API tests for AutomationExercise. The tests ar
 
 ## 1. Cloning a repository
 First, clone the repository with this project to your local machine:
-https://github.com/JAVA-QA-AUTO-UA-RB/autoqa-final-IrinaPleshakova
+https://github.com/IrinaPleshakova/-UI-and-API-testing-
 
 ## 2. Opening in IntelliJ IDEA
 Open the project in IntelliJ IDEA to work with code and tests.
